@@ -1,0 +1,106 @@
+/* # is for ids, . is for classes */
+
+body {
+    background-color: MediumAquamarine;
+    /* Browser first tries to use first font, then tries next if unsupported */
+    font-family: Verdana, Helvetica, Arial, sans-serif
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: powderblue; /* color of background */
+    color: #202020; /* color of text */
+}
+
+.header h1 {
+    line-height: 0px;
+    font-size: 40px;
+}
+
+.header h2 {
+    font-size: 20px;
+}
+
+.navbar {
+    padding: 10px;
+    overflow: hidden;
+    background-color: #444;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white; /* text color */
+    text-align: center;
+    padding: 14px 20px; /* vertical/horizontal; can be top/sides/bottom or all or top/right/bottom/left */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar a.right {
+    float: right; /* override the float left */
+}
+
+/* on mouse hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* bottom part stuff */
+* {
+    box-sizing: border-box; /* includes padding and border in elm's total width/height */
+}
+
+.row {
+    display: flex; /* can restack items when there's no space. define flex for elms inside it. add to 100*/
+    flex-wrap: wrap;
+    font-size: 4;
+}
+
+.side {
+    flex: 30%;
+    background-color: #f1f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.boxed {
+    border: 2px solid #ffffff;
+}
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.main button {
+    padding: 5px;
+    font-size: 15px;
+    background-color: #97e570; 
+    border-radius: 15px;
+    border: 2px solid #000000;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+/* @media queries for width/height of viewport/device, orientation, resolution
+    for cross-device support */
+/* to stack columns */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column; /* how the elms stack. reverse flips up/down, etc if elms overlap */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}

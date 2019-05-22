@@ -5,70 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 </head>
 <body>
-    <div class="header">
-        <h1> Welcome </h1>
-        <h2> to Jenny Wang's portfolio <h2>
-    </div>
+    <div id="header"></div>
 
-    <div class='navbar'>
-        <a href="/" class="left">Home</a>
-        <a href="contact.html" class="right">Contact</a>
-        <a href="image_gallery.html" class="right boxed">Image Gallery</a>
-    </div>
-
-    <div class="row">
+    <div id="body" class="row" style="z-index: 0; position: relative; display: none;">
         <div class="main" align=center>
-            <font size=6>
+            <font size=5>
                 <div id="gallery"></div>
-                <button id='RememberMeFrog' onclick="addVote('#RememberMeFrog')" type="button" value='0'>0</button>
             </font>
+
+            <div>Thanks for loving 
+                <div id="hearts_loved" style="display: inline;">0</div> 
+                of these magnificent pieces of art! <br>
+                <font size=2>Unfortunately, I'll forget this soon afterwards though because GitHub Pages only hosts static webistes and I don't think you want cookies.</font>
+            </div>
         </div>
     </div>
 
-    <div class="footer">
-        <p> Jenny Wang ©2019 </p>
-    </div>
+    <div id="footer"></div>
 
     <script>
-        $(gallery).load('images/gallery_images.html');
+        $(gallery).load('gallery_images.html');
 
-        var gallary_votes = {}
+        var totalHearts = 0;
 
-        function loadVotes() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    gallary_votes = JSON.parse(this.responseText)
-
-                    for (var id in gallary_votes) {
-                        $("#" + id).text(gallary_votes[id]);
-                    }
-                    console.log(gallary_votes);
-                }
-                if (this.readyState == 4 && this.status == 404) {
-                    console.log('Error: Gallery votes file not found.');
-                }
-            };
-            xhttp.open("GET", "/images/gallery_votes.json");
-            xhttp.send();
-        };
-
-        function saveVotes() {
-            // GitHub pages only supports static pages :c
-        }
-
-        loadVotes();
-
-        function addVote(id) {
-            if ($(id).val() == 0) {
-                $(id).text(parseInt($(id).html()) + 1);
-                $(id).val(1); // cannot vote again
-                saveVotes();
+        function toggleColor(id) {
+            if (document.getElementById(id).getAttribute("style") == "color: black; font-size: 20px;") {
+                document.getElementById(id).setAttribute("style", "color: red; font-size: 20px;")
+                totalHearts++;
+                $("#hearts_loved").text(totalHearts);
+            } else {
+                document.getElementById(id).setAttribute("style", "color: black; font-size: 20px;")
+                totalHearts--;
+                $("#hearts_loved").text(totalHearts);
             }
-        };
+
+        }
+    </script>
+
+    <script> 
+        // load the header, show the body and personalize the header, then load the footer
+        $(document).ready(function() {
+            $("#header").load("header.html", function() {
+                $("#images").addClass("boxed");
+                document.getElementById("body").style.setProperty("display", "flex");
+                $("#footer").load("footer.html");
+            });
+        })
     </script>
 </body>
 

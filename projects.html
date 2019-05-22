@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+ 
+    <div id="body" class="row" style="z-index: 0; position: relative; display: none;">
+        <div class="side">
+            ~~~<br>
+            <img src="/images/remember_me_frog_nowords.png" alt="A Frog"></img><br>
+            ~~~
+        </div>
+        <div class="main">
+            <p> 
+                This is a noninclusive list of some cs projects I have worked on in the past. You can find individual pages for them below: <br><br>
+
+                <ul>
+                    <li> <a href="pacnyan.html">PacNyan</a> </li>
+                    <li> <a href="readable_messes.html">Readable Messes</a> </li>
+                </ul>
+
+            </p>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script> 
+        // load the header, show the body and personalize the header, then load the footer
+        $(document).ready(function() {
+            $("#header").load("header.html", function() {
+                $("#projects").addClass("boxed");
+                document.getElementById("body").style.setProperty("display", "flex");
+                $("#footer").load("footer.html");
+            });
+        })
+    </script>
+</body>
+</html>

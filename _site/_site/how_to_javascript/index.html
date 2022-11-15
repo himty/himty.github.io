@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How to Javascript – Jenny Wang – research profile</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="HTML STUFF
+============
+
+" />
+    <meta property="og:description" content="HTML STUFF
+============
+
+" />
+    
+    <meta name="author" content="Jenny Wang" />
+
+    
+    <meta property="og:title" content="How to Javascript" />
+    <meta property="twitter:title" content="How to Javascript" />
+    
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:normal,b,i,bi" rel="stylesheet">
+    <script src="https://use.fontawesome.com/60beeb5aee.js" type="text/javascript"></script>
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" id="avadaredux-google-fonts-avada_theme_options-css" href="https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700italic%2C700%7CPT+Serif%3A400&amp;subset=latin" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Jenny Wang - research profile" href="/feed.xml" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/contrib/auto-render.min.js" integrity="sha384-IiI65aU9ZYub2MY9zhtKd1H2ps7xxf+eb2YFG9lX6uRqpXCvBTOidPRCXCrQ++Uc" crossorigin="anonymous"></script>
+    
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"  />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://avatars.githubusercontent.com/u/9757649?v=4" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Jenny Wang</a></h1>
+            <p class="site-description">research profile</p>
+          </div>
+
+          <nav>
+            <!-- <a href="/archive">Archive</a> -->
+            <a href="/">Home</a>
+            <a href="/blog">Blog</a>
+            <a href="/cv">CV</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <div class="row">
+<div class="col-sm-8">
+
+<article class="post">
+  <h1>How to Javascript</h1>
+
+  <div class="author">
+    <div>By Jenny Wang on May 24, 2019</div>
+    
+        <div style="font-style: italic;">~10 min. read</div>
+    
+</div>
+
+
+
+  <div class="content">
+  <h2 id="html-stuff">HTML STUFF</h2>
+<p>============</p>
+
+<p><code class="highlighter-rouge"><span class="cp">&lt;!DOCTYPE html&gt;</span></code></p>
+
+<p><code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code></p>
+
+<p><code class="highlighter-rouge">&lt;body onload=function()&gt;</code></p>
+<ul>
+  <li>onload- does <code class="highlighter-rouge">function()</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;script&gt;</code></p>
+
+<p><code class="highlighter-rouge">&lt;h1&gt;</code></p>
+
+<p><code class="highlighter-rouge">&lt;p id="demo"&gt;</code></p>
+<ul>
+  <li><code class="highlighter-rouge">id</code>-     set the id so its elements can be found w/ getElementById()
+  if there is no matching id, creates one at the bottom of the page
+events: onchange, onclick, onmouseover, onmouseout, onkeydown, onload</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;br /&gt;</code></p>
+<ul>
+  <li>inserts a line break there</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;noscript&gt;Text to display&lt;/noscript&gt;</code></p>
+<ul>
+  <li>Display that text if javascript is not enabled</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;!-- and //--&gt;</code></p>
+<ul>
+  <li>outline the script with this comment so unsupported computers skip it</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;div style="" align="" globalAtribbutes&gt;</code></p>
+<ul>
+  <li>style- “color:#0000FF” =&gt; all text within &lt;div&gt; = that color</li>
+  <li>align- left/right/center/justify(stretch) the elements
+    <ul>
+      <li>not supported in HTML5</li>
+    </ul>
+  </li>
+  <li>draggable- can click and drag like a picture</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;form action="code.php" method="post/get"&gt;</code></p>
+<ul>
+  <li>for organization</li>
+  <li>action- what to do after submit button is clicked
+    <ul>
+      <li>if ommitted, looks within the page</li>
+    </ul>
+  </li>
+  <li>method- how to submit data, GET = default (data displayed in</li>
+  <li>address field, POST = data hidden</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;fieldset&gt;</code></p>
+<ul>
+  <li>for organization within <code class="highlighter-rouge">&lt;form&gt;</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;legend&gt;text&lt;/legend&gt;</code></p>
+<ul>
+  <li>“header” for fieldset</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;input type="" name="name" value="text" onclick="function()"&gt;</code></p>
+<ul>
+  <li>type- none/text=text box, button=button, radio=multiple choice submit=submit button (see &lt;form&gt;)</li>
+  <li>name- must be included to be submitted within &lt;form&gt;
+    <ul>
+      <li>id- can’t be used for &lt;form&gt;</li>
+    </ul>
+  </li>
+  <li>value- text to initially display (hint). ‘’ is empty</li>
+  <li>onclick (buttons)- when element is clicked do blah</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;audio src="dir or website"&gt;</code></p>
+<ul>
+  <li>holds an audio file</li>
+  <li>audio accessed by through audioElement.play()</li>
+  <li>src- a directory or website that holds the audio file</li>
+</ul>
+
+<p><code class="highlighter-rouge">.innerHTML / .value</code></p>
+<ul>
+  <li>.value is for buttons, etc</li>
+  <li>.innerHTML is for paragraphs, etc</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;strike&gt;text&lt;/strike&gt;</code></p>
+<ul>
+  <li>text has strikethrough</li>
+</ul>
+
+<h2 id="global-attributes">GLOBAL ATTRIBUTES</h2>
+<p>==================
+http://www.w3schools.com/TAGS/ref_standardattributes.asp</p>
+
+<p><code class="highlighter-rouge">draggable=true/false</code></p>
+<ul>
+  <li>click and drag the element like a picture
+<code class="highlighter-rouge">spellcheck=true/false</code></li>
+  <li>have spellcheck within element or not</li>
+</ul>
+
+<h2 id="event-attributes">EVENT ATTRIBUTES</h2>
+<p>=================
+http://www.w3schools.com/TAGS/ref_eventattributes.asp</p>
+
+<p><code class="highlighter-rouge">onclick="function()"</code></p>
+<ul>
+  <li>do this when the element is clicked</li>
+  <li>for string parameters, use quotes DIFFERENT from the one
+    <ul>
+      <li>surrounding the function</li>
+      <li>ex: <code class="highlighter-rouge">"function('hi')"</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">ondblclick="function()"</code>
+    - do this when the element is double clicked</p>
+
+<p><code class="highlighter-rouge">onload="function()"</code>
+    - do this when the element loads</p>
+
+<p><code class="highlighter-rouge">onkeydown="function()"</code>
+    - do this when key is down</p>
+
+<h1>====================================================================</h1>
+<h1 id="-1">====================================================================</h1>
+<h1 id="-2">====================================================================</h1>
+
+<h2 id="javascript-stuff">JAVASCRIPT STUFF</h2>
+<p>==================</p>
+
+<h2 id="random-syntax-and-stuff">RANDOM SYNTAX AND STUFF</h2>
+<p>=======================</p>
+
+<p><code class="highlighter-rouge">&lt;script type="text/JavaScript"&gt;script&lt;/script&gt;</code></p>
+<ul>
+  <li>make a js script</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;script type="text/JavaScript" src="code.js"&gt;</code></p>
+<ul>
+  <li>reference an external js script</li>
+</ul>
+
+<p><code class="highlighter-rouge">==</code></p>
+<ul>
+  <li>equals</li>
+  <li>ex: <code class="highlighter-rouge">"7" == 7</code> =&gt; true</li>
+</ul>
+
+<p><code class="highlighter-rouge">===</code></p>
+<ul>
+  <li>strict equals, takes var type into account, too</li>
+  <li>ex: <code class="highlighter-rouge">"7" === 7</code> =&gt; false</li>
+</ul>
+
+<p><code class="highlighter-rouge">this</code></p>
+<ul>
+  <li>the element</li>
+  <li>
+    <p>ex:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  `&lt;button onclick="this.value=Date()&gt; `
+</code></pre></div>    </div>
+
+    <ul>
+      <li>changes button’s own text</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">typeof &lt;variable&gt;</code></p>
+<ul>
+  <li>returns type of variable</li>
+  <li>ex: <code class="highlighter-rouge">typeof variable == 'undefined'</code></li>
+</ul>
+
+<p>if a variable doesn’t exist, it basically == false</p>
+<ul>
+  <li>
+    <p>ex:
+      function test(callbackFunction)
+          if (callbackFunction) {
+              callbackFunction();
+          }
+      }</p>
+  </li>
+  <li>and if I put test() with no callbackFunction, it just doesn’t do anything</li>
+  <li>AKA: can call functions with less arguments than specified</li>
+</ul>
+
+<p>closure: variables created outside an event listener are “kept alive” if the reference in the listener is still there</p>
+<ul>
+  <li>creates memory leaks</li>
+  <li>use <code class="highlighter-rouge">$('element').off('event')</code>
+  =&gt; ex: <code class="highlighter-rouge">$('button').off('click');</code>
+“use strict” ontop of the script</li>
+  <li>cannot “pollute the root scope”
+    <ul>
+      <li>can’t make a new var to fit the uninitialized a = 2 in the window object</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>foo: function(){
+    //do something
+}
+</code></pre></div></div>
+
+<ul>
+  <li>another way to declare the function foo()</li>
+</ul>
+
+<p><code class="highlighter-rouge">try{ throw "error" } catch(e){ switch(e){ case "error" break;}</code></p>
+<ul>
+  <li>create + manage errors!
+<code class="highlighter-rouge">let</code></li>
+  <li>block-scoped</li>
+  <li>using x before let statement causes error</li>
+  <li>only defined in its block
+<code class="highlighter-rouge">var</code></li>
+  <li>function-scoped</li>
+  <li>using x before var statement sets x to undefined
+<code class="highlighter-rouge">that ${var1 + var2} is cool</code></li>
+  <li>template literals. Replaces “that “ + (var1 + var2) + “ is cool”</li>
+  <li>
+    <p>can do multiline:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  `hi
+  there`
+</code></pre></div>    </div>
+
+    <ul>
+      <li>(this has a \n in the middle)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="functionsattributes">FUNCTIONS/ATTRIBUTES</h2>
+<p>======================
+<code class="highlighter-rouge">window.alert(&lt;text or num&gt;);</code> [or just alert()]
+    popup alert</p>
+
+<p><code class="highlighter-rouge">document</code></p>
+
+<ul>
+  <li><code class="highlighter-rouge">.write(&lt;text or num or object&gt;);</code>
+    <ul>
+      <li>cannot write numbers when it is not in a function</li>
+      <li>only for testing purposes</li>
+      <li>if it is object, can type as <code class="highlighter-rouge">"&lt;p&gt;paragraph&lt;/p&gt;"</code></li>
+      <li>“<code class="highlighter-rouge">string" + num = "stringnum"</code></li>
+      <li><code class="highlighter-rouge">num + num = sum</code></li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.getElementById(id);</code>
+    <ul>
+      <li>access an HTML element</li>
+      <li><code class="highlighter-rouge">.innerHTML = "text";</code>
+        <ul>
+          <li>change the element’s text</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.body</code>
+    <ul>
+      <li>do something to the &lt;body&gt;</li>
+      <li>.appendChild(‘elementVariable’)
+        <ul>
+          <li>add the element (ex: button) to the document</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.createElement("element")</code>
+    <ul>
+      <li>ex: “button”, “br” (line break)</li>
+      <li>create the element.</li>
+      <li>can save it w/ <code class="highlighter-rouge">var btn = document.createElement("button");</code></li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.createTextNode("text")</code>
+    <ul>
+      <li>create the text node (variable)</li>
+      <li>can save it w/ <code class="highlighter-rouge">var t = document.createTextNode("text");</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Any element variable (ex: btn)</p>
+<ul>
+  <li><code class="highlighter-rouge">btn.appendChild(textNode)</code></li>
+  <li><code class="highlighter-rouge">.previousSibling</code>
+    <ul>
+      <li>returns element right before it in the parent</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.replaceChild(newChildElement, oldChildElement)</code>
+    <ul>
+      <li>replace the old with the new</li>
+      <li>later do newChild.appendChild(oldChild) to restructure</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">console.log(text/num, text/num, etc);</code></p>
+<ul>
+  <li>log text into the console (inspect element)</li>
+  <li>multiple parameters =&gt; a space in the</li>
+</ul>
+
+<p><code class="highlighter-rouge">str</code></p>
+<ul>
+  <li><code class="highlighter-rouge">.indexOf("string"[, fromIndex]);</code>
+    <ul>
+      <li>returns first index of “string” within str
+        <ul>
+          <li>returns-1 if not found</li>
+        </ul>
+      </li>
+      <li>begin looking from the index fromIndex</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.lastIndexOf("string");</code>
+    <ul>
+      <li>returns last index of “string within str
+        <ul>
+          <li>returns -1 if there’s nothing</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.search("string")</code> or <code class="highlighter-rouge">.search([regexp object])</code>
+    <ul>
+      <li>can use regexp (but slower)</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.match([regexp object])</code>
+    <ul>
+      <li>better search method</li>
+      <li>ex: <code class="highlighter-rouge">match(/m/gi)</code> (see regexp)</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.substr(start, length);</code>
+    <ul>
+      <li>start at start and end length chars later</li>
+      <li>start is negative =&gt; start from the end of the string</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.substring(start, end);</code>
+    <ul>
+      <li>start at start and end at end</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.slice(start[, end]);</code>
+    <ul>
+      <li>almost same as <code class="highlighter-rouge">substring()</code></li>
+      <li>if start/end are negative, count from the end of the string
+        <ul>
+          <li>doesn’t work in Internet Exploerer 8 or earlier</li>
+        </ul>
+      </li>
+      <li>only one parameter =&gt; slice out the rest of the string</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.split("searchTerm"[, numElementsToReturn]);</code>
+    <ul>
+      <li>return array of str split at the search terms</li>
+      <li>can stop looking for new terms after numElementsToReturn</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.charAt(index)</code>
+    <ul>
+      <li>returns char at the index</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.replace("findThis", "replaceWithThis");</code>
+    <ul>
+      <li>replace all “findThis”’s with the replacement</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.toLowerCase()</code>
+    <ul>
+      <li>returns string in all lowercase</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.toUpperCase()</code>
+    <ul>
+      <li>returns string in all uppercase</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.strike()</code>
+    <ul>
+      <li>returns <strike>[str.value]</strike></li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.length</code>
+    <ul>
+      <li>returns length of string</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">element.fireevent(eventStartingWithOn, event)</code></p>
+<ul>
+  <li>can be used without the () and stuff in it</li>
+  <li>returns if the event was cancelled (ex: can’t click there)</li>
+  <li>eventStartingWithOn/event are more specifications</li>
+</ul>
+
+<p><code class="highlighter-rouge">Math.random()</code></p>
+<ul>
+  <li>returns rand number from 0 to 1</li>
+  <li><code class="highlighter-rouge">Math.floor(Math.random()*50)</code> for rand int between 0 and 50</li>
+</ul>
+
+<p><code class="highlighter-rouge">Array</code></p>
+<ul>
+  <li>.splice(index, number)
+  remove element(s) from the array</li>
+  <li>.push(element)
+  add element to end of array</li>
+  <li>.includes(element)
+    <ul>
+      <li>returns if the element is in the array</li>
+    </ul>
+  </li>
+  <li>.pop()
+  removes and returns last element</li>
+  <li>.shift()
+    <ul>
+      <li>removes and returns first element. all elements are shifted left</li>
+    </ul>
+  </li>
+  <li>can initialize with var a = [1, 2, 3]</li>
+  <li>
+    <p>adding elements outside the array puts undefined in the middle</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var a = [1, 2, 3]
+  a[5] = 0
+  // a = [1, 2, 3, undefined, undefined, 0]
+</code></pre></div>    </div>
+  </li>
+  <li>an instanceof Array</li>
+</ul>
+
+<h2 id="events-for-stuff">EVENTS FOR STUFF</h2>
+<p>==================</p>
+
+<p><code class="highlighter-rouge">document</code></p>
+<ul>
+  <li><code class="highlighter-rouge">.ready()</code>
+    <ul>
+      <li>does what’s inside () when doc is ready
+<code class="highlighter-rouge">onerror = &lt;function&gt;</code></li>
+    </ul>
+  </li>
+  <li>calls <code class="highlighter-rouge">&lt;function&gt;</code> when the document errors.</li>
+</ul>
+
+<h2 id="variable-magic">VARIABLE MAGIC</h2>
+<p>================</p>
+
+<p><code class="highlighter-rouge">var varName = &lt;something&gt;;</code></p>
+
+<p><code class="highlighter-rouge">window.varName</code></p>
+<ul>
+  <li>all global variables in HTML are part of the window object</li>
+</ul>
+
+<p><code class="highlighter-rouge">var car = {brand:"Fiat", price:"3000000000000"};</code></p>
+<ul>
+  <li>get values with car.price or car[“price”]</li>
+  <li>can have methods as elements
+    <ul>
+      <li>use with car.function()</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">this.innerHTML = &lt;blah&gt;</code></p>
+<ul>
+  <li>change own element (ex: if in <button>, change button name)</button></li>
+</ul>
+
+<p>strings</p>
+<ul>
+  <li><code class="highlighter-rouge">txt.length</code>
+    <ul>
+      <li>returns length of string</li>
+    </ul>
+  </li>
+</ul>
+
+<p>string objects</p>
+<ul>
+  <li>For <code class="highlighter-rouge">var x = new String("Some Text");</code>
+    <ul>
+      <li><code class="highlighter-rouge">x == y</code> (another new String()) =&gt; false</li>
+      <li><code class="highlighter-rouge">x == x</code> =&gt; true</li>
+      <li><code class="highlighter-rouge">!= "Some Text"</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>if variable not given in parameter of function, it = undefined
+    - ex: <code class="highlighter-rouge">func(x,y)</code> =&gt; use <code class="highlighter-rouge">func(1)</code> =&gt; y = undefined</p>
+
+<p>2D Array
+    - is arrays in an array
+    - ex: 
+            var array = new Array(columns);
+            for (i = 0; i &lt; columnds; i++) {
+                array[i] = new Array(rows);
+            }
+    - access with <code class="highlighter-rouge">array[1][2]</code></p>
+
+<h2 id="prototypes">PROTOTYPES</h2>
+<p>=============</p>
+<ul>
+  <li>basically parent classes in java</li>
+  <li>different from classes b/c they are hoisted
+    <ul>
+      <li>can be used in lines above it b/c it’s basically in the head</li>
+    </ul>
+  </li>
+  <li>
+    <p>create prototype:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  function Person(n, a){
+      this.name = n;
+      this.age = a;
+      this.talk = function() {console.log("Hi")};
+  }
+</code></pre></div>    </div>
+  </li>
+  <li>add properties within prototype once made:
+    <ul>
+      <li><code class="highlighter-rouge">Person.prototype.newProtoName = "value";</code></li>
+    </ul>
+  </li>
+  <li>create new object from prototype:
+    <ul>
+      <li><code class="highlighter-rouge">var joe = new Person("Joe", 70);</code></li>
+    </ul>
+  </li>
+  <li>add property to existing object
+    <ul>
+      <li><code class="highlighter-rouge">myObject.newProperty = "value";</code></li>
+      <li>(creates it automagically for myObject and not prototype)</li>
+    </ul>
+  </li>
+  <li>
+    <p>add method to existing object</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  myObject.property = function () {
+      return "I dunno";
+  };
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">object.prototype.isPrototypeOf(obj)</code></p>
+<ul>
+  <li>returns whether object.prototype is in prototype chain of obj</li>
+</ul>
+
+<h2 id="classes">CLASSES</h2>
+<p>=========</p>
+
+<ul>
+  <li>
+    <p>not hoisted</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  class B extends A {
+      publicField = 0;
+      #privateField = 1;
+      uninitialized;
+
+      constructor(x, y) {
+          this.x = x;
+          this.y = y;
+      }
+
+      foo() {
+          &lt;function body&gt;
+      }
+  }
+</code></pre></div>    </div>
+  </li>
+  <li>constructor is named “constructor”</li>
+  <li>don’t put <code class="highlighter-rouge">def</code>/<code class="highlighter-rouge">var</code>/<code class="highlighter-rouge">function</code> keywords in front of methods</li>
+</ul>
+
+<h2 id="regular-expressions-regexp">REGULAR EXPRESSIONS (regexp)</h2>
+<p>===============================</p>
+
+<ul>
+  <li>object representing formatting</li>
+  <li>syntax: <code class="highlighter-rouge">/pattern/modifiers</code>
+    <ul>
+      <li>pattern- word/char/[multiple things] to look for</li>
+      <li>modifiers- i (case-insensitive),
+        <ul>
+          <li><code class="highlighter-rouge">g</code> (global, find multiple matches)</li>
+          <li><code class="highlighter-rouge">m</code> (multi-line matching)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>ex: <code class="highlighter-rouge">str.match(/m/gi)</code></li>
+  <li>ex: <code class="highlighter-rouge">var rEPattern1 = /z/i;</code>
+<code class="highlighter-rouge">reg</code>
+    <ul>
+      <li><code class="highlighter-rouge">.exec()</code>
+        <ul>
+          <li>returns first match if found</li>
+          <li>returns false if none found</li>
+          <li>if just called for the same string, starts searching after the previous match
+  <code class="highlighter-rouge">.test()</code></li>
+          <li>returns true if found, false if not found</li>
+          <li>if just called for the same string, starts searching after the previous match</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="built-in-variables">BUILT IN VARIABLES</h2>
+<p>=====================
+<code class="highlighter-rouge">Date()</code></p>
+
+<p><code class="highlighter-rouge">document.location</code></p>
+<ul>
+  <li>is website url</li>
+</ul>
+
+<h2 id="helper-functions">HELPER FUNCTIONS</h2>
+<p>===================</p>
+
+<p>Append text to document body</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    document.body.appendChild(document.createTextNode("hi"));
+</code></pre></div></div>
+
+<p>Simulate a click without clicking there</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    function eventFire(el, etype){
+      if (el.fireEvent) {
+        el.fireEvent('on' + etype);
+      } else {
+        var evObj = document.createEvent('Events');
+        evObj.initEvent(etype, true, false);
+        el.dispatchEvent(evObj);
+      }
+    }
+</code></pre></div></div>
+
+<ul>
+  <li>usage: <code class="highlighter-rouge">eventFire(document.getElementById('mytest1'), 'click');</code></li>
+</ul>
+
+<p>Get mouse coordinates when it changes</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(function() {
+    document.onmousemove = handleMouseMove;
+    function handleMouseMove(event) {
+        var dot, eventDoc, doc, body, pageX, pageY;
+
+        event = event || window.event; // IE-ism
+
+        // If pageX/Y aren't available and clientX/Y are,
+        // calculate pageX/Y - logic taken from jQuery.
+        // (This is to support old IE)
+        if (event.pageX == null &amp;&amp; event.clientX != null) {
+            eventDoc = (event.target &amp;&amp; event.target.ownerDocument) || document;
+            doc = eventDoc.documentElement;
+            body = eventDoc.body;
+
+            event.pageX = event.clientX +
+              (doc &amp;&amp; doc.scrollLeft || body &amp;&amp; body.scrollLeft || 0) -
+              (doc &amp;&amp; doc.clientLeft || body &amp;&amp; body.clientLeft || 0);
+            event.pageY = event.clientY +
+              (doc &amp;&amp; doc.scrollTop  || body &amp;&amp; body.scrollTop  || 0) -
+              (doc &amp;&amp; doc.clientTop  || body &amp;&amp; body.clientTop  || 0 );
+        }
+
+        // Use event.pageX / event.pageY here
+    }
+})();
+</code></pre></div></div>
+
+<h2 id="terms">TERMS</h2>
+<p>========</p>
+
+<p>String interpolation</p>
+<ul>
+  <li>add variable value to a string</li>
+  <li>ex: console.log(var+”hi”);</li>
+  <li>Escaping a letter
+    <ul>
+      <li>in a quote <code class="highlighter-rouge">"There\'s something"</code>
+        <ul>
+          <li>put a slash to print the apostrophe</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="tips">TIPS</h2>
+<p>======</p>
+
+<ul>
+  <li>while testing on a web server
+    <ul>
+      <li>disable cache in inspect element
+        <ul>
+          <li><code class="highlighter-rouge">Network-&gt;Disable cache</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>change order of elements by appending/something the <code class="highlighter-rouge">document.getElementById</code></li>
+</ul>
+
+<h1 id="-3">====================================================================</h1>
+<h1 id="-4">====================================================================</h1>
+<h1 id="-5">====================================================================</h1>
+
+<h2 id="jquery">JQUERY</h2>
+<p>========</p>
+
+<p><code class="highlighter-rouge">$(thing)</code></p>
+<ul>
+  <li>means the element is from jquery and should act like one &gt;:D</li>
+</ul>
+
+<p><code class="highlighter-rouge">$(document)</code></p>
+
+<p><code class="highlighter-rouge">$('button')</code></p>
+<ul>
+  <li>it’s a button element!
+    <ul>
+      <li><code class="highlighter-rouge">.on('event', doThis)</code>
+        <ul>
+          <li>‘event’ is the event psh. ex: ‘click’</li>
+          <li>doThis can be a function</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="-6">====================================================================</h1>
+<h1 id="-7">====================================================================</h1>
+<h1 id="-8">====================================================================</h1>
+
+<h2 id="notes">Notes</h2>
+<p>========</p>
+
+<p>Should probably use a modern front end library like <code class="highlighter-rouge">ReactJS</code> so that the site doesn’t become spaghetti code. These notes are a way to get started with HTML and Javascript, but don’t really talk about best coding practices.</p>
+
+  </div>
+
+</article>
+
+  
+<div class="tags">
+    Tags:
+   
+    <span class="tag"><a href="/coding_notes">coding_notes</a></span>
+   
+</div>
+
+
+
+  <div class="row pagenav">
+      
+      <div class="col-xs-6 prev_post"><a href="/how_to_python/">&larr; How to Python</a></div>
+      
+      
+      <div class="col-xs-6 next_post"><a href="/how_to_c/">How to C &rarr;</a></div>
+      
+  </div>
+
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'himty-github-io';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+  </div>
+
+  	 <div class="sidebar col-sm-4">
+	   <h1>Recent Posts</h1>
+
+	   <ul>
+	     
+	     <li><a href="/how_to_matlab/">How to MATLAB</a></li>
+	     
+	     <li><a href="/how_to_java/">How to Java (APCS level)</a></li>
+	     
+	     <li><a href="/how_to_c/">How to C</a></li>
+	     
+	     <li><a href="/how_to_javascript/">How to Javascript</a></li>
+	     
+	     <li><a href="/how_to_python/">How to Python</a></li>
+	     
+	   </ul>
+	   <ul>
+		   <li><a href="/archive/index">...see all</a></li>
+	   </ul>
+
+	   <!-- <h1>Most Popular</h1>
+	   <ul>
+	     
+	   </ul> -->
+
+	   <h1>Topics</h1>
+	   <ul>
+	     
+	     
+	     
+	     
+	     <li><a href="/tag/coding_notes">coding_notes</a> (8)</li>
+	     
+	     
+	   </ul>
+
+	 </div>
+
+  
+</div>
+
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="footer">
+          
+<a href="mailto:jennyw2@andrew.cmu.edu"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/himty"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/jenny-w-657731132"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+
+<a href="http://stackoverflow.com/users/5901346/himty"><i class="svg-icon stackoverflow"></i></a>
+
+
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'G-KD8WS8KY23', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/how_to_javascript/',
+		  'title': 'How to Javascript'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+    <script>
+      renderMathInElement(document.body);
+    </script>
+  </body>
+</html>

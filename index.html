@@ -1,45 +1,67 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
-<body>
-    <div id="header"></div>
+---
+layout: default
+redirect_from: "/about"
+---
 
-    <div id="body" class="row" style="z-index: 0; position: relative; display: none;">
-        <div class="side">
-            ~~~<br>
-            <img src="/images/remember_me_frog_nowords.png" alt="A Frog"></img><br>
-            ~~~
-        </div>
-        <div class="main">
-            <p> 
-                Welcome, welcome, welcome. Hope everything is going swell. You are now on the home page of Jenny Wang's portfolio website, and you will soon be able to find all kinds of wonders beyond. <br><br>
-
-                What are the best things in life, you ask? They are:
-            </p>
-            <ul>
-                <li> Soy sauce. </li>
-                <li> Anything that has soy sauce on it. </li>
-                <font size=2><li> (I'll append Sriracha sauce to the above list)</li></font>
-            </ul>
-        </div>
+<div class="container home">
+  <div class="row">
+    <div class="col-sm-3">
+      <img class="img-responsive center-block" src="assets/headshot.jpg" img width="200" />
     </div>
+    <div class="col-sm-9">
+      <p>
+        Hello. I'm a PhD student at the Robotics Institute at Carnegie Mellon University. I'm currently a member of the <a href="https://r-pad.github.io/">Robots Perceiving and Doing Lab (RPAD)</a>, where I am advised by Prof. <a href="http://davheld.github.io/">Dave Held</a>. My general research interests are at the intersection of perception and control. Specifically, I center on the control of robotic systems through model-based machine learning to study how machines can be given greater, safer autonomy. 
+         
+      </p>
+      <p>
+        During my undergraduate study, I was advised by <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> and mentored by <a href="https://nrhinehart.github.io">Nick Rhinehart</a> at the <a href="https://rail.eecs.berkeley.edu/">Robotic AI & Learning Lab (RAIL)</a> in UC Berkeley.
+      </p>
+      <p>
+        [<a href="resources/cv.pdf">CV</a>] [<a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=cAYgoH4AAAAJ">Google Scholar</a>] [<a href="https://github.com/himty">Github</a>]
+      </p>
+      <p>
+        Contact: jennyw2 (at) andrew.cmu.edu
+      </p>
+    </div>
+  </div>
+</div>
 
-    <div id="footer"></div>
+<h2>News</h2>
 
-    <script> 
-        // load the header, show the body and personalize the header, then load the footer
-        $(document).ready(function() {
-            $("#header").load("header.html", function() {
-                $("#home").addClass("boxed");
-                document.getElementById("body").style.setProperty("display", "flex");
-                $("#footer").load("footer.html");
-            });
-        })
-    </script>
-</body>
-</html>
+<ul>
+  <li>Joined the Robotics Institute at CMU! Excited to work with <a href="http://davheld.github.io/">Dave Held</a> at the <a href="https://r-pad.github.io/">Robots Perceiving and Doing Lab (RPAD)</a></li>
+  <li>Paper accepted to NeurIPS 2021! <a href="https://sites.google.com/view/ic2">Information is Power: Intrinsic Control via Information Capture</a>.</li>
+  <li><a href="/news">...see all news</a></li>
+</ul>
+
+
+<h2>Recent Blog Posts</h2>
+
+<div class="posts">
+  {% for post in site.posts limit:4 %}
+    <article>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </article>
+  {% endfor %}
+  <a href="/archive/index">...see all posts</a>
+</div>
+
+<h2>Publications</h2>
+
+<table cellpadding="10" width="100%">
+  <tr>
+    <td class="pubimg" width="250" height="100">
+        <img src="assets/papers/neurips21.png" width="100">
+    </td>
+    <td>
+        <br>
+        <a href="https://sites.google.com/view/ic2">Information is Power: Intrinsic Control via Information Capture</a><br>
+        <div class="pubauthor">
+          Nicholas Rhinehart, <b>Jenny Wang</b>, Glen Berseth, JD Co-Reyes, Danijar Hafner, Chelsea Finn, Sergey Levine<br>
+        </div>
+        <div class="pubjournal">Advances in Neural Information Processing Systems 34 (NeurIPS 2021)
+        </div>
+        <br>
+    </td>
+  </tr>
+</table>

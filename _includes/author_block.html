@@ -1,0 +1,7 @@
+<div class="author">
+    <div>By {{ include.thingy.author }} on {{ include.thingy.date | date: "%B %e, %Y" }}</div>
+    {% if include.thingy.minutes %}
+        <div style="font-style: italic;">~{{ include.thingy.minutes }} min. read</div>
+    {% endif %}
+</div>
+

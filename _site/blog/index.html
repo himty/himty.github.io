@@ -1,0 +1,3998 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jenny Wang – research profile</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="research profile">
+    <meta property="og:description" content="research profile" />
+    
+    <meta name="author" content="Jenny Wang" />
+
+    
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:normal,b,i,bi" rel="stylesheet">
+    <script src="https://use.fontawesome.com/60beeb5aee.js" type="text/javascript"></script>
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" id="avadaredux-google-fonts-avada_theme_options-css" href="https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700italic%2C700%7CPT+Serif%3A400&amp;subset=latin" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Jenny Wang - research profile" href="/feed.xml" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/contrib/auto-render.min.js" integrity="sha384-IiI65aU9ZYub2MY9zhtKd1H2ps7xxf+eb2YFG9lX6uRqpXCvBTOidPRCXCrQ++Uc" crossorigin="anonymous"></script>
+    
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"  />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://avatars.githubusercontent.com/u/9757649?v=4" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Jenny Wang</a></h1>
+            <p class="site-description">research profile</p>
+          </div>
+
+          <nav>
+            <!-- <a href="/archive">Archive</a> -->
+            <a href="/">Home</a>
+            <a href="/blog">Blog</a>
+            <a href="/cv">CV</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <div class="posts">
+  
+  <div class="row">
+    <div class="col-sm-8">
+     
+       <article class="post">
+
+         <h1><a href="/how_to_matlab/">How to MATLAB</a></h1>
+
+         <div class="author">
+    <div>By Jenny Wang on May 27, 2019</div>
+    
+        <div style="font-style: italic;">~3 min. read</div>
+    
+</div>
+
+
+
+         <div class="entry">
+         <h2 id="numerical-data-structures">Numerical Data Structures</h2>
+<p>==========================</p>
+
+<p><code class="highlighter-rouge">cell</code></p>
+
+<p><code class="highlighter-rouge">vector</code> = row/column</p>
+
+<p><code class="highlighter-rouge">matrix</code> = group of vectors</p>
+<ul>
+  <li>is a rectangle</li>
+</ul>
+
+<p><code class="highlighter-rouge">array </code>= 3d matrix</p>
+
+<p>Initialize matrix
+    <code class="highlighter-rouge">
+    matrix = [1 1;2 2]
+   </code></p>
+<ul>
+  <li><code class="highlighter-rouge">;</code> = new row</li>
+  <li><code class="highlighter-rouge">&lt;space&gt;</code> = next column</li>
+</ul>
+
+<p>Specify # of cells</p>
+<ul>
+  <li><code class="highlighter-rouge">matrix = zeros(numRows, numColumns)</code></li>
+  <li><code class="highlighter-rouge">matrix = ones(numRows, numColumns)</code>
+    <ul>
+      <li>or <code class="highlighter-rouge">ones([numRows numColumns])</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Call data from all numRows rows or numColumns columns</p>
+<ul>
+  <li>replace with :</li>
+  <li>ex: <code class="highlighter-rouge">matrix(:,4)</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">vector = [1:100]</code></p>
+<ul>
+  <li>fills vector with numbers 1 to 100</li>
+</ul>
+
+<p><code class="highlighter-rouge">vector(row, col) = 10</code></p>
+<ul>
+  <li>change cell value</li>
+</ul>
+
+<p><code class="highlighter-rouge">vector(row, col)</code></p>
+<ul>
+  <li>get number and print it out</li>
+</ul>
+
+<p><code class="highlighter-rouge">sum(vector)</code></p>
+<ul>
+  <li>sums all numbers in vector</li>
+</ul>
+
+<p><code class="highlighter-rouge">prod(vector)</code></p>
+<ul>
+  <li>multiply everything in vector</li>
+</ul>
+
+<p>Math between two vectors/matrices</p>
+<ul>
+  <li>use <code class="highlighter-rouge">+</code>, <code class="highlighter-rouge">-</code>, <code class="highlighter-rouge">*</code>, <code class="highlighter-rouge">/</code></li>
+</ul>
+
+<p>Math between correlating cells in vectors/matrices</p>
+<ul>
+  <li>use <code class="highlighter-rouge">+</code>, <code class="highlighter-rouge">-</code>, <code class="highlighter-rouge">.*</code>, <code class="highlighter-rouge">./</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">vector = vector';</code></p>
+<ul>
+  <li>make the row vector into a column vector</li>
+</ul>
+
+<p><code class="highlighter-rouge">matrix(:)</code></p>
+<ul>
+  <li>take all cells in the matrix</li>
+</ul>
+
+<h1>=================================================</h1>
+
+<h2 id="other-data-structures">Other Data Structures</h2>
+<p>=======================</p>
+
+<p>Strings are in single quotes ‘’</p>
+
+<p><code class="highlighter-rouge">num2string(var);</code></p>
+<ul>
+  <li>change data type</li>
+</ul>
+
+<p><code class="highlighter-rouge">string2num(var);</code></p>
+<ul>
+  <li>change data type</li>
+</ul>
+
+<h1 id="-1">=====================================</h1>
+
+<h2 id="miscellaneous-syntax">Miscellaneous Syntax</h2>
+<p>=======================</p>
+
+<p><code class="highlighter-rouge">NaN</code> = null</p>
+
+<p><code class="highlighter-rouge">%</code> = comment</p>
+
+<p><code class="highlighter-rouge">...</code> at the end of the line when you want to press enter</p>
+<ul>
+  <li>ex:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var1 *...
+  var2
+</code></pre></div>    </div>
+  </li>
+  <li>put semicolons in scripts
+    <ul>
+      <li>won’t print onto command window</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">lowerLimit:upperLimit</code></p>
+<ul>
+  <li>vector with all numbers from lowerLimit to upperLimit</li>
+</ul>
+
+<p><code class="highlighter-rouge">~</code> = not</p>
+
+<p><code class="highlighter-rouge">||</code> = or</p>
+
+<p><code class="highlighter-rouge">&amp;&amp;</code> = and</p>
+
+<p>for loops
+    <code class="highlighter-rouge">
+    for i = start:end
+        %do something
+    end
+   </code></p>
+
+<p>if statemtents
+    <code class="highlighter-rouge">
+    if %condition
+        %action
+    else
+        %action
+    end
+   </code></p>
+
+<h1 id="-2">===============================</h1>
+
+<h2 id="random-functions">Random Functions</h2>
+<p>==================</p>
+
+<p><code class="highlighter-rouge">vector = xlsread('fileName.extension')</code></p>
+<ul>
+  <li>Read Exel file</li>
+</ul>
+
+<p><code class="highlighter-rouge">image = imread('imagename');</code></p>
+<ul>
+  <li>read image</li>
+</ul>
+
+<p><code class="highlighter-rouge">linspace(start, end, n_points);</code></p>
+<ul>
+  <li>returns equally spaced points</li>
+  <li>includes starting and end points</li>
+</ul>
+
+<p><code class="highlighter-rouge">[x,y] = meshgrid(xVector, yVector)</code></p>
+<ul>
+  <li>returns all possible coordinates of pts</li>
+  <li>use with linspace</li>
+</ul>
+
+<p><code class="highlighter-rouge">size(vector, &lt;row or column as in 1 or 2&gt;)</code></p>
+<ul>
+  <li>returns numRows, numColumns</li>
+  <li>don’t specify row or column if want both</li>
+</ul>
+
+<p><code class="highlighter-rouge">imageB = imresize(imageA, scale);</code></p>
+
+<p><code class="highlighter-rouge">imageB = imresize(imageA, [numRows, numCols]);</code></p>
+<ul>
+  <li>imageB has numRows rows and numCols cols</li>
+  <li>or put NaN as one of them to preserve aspect ratio</li>
+</ul>
+
+<p><code class="highlighter-rouge">imshow(image);</code></p>
+<ul>
+  <li>make a window with the image on it</li>
+</ul>
+
+<p><code class="highlighter-rouge">sind(theta)</code></p>
+<ul>
+  <li>sin</li>
+</ul>
+
+<p><code class="highlighter-rouge">cosd(theta)</code></p>
+<ul>
+  <li>cos</li>
+</ul>
+
+<p><code class="highlighter-rouge">repmat(vector, numTimes)</code></p>
+<ul>
+  <li>repeat the vector numTimes horizontally and vertically</li>
+</ul>
+
+<p><code class="highlighter-rouge">repmat(vector, numRows, numColumns)</code></p>
+<ul>
+  <li>have that many total rows/cols</li>
+</ul>
+
+<p><code class="highlighter-rouge">shuffle(vector)</code></p>
+<ul>
+  <li>change up the order of all cells, use with repmat</li>
+</ul>
+
+<p><code class="highlighter-rouge">shuffle(vector, dimension)</code></p>
+<ul>
+  <li>dimension: 1 = Rows change, 2 = Columns change, 3 = next dimension changes, etc</li>
+</ul>
+
+<p><code class="highlighter-rouge">vertcat(vector, vector2, vector3, ...)</code></p>
+<ul>
+  <li>stacks vectors ontop of each other</li>
+</ul>
+
+<p><code class="highlighter-rouge">horzcat(vector, vector2, vector3, ...)</code></p>
+<ul>
+  <li>stacks vectors side to side</li>
+</ul>
+
+<p><code class="highlighter-rouge">RandStream.setGlobalStream(RandStream('mt19937ar', 'seed', sum(100*clock)));</code></p>
+<ul>
+  <li>put it everywhere just in case you want a random number (for real randomness)</li>
+</ul>
+
+<p><code class="highlighter-rouge">randperm(upperLimit, numCells);</code></p>
+<ul>
+  <li>can’t get the same number twice</li>
+</ul>
+
+<p><code class="highlighter-rouge">randperm(upperLimit)</code></p>
+<ul>
+  <li>numbers 1~upperLimit are reordered</li>
+</ul>
+
+<p><code class="highlighter-rouge">randi(upperLimit);</code></p>
+<ul>
+  <li>get one random number</li>
+</ul>
+
+<p><code class="highlighter-rouge">randi(upperLimit, numRows, numCols);</code></p>
+<ul>
+  <li>random numbers in matrix numRows x numCols</li>
+</ul>
+
+<p><code class="highlighter-rouge">randi([lowerLimit, upperLimit]);</code></p>
+<ul>
+  <li>number from lowerLimit to upperLimit</li>
+</ul>
+
+<p><code class="highlighter-rouge">randsample(upperLimit, numCells);</code></p>
+<ul>
+  <li>numCells number of random numbers</li>
+</ul>
+
+<p><code class="highlighter-rouge">randsample([1 2 3], 2)</code></p>
+<ul>
+  <li>numCells number of rand numbers from the vector</li>
+</ul>
+
+<p><code class="highlighter-rouge">any(vector)</code></p>
+<ul>
+  <li>returns true if any of cells is nonzero</li>
+</ul>
+
+<p><code class="highlighter-rouge">floor(num)</code></p>
+<ul>
+  <li>returns num rounded down to whole number</li>
+</ul>
+
+<p><code class="highlighter-rouge">ismember(element, vector)</code></p>
+<ul>
+  <li>returns true if element is found inside the vector</li>
+</ul>
+
+<p><code class="highlighter-rouge">WaitSecs(seconds);</code></p>
+<ul>
+  <li>how long to wait</li>
+</ul>
+
+<p><code class="highlighter-rouge">GetSecs()</code></p>
+<ul>
+  <li>get seconds from start of program</li>
+  <li>use to make sure the time intervals are right</li>
+</ul>
+
+<p><code class="highlighter-rouge">[keyIsDown, secs, keyCode] = KbCheck()</code></p>
+<ul>
+  <li>if have different keyboards, put 1/2/3/4/5 in parenthesis for specific keyboard</li>
+  <li>keyIsDown = any button down (1 or 0 =&gt; true or false)</li>
+  <li>secs = time from GetSecs()</li>
+  <li>keyCode = key that is down
+    <ul>
+      <li>ex: strcmp(‘s’, KeyName(keyCode)), see if it is ‘s’</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">[x,y,clicks] = GetMouse()</code></p>
+<ul>
+  <li>x, y = mouse position coordinates</li>
+  <li>if clicks = [0,0,0] =&gt; no click, [1, 0, 0] = left click</li>
+  <li>test with any(clicks)</li>
+</ul>
+
+<p><code class="highlighter-rouge">GetClicks()</code></p>
+<ul>
+  <li>get number of mouse clicks</li>
+</ul>
+
+<p><code class="highlighter-rouge">strcmp(string1, string2)</code></p>
+<ul>
+  <li>returns true if identical, false if not</li>
+</ul>
+
+<p><code class="highlighter-rouge">string = strcat(string1, string2)</code></p>
+<ul>
+  <li>combine string1 and string2</li>
+</ul>
+
+<p><code class="highlighter-rouge">KeyName('UnifyKeyNames')</code></p>
+<ul>
+  <li>make codes from key presses the same from macs/windows/etc</li>
+</ul>
+
+<p><code class="highlighter-rouge">save(fileName, 'variable')</code></p>
+<ul>
+  <li>ex: <code class="highlighter-rouge">save('result', 'p', 'q');</code></li>
+  <li>save some variables in a file (.mat)</li>
+</ul>
+
+<p><code class="highlighter-rouge">string = upper(string)</code></p>
+<ul>
+  <li>all letters uppercase</li>
+</ul>
+
+<p><code class="highlighter-rouge">isdir(directoryString)</code></p>
+<ul>
+  <li>true if there already is a directory with that name, false if no</li>
+  <li>example of directoryString is from pwd()</li>
+</ul>
+
+<p><code class="highlighter-rouge">mkdir(directoryString)</code></p>
+<ul>
+  <li>create a folder with directory directoryString</li>
+</ul>
+
+<p><code class="highlighter-rouge">sortrows(matrix, colNum)</code></p>
+<ul>
+  <li>make numbers in the colNum-th column be in ascending order</li>
+</ul>
+
+<p><code class="highlighter-rouge">resizem(input, scale)</code></p>
+
+<p><code class="highlighter-rouge">resizem(input, [numRows, numCols])</code></p>
+<ul>
+  <li>expand and contract matrix</li>
+</ul>
+
+<h1 id="-3">====================================================</h1>
+
+<h2 id="command-line-commands">Command Line Commands</h2>
+<p>=======================</p>
+
+<p>COMMANDS CAN BE PUT INTO SCRIPTS</p>
+
+<p><code class="highlighter-rouge">pwd</code></p>
+<ul>
+  <li>print your directory</li>
+  <li>usage examples:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  rootDir = pwd();
+  resultsDir = [rootDir '/results/']
+  if ~isdir(resultsDir) %if don't have this directory already
+      mkdir(resultsDir) %make the directory/folder
+  end
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">cd(folderName)</code></p>
+<ul>
+  <li>change directory</li>
+  <li>go one level up =&gt; cd ..</li>
+</ul>
+
+<p><code class="highlighter-rouge">ls</code></p>
+<ul>
+  <li>list of files in the folder</li>
+</ul>
+
+<p><code class="highlighter-rouge">clear all</code></p>
+<ul>
+  <li>clears variables from other experiments</li>
+</ul>
+
+<p><code class="highlighter-rouge">clc</code></p>
+<ul>
+  <li>clear command window</li>
+</ul>
+
+<h1 id="-4">===========================================</h1>
+
+<h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
+<p>====================</p>
+
+<p><code class="highlighter-rouge">ctrl+c then s then c then a then enter</code></p>
+<ul>
+  <li>bring back window (if it crashes)</li>
+  <li>might need to alt+tab (switch windows) before doing above</li>
+</ul>
+
+<h1 id="-5">=================================================================</h1>
+
+<h2 id="psychtoolbox">Psychtoolbox</h2>
+<p>===============</p>
+
+<p>A library for psychology experiments</p>
+
+<p>Screen has many settings</p>
+<ul>
+  <li>access w/ <code class="highlighter-rouge">Screen('something', &lt;specific&gt;, &lt;more specific&gt;, &lt;etc&gt;);</code></li>
+  <li><code class="highlighter-rouge">Screen('CloseAll');</code>
+    <ul>
+      <li>closes all screens</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">Screen('Preference', 'SkipSyncTests', 1);</code>
+    <ul>
+      <li>yes to skipping sync tests</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">[window, rect] = Screen('OpenWindow', 0, [], [500 500 700 700]); </code></p>
+<ul>
+  <li>open the window
+    <ul>
+      <li>0 = open on this monitor</li>
+      <li>1 = open on other monitor</li>
+    </ul>
+  </li>
+  <li>2nd matrix = where the screen will be</li>
+  <li>window = pointer</li>
+  <li>rect = (startX, startY, endX, endY)
+    <ul>
+      <li>corner coordinates;</li>
+    </ul>
+  </li>
+  <li>Screen puts data into window/rect</li>
+</ul>
+
+<p><code class="highlighter-rouge">x = Screen('MakeTexture', window, uint8(image));</code></p>
+<ul>
+  <li>uint8 because colors in image can’t be &gt; 255</li>
+</ul>
+
+<p><code class="highlighter-rouge">Screen('DrawTextures', window, x);</code></p>
+<ul>
+  <li>draw the texture. x is from function above</li>
+</ul>
+
+<p><code class="highlighter-rouge">Screen('DrawTextures', window, tid(rand_oranges(i,:)), [], xy_rect, orientation);</code></p>
+<ul>
+  <li>xy_rect = corners of each picture</li>
+  <li>orientation = degrees of rotation=========================================================================</li>
+</ul>
+
+<p><code class="highlighter-rouge">A = Screen('Flip', window);</code></p>
+<ul>
+  <li>display onto monitor</li>
+  <li>usually don’t need A</li>
+</ul>
+
+<p><code class="highlighter-rouge">Screen('Flip', window, A + seconds);</code></p>
+<ul>
+  <li>show a blank screen (if nothing is made with window) second seconds later</li>
+  <li>more accurate than WaitSecs()</li>
+</ul>
+
+<p><code class="highlighter-rouge">KbWait(); </code></p>
+<ul>
+  <li>
+    <p>wait for keyboard input before going on</p>
+  </li>
+  <li>
+    <p>how to get rid of background of image</p>
+    <ul>
+      <li>add transparent mask ontop</li>
+      <li>mask must be same size as image</li>
+    </ul>
+  </li>
+</ul>
+
+         </div>
+
+         
+<div class="tags">
+    Tags:
+   
+    <span class="tag"><a href="/coding_notes">coding_notes</a></span>
+   
+</div>
+
+
+
+       </article>
+   
+       <article class="post">
+
+         <h1><a href="/how_to_java/">How to Java (APCS level)</a></h1>
+
+         <div class="author">
+    <div>By Jenny Wang on May 27, 2019</div>
+    
+        <div style="font-style: italic;">~3 min. read</div>
+    
+</div>
+
+
+
+         <div class="entry">
+         <h2 id="accessible-methods-in-the-java-quick-reference">Accessible methods in the Java Quick Reference</h2>
+<p>===============================================</p>
+
+<p><code class="highlighter-rouge">Object</code></p>
+<ul>
+  <li><code class="highlighter-rouge">boolean equals(Object other)</code></li>
+  <li><code class="highlighter-rouge">String toString()</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">Integer</code></p>
+<ul>
+  <li><code class="highlighter-rouge">Integer(int value)</code></li>
+  <li><code class="highlighter-rouge">int intValue()</code>
+    <ul>
+      <li>returns value in int</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">Integer.MIN_VALUE</code>
+    <ul>
+      <li>smallest value that can be stored in an int</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">Integer.MAX_VALUE</code>
+    <ul>
+      <li>largest value that can be stored in an int</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">Double</code></p>
+<ul>
+  <li><code class="highlighter-rouge">Double(double value)</code></li>
+  <li><code class="highlighter-rouge">double doubleValue()</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">String</code></p>
+<ul>
+  <li><code class="highlighter-rouge">int length()</code></li>
+  <li><code class="highlighter-rouge">String substring(int from, int to)</code></li>
+  <li><code class="highlighter-rouge">String substring(int from)</code></li>
+  <li><code class="highlighter-rouge">int indexOf(String str)</code></li>
+  <li><code class="highlighter-rouge">int compareTo(String other)</code>
+    <ul>
+      <li>returns
+        <ul>
+          <li><code class="highlighter-rouge">0</code> if equivalent</li>
+          <li>some number &gt; 0 if earlier in alphabet</li>
+          <li>some number &lt; 0 if later in alphabet</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">Math</code></p>
+<ul>
+  <li><code class="highlighter-rouge">abs(int/double x)</code></li>
+  <li><code class="highlighter-rouge">pow(double base, double exponent)</code></li>
+  <li><code class="highlighter-rouge">sqrt(double x)</code></li>
+  <li><code class="highlighter-rouge">double random()</code>
+    <ul>
+      <li>double in the range [0,1)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">List&lt;E&gt;</code></p>
+<ul>
+  <li><code class="highlighter-rouge">int size()</code></li>
+  <li><code class="highlighter-rouge">boolean add(E obj)</code>
+    <ul>
+      <li>returns true after adding it ._.</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">void add(int index, E obj)</code></li>
+  <li><code class="highlighter-rouge">E get(int index)</code>
+    <ul>
+      <li>if it’s a number, returns Integer/smth else
+        <ul>
+          <li>(not int/double, but Integer/Double)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">E set(int index, E obj)</code></li>
+  <li><code class="highlighter-rouge">E remove(int index)</code>
+    <ul>
+      <li>changes indices of next elements. BEWARE IN LOOPS</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="terms">TERMS</h2>
+<p>========</p>
+
+<ul>
+  <li>API = Application Programming Interface
+    <ul>
+      <li>methods, routines, etc used to program</li>
+    </ul>
+  </li>
+  <li>nested/inner class
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  class foo {
+      class bar {...}
+  }
+</code></pre></div>    </div>
+    <ul>
+      <li>^^ bar is nested class</li>
+      <li>bar sees everything from foo, but isn’t a foo</li>
+      <li>ex: String is a nested class of Object</li>
+    </ul>
+  </li>
+  <li>child class
+    <ul>
+      <li><code class="highlighter-rouge">class bar extends foo {...}</code></li>
+      <li>^^bar is child class</li>
+      <li>bar sees everything from foo, and is a foo</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="keywords">KEYWORDS</h2>
+<p>===========</p>
+
+<p><code class="highlighter-rouge">implements</code></p>
+<ul>
+  <li>for interfaces (methods not defined)</li>
+  <li>provide definitions for APIs</li>
+</ul>
+
+<p><code class="highlighter-rouge">extends</code></p>
+<ul>
+  <li>for Classes (methods defined)</li>
+  <li>parent-child relationship</li>
+</ul>
+
+<p><code class="highlighter-rouge">static</code></p>
+<ul>
+  <li>modifies/takes stuff from the class</li>
+  <li>nonstatic (aka not putting static there) modifies the instance</li>
+</ul>
+
+<p><code class="highlighter-rouge">Integer/Double</code></p>
+<ul>
+  <li>can == null =&gt; can’t assign null to an int
+    <ul>
+      <li>otherwise, it’s the same as int/double in Java 5+</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">List</code></p>
+<ul>
+  <li>from index 0</li>
+  <li>see methods</li>
+  <li>to initialize
+    <ul>
+      <li><code class="highlighter-rouge">List&lt;Integer/etc&gt; a = Arrays.asList(ele1, ele2, ...);</code></li>
+    </ul>
+  </li>
+  <li>is immutable (cannot be modified)</li>
+  <li>is an interface</li>
+</ul>
+
+<p><code class="highlighter-rouge">ArrayList</code></p>
+<ul>
+  <li>extends AbstractList that extends List</li>
+  <li>from index 0</li>
+  <li>to initialize
+    <ul>
+      <li><code class="highlighter-rouge">ArrayList&lt;Integer/etc&gt; a = new ArrayList(Arrays.asList(ele1, ...);</code></li>
+    </ul>
+  </li>
+  <li>is a Class</li>
+</ul>
+
+<h2 id="control-statements">CONTROL STATEMENTS</h2>
+<p>=====================</p>
+
+<ul>
+  <li>enhanced for loop (“for-each”)
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  String[] array = {...};
+  for (String element : array) {
+      //do something for all elements in array
+  }
+  the same as:
+      for (int i=0; i&lt;array.length(); i++) {
+          ;
+      }
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="sorts">SORTS</h2>
+<p>========</p>
+
+<ul>
+  <li>insertion sort</li>
+  <li>selection sort</li>
+  <li>bubble sort</li>
+  <li>mergesort</li>
+  <li>heapsort</li>
+  <li>quick sort</li>
+</ul>
+
+<h1>==================================================</h1>
+
+<p>Java unrelated to APCS</p>
+
+<ul>
+  <li>concurrency
+    <ul>
+      <li>processes happen at the same time</li>
+      <li>use threads</li>
+    </ul>
+  </li>
+  <li>immutable
+    <ul>
+      <li>that instance cannot be changed after it is made</li>
+      <li>uses the keyword final</li>
+    </ul>
+  </li>
+  <li>\unnnn (escape sequence like \n)
+    <ul>
+      <li>line break LOL</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">assert &lt;boolean expression&gt;</code>
+    <ul>
+      <li>check for bugs in the code</li>
+      <li>if expression after it is false, it stops the program</li>
+      <li>ex: assert varIsTrue == false</li>
+    </ul>
+  </li>
+</ul>
+
+
+         </div>
+
+         
+<div class="tags">
+    Tags:
+   
+    <span class="tag"><a href="/coding_notes">coding_notes</a></span>
+   
+</div>
+
+
+
+       </article>
+   
+       <article class="post">
+
+         <h1><a href="/how_to_c/">How to C</a></h1>
+
+         <div class="author">
+    <div>By Jenny Wang on May 27, 2019</div>
+    
+        <div style="font-style: italic;">~10 min. read</div>
+    
+</div>
+
+
+
+         <div class="entry">
+         <h2 id="popular-things-to-include">Popular things to include:</h2>
+<p>============================</p>
+
+<p><code class="highlighter-rouge">#include &lt;stdio.h&gt;</code></p>
+<ul>
+  <li>standard input and output</li>
+</ul>
+
+<p><code class="highlighter-rouge">#include &lt;string.h&gt;</code></p>
+<ul>
+  <li>strings</li>
+</ul>
+
+<p><code class="highlighter-rouge">#include &lt;stdlib.h&gt;</code></p>
+<ul>
+  <li><code class="highlighter-rouge">exit()</code> to exit out of code</li>
+  <li><code class="highlighter-rouge">rand()</code> to create random numbers</li>
+</ul>
+
+<p><code class="highlighter-rouge">#include &lt;stdbool.h&gt;</code></p>
+<ul>
+  <li>booleans</li>
+  <li>can use bool instead of<code class="highlighter-rouge"> _Bool</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">#include &lt;ctype.h&gt;</code></p>
+<ul>
+  <li><code class="highlighter-rouge">getchar()</code> recieves a string/char, can be put in variable</li>
+  <li><code class="highlighter-rouge">putchar(string)</code> display the char</li>
+  <li><code class="highlighter-rouge">isalnum(char)</code> and others (see below)</li>
+  <li>has an alphanumber been passed in? (a for 10, b for 11, etc)</li>
+</ul>
+
+<p><code class="highlighter-rouge">#include &lt;errno.h&gt;</code></p>
+<ul>
+  <li>error handling</li>
+</ul>
+
+<p><code class="highlighter-rouge">#include &lt;math.h&gt;</code></p>
+<ul>
+  <li>calculate power of something</li>
+</ul>
+
+<h2 id="define">Define:</h2>
+<p>==========</p>
+
+<p><code class="highlighter-rouge">#define MYNAME "Derek Banas"</code></p>
+<ul>
+  <li>all uppercase, a constant</li>
+</ul>
+
+<p><code class="highlighter-rouge">#undef MYNAME</code></p>
+<ul>
+  <li>can redefine afterwards</li>
+</ul>
+
+<h2 id="concepts-and-strategies">Concepts and Strategies:</h2>
+<p>==========================</p>
+
+<ul>
+  <li>
+    <p>main looks like <code class="highlighter-rouge">int main(){}</code> and returns a <code class="highlighter-rouge">0</code> at the end</p>
+  </li>
+  <li><code class="highlighter-rouge">&amp;</code> is to get the pointer, <code class="highlighter-rouge">*</code> is for the value
+    <ul>
+      <li>inverses</li>
+    </ul>
+  </li>
+  <li>Print things on the screen from an array:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char *randomString = "Just some random stuff";
+while (*randomString){ //null=&gt;0=&gt;ends while    
+  putchar(*randomString++); //increment to chars
+}
+//OR
+int i = 0;
+while(randomString[i] != '\0'){
+  putchar(randomString[i++]);
+}
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>if you initialize a, but don’t give it a value before incrementing it, computer will take whatever was inside the place a is, increment it, and spit it out.  “Random garbage”</p>
+  </li>
+  <li>arrays use row-major ordering, so it is array[y][x]</li>
+</ul>
+
+<h2 id="data-types">Data Types:</h2>
+<p>=============</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char firstLetter = 'L';
+int age = 38; //up to 32000
+long int superBigNum = -3229384234; //bigger
+float piValue = 3.14; //decimals (38 decimal #s)
+double reallyBigPi = 3.1423842323i4uy23i4;
+</code></pre></div></div>
+
+<h2 id="to-describe-variables">To describe variables:</h2>
+<p>=========================</p>
+
+<p><code class="highlighter-rouge">unsigned</code> = no negative digits</p>
+
+<p><code class="highlighter-rouge">const</code> = constant, unchanging</p>
+
+<p><code class="highlighter-rouge">size_t</code> = stores the amount of data in bytes</p>
+
+<p><code class="highlighter-rouge">extern</code> = variable was defined elsewhere, but use that var here, too</p>
+
+<p><code class="highlighter-rouge">static</code> = basically a “global” variable with a scope limited to where it was defined
+    - functions: “you can’t call me out of my scope! &gt;:D”</p>
+
+<h2 id="relational">Relational:</h2>
+<p>=============</p>
+
+<p><code class="highlighter-rouge">TRUE</code> is anything other than 0</p>
+<ul>
+  <li>can an int be used in if(int) ?</li>
+</ul>
+
+<p><code class="highlighter-rouge">FALSE</code> is also 0</p>
+
+<p><code class="highlighter-rouge">&gt;</code>, <code class="highlighter-rouge">&lt;</code>, <code class="highlighter-rouge">&gt;=</code>, <code class="highlighter-rouge">&lt;=</code>, <code class="highlighter-rouge">==</code>, <code class="highlighter-rouge">!=</code>, <code class="highlighter-rouge">&amp;&amp;</code>, <code class="highlighter-rouge">||</code></p>
+
+<ul>
+  <li>
+    <p>result comes out as 1 (true) and 0 (false)</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">!0</code> equals <code class="highlighter-rouge">1</code></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">!1</code> equals <code class="highlighter-rouge">0</code></p>
+  </li>
+  <li>
+    <p>To choose between two options:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  char* legalAge = (custAge &gt; 21) ? "true" : "false";
+</code></pre></div>    </div>
+
+    <ul>
+      <li>if true, return true.  If false, return false</li>
+      <li>can be put inside the %s part of printf()</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="casting-a-value">Casting a value:</h2>
+<p>==================</p>
+
+<ul>
+  <li>
+    <p>to temporarily change the type</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  //when the two numbers are ints:
+  printf("numberEx / numberEx2 : %f", (float)numberEx/numberEx2);
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="strings">Strings:</h2>
+<p>===========</p>
+
+<ul>
+  <li>If made by char ex[] = {‘C’, ‘a’, ‘\0’}, include ‘\0’ “naw” to end the string</li>
+  <li>or do char myName[] = “Something” (automagically puts \0)</li>
+  <li>see Functions</li>
+</ul>
+
+<h2 id="pointers">Pointers:</h2>
+<p>============</p>
+<ul>
+  <li>
+    <p>To pass data to other functions so they can use that local variable as well</p>
+  </li>
+  <li>
+    <p>can be in %p and %d (hexidecimal or not)</p>
+  </li>
+  <li><code class="highlighter-rouge">*</code> to get what’s in the pointer</li>
+  <li>
+    <p><code class="highlighter-rouge">&amp;</code> to make it into a pointer</p>
+  </li>
+  <li>print the first index in an array:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>printf("First: %d", *array);
+</code></pre></div>    </div>
+  </li>
+  <li>print any other index because they are next to each other:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>printf("Thrid: %d", *(array + 2));
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="structs">Structs:</h2>
+<p>===========</p>
+
+<ul>
+  <li>more than one data type to describe something</li>
+  <li>
+    <p>need <code class="highlighter-rouge">*</code> for strings because of pointers</p>
+  </li>
+  <li>Example:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  struct dogs{
+
+      const char *name;
+      int height; 
+
+  };
+</code></pre></div>    </div>
+  </li>
+  <li>use <code class="highlighter-rouge">typedef struct</code> to make it so you don’t have to put struct everywhere else
+    <ul>
+      <li>
+        <p>“Make a new variable type”</p>
+      </li>
+      <li>
+        <p>Example:</p>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      typedef struct dog{
+
+          const char *name;
+          int height; 
+
+      } dog; //you can call it with dog
+              //can put multiple names
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>To put info in:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  struct dog spike = {"Spike", 90};
+</code></pre></div>    </div>
+  </li>
+  <li>To get the info in the struct:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  theName = theDog.name; //use the . OR
+  theName = theDog-&gt;name; //OR
+  theDog-&gt;name = theName;
+</code></pre></div>    </div>
+  </li>
+  <li>To get addresses, use theDog.name for strings and
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &amp;theDog.avgHeight for ints
+</code></pre></div>    </div>
+  </li>
+  <li>When struct is passed to function, new struct is created, so need pointers</li>
+  <li>When doing <code class="highlighter-rouge">*</code> with structs, use <code class="highlighter-rouge">()</code>:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  (*theDog).weight = newWeight;
+</code></pre></div>    </div>
+
+    <ul>
+      <li>OR you can do
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  *theDog-&gt;weight = newWeight;
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">struct dog cujo2 = cujo;</code></p>
+<ul>
+  <li>Can copy everything in a struct, including pointers</li>
+</ul>
+
+<h2 id="union">Union:</h2>
+<p>========</p>
+
+<ul>
+  <li>
+    <p>store 1 pieces of data that can be any type, but is not more than one type at a single time</p>
+  </li>
+  <li>Making one:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  typedef union{
+        
+      short individual;
+      float pound;
+      float ounce;
+
+  } amount; //this union is named amount
+
+  //set amount as 16, other values follow
+  amount orangeAmt = {.ounce = 16};
+
+  //changes the value of the whole union
+  orangeAmt.individual = 4;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>BE SURE TO USE THE CORRECT DATA TYPE</p>
+  </li>
+  <li>Can put them in structs</li>
+  <li>To initialize:
+    <ul>
+      <li>Ex: orangeProduct is a type of struct named orangeProduct, theAmount is an union, so
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  orangeProduct productOrdered = {"Chiquita",
+      .theAmount.ounce = 16};
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="linked-list">Linked List:</h2>
+<p>==============</p>
+
+<ul>
+  <li>
+    <p>Essentially make an infinitely long list with structs</p>
+  </li>
+  <li>
+    <p>Format of each struct:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  typedef struct product{
+
+      const char *name;
+      float price;
+
+      struct product *next; //pointer to next struct
+
+  } product;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>if <code class="highlighter-rouge">pProduct</code> is the pointer of the given product, the next one in the line is <code class="highlighter-rouge">pProduct-&gt;next</code></p>
+  </li>
+  <li>Add a new struct to the end:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  tomato.next = &amp;potato;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>add a new product, apple, between potato and lemon:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  potato.next = &amp;apple, apple.next = &amp;lemon, lemon.next = NULL
+</code></pre></div>    </div>
+  </li>
+  <li>To go through all structs:
+    <ul>
+      <li>go through all the items through next until you get NULL</li>
+    </ul>
+  </li>
+  <li>To search for a struct:
+    <ul>
+      <li>recieve a <code class="highlighter-rouge">*productName</code></li>
+      <li>set a varialbe to the first variable in the struct =&gt; name</li>
+      <li>use strcmp() to compare</li>
+    </ul>
+  </li>
+  <li>Deleting an item:
+    <ul>
+      <li>Ex: Tomato, Potato, Lemon</li>
+      <li>see what’s before potato from the time you were scanning for potato
+        <ul>
+          <li>potato’s next is now tomato’s next</li>
+        </ul>
+      </li>
+      <li>free() potato</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="macros">Macros:</h2>
+<p>==========</p>
+
+<ul>
+  <li>A fragment of code that is given a name</li>
+  <li>name is read =&gt; whole code is pasted in</li>
+  <li>conventional = names are all UPPERCASE</li>
+  <li>
+    <p>Ex: <code class="highlighter-rouge">#define MACRO_THINGIE 10</code> -&gt; 10 is put in MACRO_THINGIE, replaces it</p>
+  </li>
+  <li>can make multiple lines
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  #define MACRO_NUMBERS 10 \
+                          2 \
+                          3
+  int x[] = {MACRO_NUMBERS};
+</code></pre></div>    </div>
+    <ul>
+      <li>makes: int x[] = {10,2,3};</li>
+      <li>weird error line numbers later on tho</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="enumerated-type">Enumerated type</h3>
+<p>====================
+For the times that you don’t need anything else other than what you put inside</p>
+
+<h2 id="initialize">Initialize:</h2>
+<p>==============</p>
+
+<p><code class="highlighter-rouge">typedef enum{ INDIV, OUNCE, POUND } quantity;</code></p>
+
+<p>To set the value:
+<code class="highlighter-rouge">quantity quantityType = INDIV;</code></p>
+
+<p>To do somethign:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (quantityType == INDIV){
+    blah blah
+}
+</code></pre></div></div>
+
+<h2 id="line-buffering">Line buffering:</h2>
+<p>=================</p>
+
+<p>storing/scanning an amount of information before something is done to it</p>
+
+<h2 id="file-io">File I/O:</h2>
+<p>===========</p>
+
+<ul>
+  <li>Print out data from the file:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  char buffer[1000];
+  while(fgets(buffer, 1000, pFile) != NULL){
+      printf("%s", buffer);
+  }
+  //OR
+  while(fscanf(pFile, "%s", buffer) == 1) 
+</code></pre></div>    </div>
+    <ul>
+      <li>returns # other than 1 if it doesn’t pass a string</li>
+    </ul>
+  </li>
+  <li>Print directly to the file:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  fputs("Messing with strings", pFile);
+</code></pre></div>    </div>
+    <ul>
+      <li>pFile is the way you are entering stuff</li>
+    </ul>
+  </li>
+  <li>
+    <p>TO PRINT WHOLE THING, YOUR “CURSOR” HAS TO BE AT BEGINNING</p>
+  </li>
+  <li>To get number of bytes in whole file:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  fseek(pFile, 0, SEEK_END);
+  ftell(pFile)
+</code></pre></div>    </div>
+    <ul>
+      <li>because the “cursor” is at the end of the file</li>
+    </ul>
+  </li>
+  <li>see Functions</li>
+</ul>
+
+<h2 id="convert-any-base-to-any-base">Convert any base to any base:</h2>
+<p>===============================</p>
+
+<p>For <code class="highlighter-rouge">startingBase</code>, <code class="highlighter-rouge">endingBase</code>, <code class="highlighter-rouge">numberToConvert</code></p>
+<ul>
+  <li><code class="highlighter-rouge">numberToConvert % endingBase</code> =&gt; put in array</li>
+  <li>Then <code class="highlighter-rouge">numberToConvert = (numberToConvert - &lt;remainder&gt;) / endingBase</code>
+    <ul>
+      <li>and so on until you get an error with 1</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Convert any base to base 10:</p>
+<ul>
+  <li>ex: binary 110 to base 10
+    <ul>
+      <li>(1 * 2^2) + (1 * 2^1) + (0 * 2^0)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>chars have values, too!</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if(isalpha(number[i])){
+    int charCode = ((int)tolower(number[i])) - 87;
+    result += charCode * pow(baseFrom, toThePowerOf);
+}
+</code></pre></div></div>
+
+<h2 id="bitwise-operators">Bitwise operators:</h2>
+<p>====================</p>
+
+<p><code class="highlighter-rouge">&amp;</code> And bitwise operator:</p>
+<ul>
+  <li><code class="highlighter-rouge">110 &amp; 111</code> =&gt; 1 for every time they’re both 1
+    <ul>
+      <li>110 is result</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">|</code> Or bitwise operator:</p>
+<ul>
+  <li><code class="highlighter-rouge">6 | 7</code> =&gt; if either is a 1, return a 1 =&gt; 111</li>
+</ul>
+
+<p><code class="highlighter-rouge">^</code> exclusive or:</p>
+<ul>
+  <li>6 ^ 7
+    <ul>
+      <li>1 returned if one is a 1, other is 0</li>
+      <li>001 =&gt; 1 is returned</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">~</code> bitwise not:</p>
+<ul>
+  <li>~x
+    <ul>
+      <li>if a bit in x == 0, that bit is now = 1</li>
+      <li>if a bit in x == 1, that bit is now = 0</li>
+    </ul>
+  </li>
+  <li>
+    <p>negative is the 2’s complement
+000000010 =&gt; 2
+111111101 =&gt; complement of 2
+111111110 =&gt; add 1 to it</p>
+  </li>
+  <li>inverse sign = <code class="highlighter-rouge">~</code>
+    <ul>
+      <li>Ex: <code class="highlighter-rouge">~numberSix = -6</code></li>
+    </ul>
+  </li>
+  <li>shift operators:
+    <ul>
+      <li><code class="highlighter-rouge">shiftLeftTwo = numberSix &lt;&lt; 2;</code></li>
+      <li><code class="highlighter-rouge">x/pow(2, n)</code> is the same as <code class="highlighter-rouge">x&gt;&gt;n</code></li>
+    </ul>
+  </li>
+  <li>bit masking
+    <ul>
+      <li>if you want to see what is in some specific spots</li>
+      <li>do 1 for parts you want to see, 0 for others</li>
+      <li>do an AND bitwise operator</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="functions">Functions:</h2>
+<p>============</p>
+
+<p><code class="highlighter-rouge">printf("string, int %d, long int %ld, decimal with 2 decimal </code></p>
+<ul>
+  <li>places shown %.2f”, intValue, longIntValue, floatValue);</li>
+  <li>Displays to terminal</li>
+  <li>Conversion characters:
+    <ul>
+      <li><code class="highlighter-rouge">%ld</code> //long</li>
+      <li><code class="highlighter-rouge">%d</code> //int</li>
+      <li><code class="highlighter-rouge">%.5f</code> //prints to 5 decimal places</li>
+      <li><code class="highlighter-rouge">%.15f</code> //used for float and double</li>
+      <li><code class="highlighter-rouge">%c</code> //char</li>
+      <li><code class="highlighter-rouge">%s</code> //string</li>
+      <li><code class="highlighter-rouge">%p</code> //return hexidecimal addresses
+  //also use &amp; =&gt; printf(“%p”, &amp;rand1)</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">\n</code> = line, <code class="highlighter-rouge">\t</code> = tab, <code class="highlighter-rouge">\\</code> = print, <code class="highlighter-rouge">\"</code> = print “</li>
+</ul>
+
+<p><code class="highlighter-rouge">scanf("&lt;data type in format&gt;", &amp;whereToStore, &amp;otherPlace);</code></p>
+<ul>
+  <li>Ex: <code class="highlighter-rouge">scanf(" %d/%d/%d", &amp;month, &amp;day, &amp;year);</code></li>
+  <li>Store input from user, bulky</li>
+  <li>will overwrite values if there is a data overflow</li>
+  <li>needs the &amp;</li>
+  <li>don’t use %d++ in the “” because it screws up</li>
+  <li>will return a 1 or 0 if compared with == to a number</li>
+</ul>
+
+<p><code class="highlighter-rouge">fgets(storeHere, 30, stdin);</code></p>
+<ul>
+  <li>like <code class="highlighter-rouge">scanf()</code></li>
+  <li>store the 30 bytes of information in storeHere through stdin</li>
+  <li>adds the \0 character</li>
+  <li>adds new line</li>
+  <li>accepts more than one string</li>
+</ul>
+
+<p><code class="highlighter-rouge">fputs("string here", stdout);</code></p>
+<ul>
+  <li>string, output method</li>
+  <li>no new line</li>
+</ul>
+
+<p><code class="highlighter-rouge">gets(name);</code></p>
+<ul>
+  <li>accepts one string and puts it in name</li>
+  <li>no new line.  It ends with \0</li>
+</ul>
+
+<p><code class="highlighter-rouge">puts("string here");</code></p>
+<ul>
+  <li>makes a new line after displaying the string</li>
+</ul>
+
+<p><code class="highlighter-rouge">strcpy(myName, "Bob Joe"); //used to hold "Derek Banas"</code></p>
+<ul>
+  <li>assign a different value to the variable</li>
+</ul>
+
+<p><code class="highlighter-rouge">strcomp()</code></p>
+<ul>
+  <li>returns negative # if first string is less than 2nd</li>
+  <li>returns positive # if more (second would come first if  alphabetic)</li>
+  <li>returns 0 if equal</li>
+</ul>
+
+<p><code class="highlighter-rouge">strcat(yourCity, yourState);</code></p>
+<ul>
+  <li>combine the two strings into yourCity</li>
+</ul>
+
+<p><code class="highlighter-rouge">strlcpy(yourCity, "aksjdfl", sizeof(yourCity));</code></p>
+<ul>
+  <li>cuts off the end of the string so variable doesn’t overflow</li>
+</ul>
+
+<p><code class="highlighter-rouge">strlen(name);</code></p>
+<ul>
+  <li>returns the length of the variable (number of slots)</li>
+</ul>
+
+<p><code class="highlighter-rouge">theChar = getchar();</code></p>
+<ul>
+  <li>Takes in chars until enter is pressed</li>
+</ul>
+
+<p><code class="highlighter-rouge">putchar(theChar);</code></p>
+<ul>
+  <li>print the char on the screen</li>
+</ul>
+
+<p><code class="highlighter-rouge">strrchr(randomString, '\n');</code></p>
+<ul>
+  <li>returns last occurance of \n in randomString</li>
+</ul>
+
+<p><code class="highlighter-rouge">strchr(randomString, 'a');</code></p>
+<ul>
+  <li>returns first occurance of a in randomString</li>
+</ul>
+
+<p><code class="highlighter-rouge">tolower(char)</code></p>
+<ul>
+  <li>makes the letter lower cased</li>
+  <li>Ex: <code class="highlighter-rouge">theString[i] = tolower(theString[i]);</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">toupper(char)</code></p>
+<ul>
+  <li>makes the letter upper cased</li>
+</ul>
+
+<p><code class="highlighter-rouge">isalnum(char)</code></p>
+<ul>
+  <li>is it consisting of all numbers?</li>
+</ul>
+
+<p><code class="highlighter-rouge">isalpha(char)</code></p>
+<ul>
+  <li>alphabetic character</li>
+</ul>
+
+<p><code class="highlighter-rouge">isblank(char)</code></p>
+<ul>
+  <li>space</li>
+</ul>
+
+<p><code class="highlighter-rouge">isdigit(char)</code></p>
+<ul>
+  <li>digit</li>
+</ul>
+
+<p><code class="highlighter-rouge">isgraph(char)</code></p>
+<ul>
+  <li>anything but space</li>
+</ul>
+
+<p><code class="highlighter-rouge">isupper(char)</code></p>
+<ul>
+  <li>upper cased</li>
+</ul>
+
+<p><code class="highlighter-rouge">islower(char)</code></p>
+<ul>
+  <li>lower cased</li>
+</ul>
+
+<p><code class="highlighter-rouge">ispunct(char)</code></p>
+<ul>
+  <li>punctuation</li>
+</ul>
+
+<p><code class="highlighter-rouge">isspace(char)</code></p>
+<ul>
+  <li>any space</li>
+</ul>
+
+<p><code class="highlighter-rouge">strcmp(string, string)</code></p>
+<ul>
+  <li>comparing two string sto see if they match</li>
+  <li>returns 0 if they’re the same</li>
+  <li>returns (+) if first string more (further in alpha order)</li>
+  <li>returns (-) if first string is less</li>
+</ul>
+
+<p><code class="highlighter-rouge">exit()</code></p>
+<ul>
+  <li>Close program.  Don’t run anything else.</li>
+  <li>can be (0),(1),(2),(3),(4), etc for personal reference</li>
+</ul>
+
+<p><code class="highlighter-rouge">rand()</code></p>
+<ul>
+  <li>Create random number</li>
+  <li>To get numbers 1-50: <code class="highlighter-rouge">rand() % 50 + 1</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">break;</code></p>
+<ul>
+  <li>exit out of an infinite loop (is like exit())</li>
+  <li>used in switch</li>
+</ul>
+
+<p><code class="highlighter-rouge">continue;</code></p>
+<ul>
+  <li>go back to the beginning of the braces</li>
+  <li>Ex:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  for(blah){ 
+      //do something, start here again!
+      if (variable == 1){ continue; }
+      //don't do this stuff this time
+  } 
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>switch(whatToDo){
+        
+    case(1) : printf("Print the time");
+        break;
+
+    default : printf("Bye");
+        exit(0);
+        break;
+
+    }
+</code></pre></div></div>
+<ul>
+  <li>if whatToDo == 1 (in case(1)), do that</li>
+  <li>go on to other cases</li>
+  <li>default is done if nothing else works</li>
+  <li>if there isn’t a break, it will execute all the other statements after the one it entered in on range is 4…6 instead of 4 or something</li>
+</ul>
+
+<p><code class="highlighter-rouge">sizeof(variableName);</code></p>
+<ul>
+  <li>returns the number of bytes in there</li>
+</ul>
+
+<p><code class="highlighter-rouge">pRandomNumbers = malloc(amountOfBytesToStore);</code></p>
+<ul>
+  <li>if fails, stores a NULL</li>
+  <li>Good usage to store a specific number of ints:
+    <ul>
+      <li><code class="highlighter-rouge">malloc(amtOfNumbersToStore * sizeof(int))</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">free(pRandomNumbers);</code></p>
+<ul>
+  <li>free memory for pRandomNumbers to prevent crashing</li>
+  <li>used for large scale programs that don’t end in a while</li>
+</ul>
+
+<p><code class="highlighter-rouge">pFile* = fopen("fileName.txt", "w");</code></p>
+<ul>
+  <li>will make the file if it doesn’t exist</li>
+  <li>binary files (.bin) use things like rb+
+    <ul>
+      <li>“w” - stuff already inside will be deleted/replaced</li>
+      <li>“a” - append or add new info</li>
+      <li>“r” - read from the file</li>
+      <li>“a+” - start at end of file if it exists and reads and writes</li>
+      <li>“r+” - open at beginning for reading and writing, no delete, no make new file</li>
+      <li>“w+” - delete original (or make new one if no exist), read and write</li>
+    </ul>
+  </li>
+  <li>if file wasn’t opened, returns a 1</li>
+</ul>
+
+<p><code class="highlighter-rouge">fprintf(pFile, "%d", randomNumber)</code></p>
+<ul>
+  <li>print it to the file like printf()</li>
+  <li>file to print to, what to print</li>
+</ul>
+
+<p><code class="highlighter-rouge">fclose(pFile)</code></p>
+<ul>
+  <li>close the file, if not closed, returns 0</li>
+  <li>if went well, returns 1
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  if(fclose(pFile)) != 0){
+      printf("Success writing to text");
+  }
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">fseek(pFile, 12, SEEK_SET);</code></p>
+<ul>
+  <li>can use (-) numbers in fseek()</li>
+  <li>12- move 12 characters =&gt; “moving the cursor”</li>
+  <li>Seek things:
+    <ul>
+      <li>SEEK_SET - Start from beginning of file</li>
+      <li>SEEK_CUR - Move from current position in file</li>
+      <li>SEEK_END - Based off of end of file</li>
+    </ul>
+  </li>
+  <li>in binary mode, need to * number chars to move by the size of each thingie =&gt; move 12 =&gt; 12 * sizeof(int)</li>
+</ul>
+
+<p><code class="highlighter-rouge">ftell(pFilfe)</code></p>
+<ul>
+  <li>returns the number of bytes the cursor is from the beginning of the file</li>
+</ul>
+
+<p><code class="highlighter-rouge">perror("Error Occured");</code></p>
+<ul>
+  <li>prints that and the standard error message</li>
+</ul>
+
+<p><code class="highlighter-rouge">printf("Error Code %d\n", errno);</code></p>
+<ul>
+  <li>prints error code</li>
+</ul>
+
+<p><code class="highlighter-rouge">fwrite(name, sizeof(name[0]), sizeof(name)/sizeof(name[0]), pFile);</code></p>
+<ul>
+  <li>Write binary data to file</li>
+  <li>pointer by default</li>
+  <li>variable, size of each element, number of elements, where to print</li>
+</ul>
+
+<p><code class="highlighter-rouge">fread(buffer, 1, fileSize, pFile);</code></p>
+<ul>
+  <li><code class="highlighter-rouge">dataInFile = fread(blah blah);</code></li>
+  <li>information goes to buffer, bytes taken from each element,
+    <ul>
+      <li>number of elements, read from this place</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">rewind(pFile);</code></p>
+<ul>
+  <li>go to beginning of file</li>
+</ul>
+
+<p><code class="highlighter-rouge">pow(base, toThePowerOf);</code></p>
+<ul>
+  <li>mutiply base and itself toThePowerOf times</li>
+</ul>
+
+
+         </div>
+
+         
+<div class="tags">
+    Tags:
+   
+    <span class="tag"><a href="/coding_notes">coding_notes</a></span>
+   
+</div>
+
+
+
+       </article>
+   
+       <article class="post">
+
+         <h1><a href="/how_to_javascript/">How to Javascript</a></h1>
+
+         <div class="author">
+    <div>By Jenny Wang on May 24, 2019</div>
+    
+        <div style="font-style: italic;">~10 min. read</div>
+    
+</div>
+
+
+
+         <div class="entry">
+         <h2 id="html-stuff">HTML STUFF</h2>
+<p>============</p>
+
+<p><code class="highlighter-rouge"><span class="cp">&lt;!DOCTYPE html&gt;</span></code></p>
+
+<p><code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code></p>
+
+<p><code class="highlighter-rouge">&lt;body onload=function()&gt;</code></p>
+<ul>
+  <li>onload- does <code class="highlighter-rouge">function()</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;script&gt;</code></p>
+
+<p><code class="highlighter-rouge">&lt;h1&gt;</code></p>
+
+<p><code class="highlighter-rouge">&lt;p id="demo"&gt;</code></p>
+<ul>
+  <li><code class="highlighter-rouge">id</code>-     set the id so its elements can be found w/ getElementById()
+  if there is no matching id, creates one at the bottom of the page
+events: onchange, onclick, onmouseover, onmouseout, onkeydown, onload</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;br /&gt;</code></p>
+<ul>
+  <li>inserts a line break there</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;noscript&gt;Text to display&lt;/noscript&gt;</code></p>
+<ul>
+  <li>Display that text if javascript is not enabled</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;!-- and //--&gt;</code></p>
+<ul>
+  <li>outline the script with this comment so unsupported computers skip it</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;div style="" align="" globalAtribbutes&gt;</code></p>
+<ul>
+  <li>style- “color:#0000FF” =&gt; all text within &lt;div&gt; = that color</li>
+  <li>align- left/right/center/justify(stretch) the elements
+    <ul>
+      <li>not supported in HTML5</li>
+    </ul>
+  </li>
+  <li>draggable- can click and drag like a picture</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;form action="code.php" method="post/get"&gt;</code></p>
+<ul>
+  <li>for organization</li>
+  <li>action- what to do after submit button is clicked
+    <ul>
+      <li>if ommitted, looks within the page</li>
+    </ul>
+  </li>
+  <li>method- how to submit data, GET = default (data displayed in</li>
+  <li>address field, POST = data hidden</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;fieldset&gt;</code></p>
+<ul>
+  <li>for organization within <code class="highlighter-rouge">&lt;form&gt;</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;legend&gt;text&lt;/legend&gt;</code></p>
+<ul>
+  <li>“header” for fieldset</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;input type="" name="name" value="text" onclick="function()"&gt;</code></p>
+<ul>
+  <li>type- none/text=text box, button=button, radio=multiple choice submit=submit button (see &lt;form&gt;)</li>
+  <li>name- must be included to be submitted within &lt;form&gt;
+    <ul>
+      <li>id- can’t be used for &lt;form&gt;</li>
+    </ul>
+  </li>
+  <li>value- text to initially display (hint). ‘’ is empty</li>
+  <li>onclick (buttons)- when element is clicked do blah</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;audio src="dir or website"&gt;</code></p>
+<ul>
+  <li>holds an audio file</li>
+  <li>audio accessed by through audioElement.play()</li>
+  <li>src- a directory or website that holds the audio file</li>
+</ul>
+
+<p><code class="highlighter-rouge">.innerHTML / .value</code></p>
+<ul>
+  <li>.value is for buttons, etc</li>
+  <li>.innerHTML is for paragraphs, etc</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;strike&gt;text&lt;/strike&gt;</code></p>
+<ul>
+  <li>text has strikethrough</li>
+</ul>
+
+<h2 id="global-attributes">GLOBAL ATTRIBUTES</h2>
+<p>==================
+http://www.w3schools.com/TAGS/ref_standardattributes.asp</p>
+
+<p><code class="highlighter-rouge">draggable=true/false</code></p>
+<ul>
+  <li>click and drag the element like a picture
+<code class="highlighter-rouge">spellcheck=true/false</code></li>
+  <li>have spellcheck within element or not</li>
+</ul>
+
+<h2 id="event-attributes">EVENT ATTRIBUTES</h2>
+<p>=================
+http://www.w3schools.com/TAGS/ref_eventattributes.asp</p>
+
+<p><code class="highlighter-rouge">onclick="function()"</code></p>
+<ul>
+  <li>do this when the element is clicked</li>
+  <li>for string parameters, use quotes DIFFERENT from the one
+    <ul>
+      <li>surrounding the function</li>
+      <li>ex: <code class="highlighter-rouge">"function('hi')"</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">ondblclick="function()"</code>
+    - do this when the element is double clicked</p>
+
+<p><code class="highlighter-rouge">onload="function()"</code>
+    - do this when the element loads</p>
+
+<p><code class="highlighter-rouge">onkeydown="function()"</code>
+    - do this when key is down</p>
+
+<h1>====================================================================</h1>
+<h1 id="-1">====================================================================</h1>
+<h1 id="-2">====================================================================</h1>
+
+<h2 id="javascript-stuff">JAVASCRIPT STUFF</h2>
+<p>==================</p>
+
+<h2 id="random-syntax-and-stuff">RANDOM SYNTAX AND STUFF</h2>
+<p>=======================</p>
+
+<p><code class="highlighter-rouge">&lt;script type="text/JavaScript"&gt;script&lt;/script&gt;</code></p>
+<ul>
+  <li>make a js script</li>
+</ul>
+
+<p><code class="highlighter-rouge">&lt;script type="text/JavaScript" src="code.js"&gt;</code></p>
+<ul>
+  <li>reference an external js script</li>
+</ul>
+
+<p><code class="highlighter-rouge">==</code></p>
+<ul>
+  <li>equals</li>
+  <li>ex: <code class="highlighter-rouge">"7" == 7</code> =&gt; true</li>
+</ul>
+
+<p><code class="highlighter-rouge">===</code></p>
+<ul>
+  <li>strict equals, takes var type into account, too</li>
+  <li>ex: <code class="highlighter-rouge">"7" === 7</code> =&gt; false</li>
+</ul>
+
+<p><code class="highlighter-rouge">this</code></p>
+<ul>
+  <li>the element</li>
+  <li>
+    <p>ex:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  `&lt;button onclick="this.value=Date()&gt; `
+</code></pre></div>    </div>
+
+    <ul>
+      <li>changes button’s own text</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">typeof &lt;variable&gt;</code></p>
+<ul>
+  <li>returns type of variable</li>
+  <li>ex: <code class="highlighter-rouge">typeof variable == 'undefined'</code></li>
+</ul>
+
+<p>if a variable doesn’t exist, it basically == false</p>
+<ul>
+  <li>
+    <p>ex:
+      function test(callbackFunction)
+          if (callbackFunction) {
+              callbackFunction();
+          }
+      }</p>
+  </li>
+  <li>and if I put test() with no callbackFunction, it just doesn’t do anything</li>
+  <li>AKA: can call functions with less arguments than specified</li>
+</ul>
+
+<p>closure: variables created outside an event listener are “kept alive” if the reference in the listener is still there</p>
+<ul>
+  <li>creates memory leaks</li>
+  <li>use <code class="highlighter-rouge">$('element').off('event')</code>
+  =&gt; ex: <code class="highlighter-rouge">$('button').off('click');</code>
+“use strict” ontop of the script</li>
+  <li>cannot “pollute the root scope”
+    <ul>
+      <li>can’t make a new var to fit the uninitialized a = 2 in the window object</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>foo: function(){
+    //do something
+}
+</code></pre></div></div>
+
+<ul>
+  <li>another way to declare the function foo()</li>
+</ul>
+
+<p><code class="highlighter-rouge">try{ throw "error" } catch(e){ switch(e){ case "error" break;}</code></p>
+<ul>
+  <li>create + manage errors!
+<code class="highlighter-rouge">let</code></li>
+  <li>block-scoped</li>
+  <li>using x before let statement causes error</li>
+  <li>only defined in its block
+<code class="highlighter-rouge">var</code></li>
+  <li>function-scoped</li>
+  <li>using x before var statement sets x to undefined
+<code class="highlighter-rouge">that ${var1 + var2} is cool</code></li>
+  <li>template literals. Replaces “that “ + (var1 + var2) + “ is cool”</li>
+  <li>
+    <p>can do multiline:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  `hi
+  there`
+</code></pre></div>    </div>
+
+    <ul>
+      <li>(this has a \n in the middle)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="functionsattributes">FUNCTIONS/ATTRIBUTES</h2>
+<p>======================
+<code class="highlighter-rouge">window.alert(&lt;text or num&gt;);</code> [or just alert()]
+    popup alert</p>
+
+<p><code class="highlighter-rouge">document</code></p>
+
+<ul>
+  <li><code class="highlighter-rouge">.write(&lt;text or num or object&gt;);</code>
+    <ul>
+      <li>cannot write numbers when it is not in a function</li>
+      <li>only for testing purposes</li>
+      <li>if it is object, can type as <code class="highlighter-rouge">"&lt;p&gt;paragraph&lt;/p&gt;"</code></li>
+      <li>“<code class="highlighter-rouge">string" + num = "stringnum"</code></li>
+      <li><code class="highlighter-rouge">num + num = sum</code></li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.getElementById(id);</code>
+    <ul>
+      <li>access an HTML element</li>
+      <li><code class="highlighter-rouge">.innerHTML = "text";</code>
+        <ul>
+          <li>change the element’s text</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.body</code>
+    <ul>
+      <li>do something to the &lt;body&gt;</li>
+      <li>.appendChild(‘elementVariable’)
+        <ul>
+          <li>add the element (ex: button) to the document</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.createElement("element")</code>
+    <ul>
+      <li>ex: “button”, “br” (line break)</li>
+      <li>create the element.</li>
+      <li>can save it w/ <code class="highlighter-rouge">var btn = document.createElement("button");</code></li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.createTextNode("text")</code>
+    <ul>
+      <li>create the text node (variable)</li>
+      <li>can save it w/ <code class="highlighter-rouge">var t = document.createTextNode("text");</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Any element variable (ex: btn)</p>
+<ul>
+  <li><code class="highlighter-rouge">btn.appendChild(textNode)</code></li>
+  <li><code class="highlighter-rouge">.previousSibling</code>
+    <ul>
+      <li>returns element right before it in the parent</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.replaceChild(newChildElement, oldChildElement)</code>
+    <ul>
+      <li>replace the old with the new</li>
+      <li>later do newChild.appendChild(oldChild) to restructure</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">console.log(text/num, text/num, etc);</code></p>
+<ul>
+  <li>log text into the console (inspect element)</li>
+  <li>multiple parameters =&gt; a space in the</li>
+</ul>
+
+<p><code class="highlighter-rouge">str</code></p>
+<ul>
+  <li><code class="highlighter-rouge">.indexOf("string"[, fromIndex]);</code>
+    <ul>
+      <li>returns first index of “string” within str
+        <ul>
+          <li>returns-1 if not found</li>
+        </ul>
+      </li>
+      <li>begin looking from the index fromIndex</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.lastIndexOf("string");</code>
+    <ul>
+      <li>returns last index of “string within str
+        <ul>
+          <li>returns -1 if there’s nothing</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.search("string")</code> or <code class="highlighter-rouge">.search([regexp object])</code>
+    <ul>
+      <li>can use regexp (but slower)</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.match([regexp object])</code>
+    <ul>
+      <li>better search method</li>
+      <li>ex: <code class="highlighter-rouge">match(/m/gi)</code> (see regexp)</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.substr(start, length);</code>
+    <ul>
+      <li>start at start and end length chars later</li>
+      <li>start is negative =&gt; start from the end of the string</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.substring(start, end);</code>
+    <ul>
+      <li>start at start and end at end</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.slice(start[, end]);</code>
+    <ul>
+      <li>almost same as <code class="highlighter-rouge">substring()</code></li>
+      <li>if start/end are negative, count from the end of the string
+        <ul>
+          <li>doesn’t work in Internet Exploerer 8 or earlier</li>
+        </ul>
+      </li>
+      <li>only one parameter =&gt; slice out the rest of the string</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.split("searchTerm"[, numElementsToReturn]);</code>
+    <ul>
+      <li>return array of str split at the search terms</li>
+      <li>can stop looking for new terms after numElementsToReturn</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.charAt(index)</code>
+    <ul>
+      <li>returns char at the index</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.replace("findThis", "replaceWithThis");</code>
+    <ul>
+      <li>replace all “findThis”’s with the replacement</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.toLowerCase()</code>
+    <ul>
+      <li>returns string in all lowercase</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.toUpperCase()</code>
+    <ul>
+      <li>returns string in all uppercase</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.strike()</code>
+    <ul>
+      <li>returns <strike>[str.value]</strike></li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.length</code>
+    <ul>
+      <li>returns length of string</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">element.fireevent(eventStartingWithOn, event)</code></p>
+<ul>
+  <li>can be used without the () and stuff in it</li>
+  <li>returns if the event was cancelled (ex: can’t click there)</li>
+  <li>eventStartingWithOn/event are more specifications</li>
+</ul>
+
+<p><code class="highlighter-rouge">Math.random()</code></p>
+<ul>
+  <li>returns rand number from 0 to 1</li>
+  <li><code class="highlighter-rouge">Math.floor(Math.random()*50)</code> for rand int between 0 and 50</li>
+</ul>
+
+<p><code class="highlighter-rouge">Array</code></p>
+<ul>
+  <li>.splice(index, number)
+  remove element(s) from the array</li>
+  <li>.push(element)
+  add element to end of array</li>
+  <li>.includes(element)
+    <ul>
+      <li>returns if the element is in the array</li>
+    </ul>
+  </li>
+  <li>.pop()
+  removes and returns last element</li>
+  <li>.shift()
+    <ul>
+      <li>removes and returns first element. all elements are shifted left</li>
+    </ul>
+  </li>
+  <li>can initialize with var a = [1, 2, 3]</li>
+  <li>
+    <p>adding elements outside the array puts undefined in the middle</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var a = [1, 2, 3]
+  a[5] = 0
+  // a = [1, 2, 3, undefined, undefined, 0]
+</code></pre></div>    </div>
+  </li>
+  <li>an instanceof Array</li>
+</ul>
+
+<h2 id="events-for-stuff">EVENTS FOR STUFF</h2>
+<p>==================</p>
+
+<p><code class="highlighter-rouge">document</code></p>
+<ul>
+  <li><code class="highlighter-rouge">.ready()</code>
+    <ul>
+      <li>does what’s inside () when doc is ready
+<code class="highlighter-rouge">onerror = &lt;function&gt;</code></li>
+    </ul>
+  </li>
+  <li>calls <code class="highlighter-rouge">&lt;function&gt;</code> when the document errors.</li>
+</ul>
+
+<h2 id="variable-magic">VARIABLE MAGIC</h2>
+<p>================</p>
+
+<p><code class="highlighter-rouge">var varName = &lt;something&gt;;</code></p>
+
+<p><code class="highlighter-rouge">window.varName</code></p>
+<ul>
+  <li>all global variables in HTML are part of the window object</li>
+</ul>
+
+<p><code class="highlighter-rouge">var car = {brand:"Fiat", price:"3000000000000"};</code></p>
+<ul>
+  <li>get values with car.price or car[“price”]</li>
+  <li>can have methods as elements
+    <ul>
+      <li>use with car.function()</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">this.innerHTML = &lt;blah&gt;</code></p>
+<ul>
+  <li>change own element (ex: if in <button>, change button name)</button></li>
+</ul>
+
+<p>strings</p>
+<ul>
+  <li><code class="highlighter-rouge">txt.length</code>
+    <ul>
+      <li>returns length of string</li>
+    </ul>
+  </li>
+</ul>
+
+<p>string objects</p>
+<ul>
+  <li>For <code class="highlighter-rouge">var x = new String("Some Text");</code>
+    <ul>
+      <li><code class="highlighter-rouge">x == y</code> (another new String()) =&gt; false</li>
+      <li><code class="highlighter-rouge">x == x</code> =&gt; true</li>
+      <li><code class="highlighter-rouge">!= "Some Text"</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>if variable not given in parameter of function, it = undefined
+    - ex: <code class="highlighter-rouge">func(x,y)</code> =&gt; use <code class="highlighter-rouge">func(1)</code> =&gt; y = undefined</p>
+
+<p>2D Array
+    - is arrays in an array
+    - ex: 
+            var array = new Array(columns);
+            for (i = 0; i &lt; columnds; i++) {
+                array[i] = new Array(rows);
+            }
+    - access with <code class="highlighter-rouge">array[1][2]</code></p>
+
+<h2 id="prototypes">PROTOTYPES</h2>
+<p>=============</p>
+<ul>
+  <li>basically parent classes in java</li>
+  <li>different from classes b/c they are hoisted
+    <ul>
+      <li>can be used in lines above it b/c it’s basically in the head</li>
+    </ul>
+  </li>
+  <li>
+    <p>create prototype:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  function Person(n, a){
+      this.name = n;
+      this.age = a;
+      this.talk = function() {console.log("Hi")};
+  }
+</code></pre></div>    </div>
+  </li>
+  <li>add properties within prototype once made:
+    <ul>
+      <li><code class="highlighter-rouge">Person.prototype.newProtoName = "value";</code></li>
+    </ul>
+  </li>
+  <li>create new object from prototype:
+    <ul>
+      <li><code class="highlighter-rouge">var joe = new Person("Joe", 70);</code></li>
+    </ul>
+  </li>
+  <li>add property to existing object
+    <ul>
+      <li><code class="highlighter-rouge">myObject.newProperty = "value";</code></li>
+      <li>(creates it automagically for myObject and not prototype)</li>
+    </ul>
+  </li>
+  <li>
+    <p>add method to existing object</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  myObject.property = function () {
+      return "I dunno";
+  };
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">object.prototype.isPrototypeOf(obj)</code></p>
+<ul>
+  <li>returns whether object.prototype is in prototype chain of obj</li>
+</ul>
+
+<h2 id="classes">CLASSES</h2>
+<p>=========</p>
+
+<ul>
+  <li>
+    <p>not hoisted</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  class B extends A {
+      publicField = 0;
+      #privateField = 1;
+      uninitialized;
+
+      constructor(x, y) {
+          this.x = x;
+          this.y = y;
+      }
+
+      foo() {
+          &lt;function body&gt;
+      }
+  }
+</code></pre></div>    </div>
+  </li>
+  <li>constructor is named “constructor”</li>
+  <li>don’t put <code class="highlighter-rouge">def</code>/<code class="highlighter-rouge">var</code>/<code class="highlighter-rouge">function</code> keywords in front of methods</li>
+</ul>
+
+<h2 id="regular-expressions-regexp">REGULAR EXPRESSIONS (regexp)</h2>
+<p>===============================</p>
+
+<ul>
+  <li>object representing formatting</li>
+  <li>syntax: <code class="highlighter-rouge">/pattern/modifiers</code>
+    <ul>
+      <li>pattern- word/char/[multiple things] to look for</li>
+      <li>modifiers- i (case-insensitive),
+        <ul>
+          <li><code class="highlighter-rouge">g</code> (global, find multiple matches)</li>
+          <li><code class="highlighter-rouge">m</code> (multi-line matching)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>ex: <code class="highlighter-rouge">str.match(/m/gi)</code></li>
+  <li>ex: <code class="highlighter-rouge">var rEPattern1 = /z/i;</code>
+<code class="highlighter-rouge">reg</code>
+    <ul>
+      <li><code class="highlighter-rouge">.exec()</code>
+        <ul>
+          <li>returns first match if found</li>
+          <li>returns false if none found</li>
+          <li>if just called for the same string, starts searching after the previous match
+  <code class="highlighter-rouge">.test()</code></li>
+          <li>returns true if found, false if not found</li>
+          <li>if just called for the same string, starts searching after the previous match</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="built-in-variables">BUILT IN VARIABLES</h2>
+<p>=====================
+<code class="highlighter-rouge">Date()</code></p>
+
+<p><code class="highlighter-rouge">document.location</code></p>
+<ul>
+  <li>is website url</li>
+</ul>
+
+<h2 id="helper-functions">HELPER FUNCTIONS</h2>
+<p>===================</p>
+
+<p>Append text to document body</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    document.body.appendChild(document.createTextNode("hi"));
+</code></pre></div></div>
+
+<p>Simulate a click without clicking there</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    function eventFire(el, etype){
+      if (el.fireEvent) {
+        el.fireEvent('on' + etype);
+      } else {
+        var evObj = document.createEvent('Events');
+        evObj.initEvent(etype, true, false);
+        el.dispatchEvent(evObj);
+      }
+    }
+</code></pre></div></div>
+
+<ul>
+  <li>usage: <code class="highlighter-rouge">eventFire(document.getElementById('mytest1'), 'click');</code></li>
+</ul>
+
+<p>Get mouse coordinates when it changes</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(function() {
+    document.onmousemove = handleMouseMove;
+    function handleMouseMove(event) {
+        var dot, eventDoc, doc, body, pageX, pageY;
+
+        event = event || window.event; // IE-ism
+
+        // If pageX/Y aren't available and clientX/Y are,
+        // calculate pageX/Y - logic taken from jQuery.
+        // (This is to support old IE)
+        if (event.pageX == null &amp;&amp; event.clientX != null) {
+            eventDoc = (event.target &amp;&amp; event.target.ownerDocument) || document;
+            doc = eventDoc.documentElement;
+            body = eventDoc.body;
+
+            event.pageX = event.clientX +
+              (doc &amp;&amp; doc.scrollLeft || body &amp;&amp; body.scrollLeft || 0) -
+              (doc &amp;&amp; doc.clientLeft || body &amp;&amp; body.clientLeft || 0);
+            event.pageY = event.clientY +
+              (doc &amp;&amp; doc.scrollTop  || body &amp;&amp; body.scrollTop  || 0) -
+              (doc &amp;&amp; doc.clientTop  || body &amp;&amp; body.clientTop  || 0 );
+        }
+
+        // Use event.pageX / event.pageY here
+    }
+})();
+</code></pre></div></div>
+
+<h2 id="terms">TERMS</h2>
+<p>========</p>
+
+<p>String interpolation</p>
+<ul>
+  <li>add variable value to a string</li>
+  <li>ex: console.log(var+”hi”);</li>
+  <li>Escaping a letter
+    <ul>
+      <li>in a quote <code class="highlighter-rouge">"There\'s something"</code>
+        <ul>
+          <li>put a slash to print the apostrophe</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="tips">TIPS</h2>
+<p>======</p>
+
+<ul>
+  <li>while testing on a web server
+    <ul>
+      <li>disable cache in inspect element
+        <ul>
+          <li><code class="highlighter-rouge">Network-&gt;Disable cache</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>change order of elements by appending/something the <code class="highlighter-rouge">document.getElementById</code></li>
+</ul>
+
+<h1 id="-3">====================================================================</h1>
+<h1 id="-4">====================================================================</h1>
+<h1 id="-5">====================================================================</h1>
+
+<h2 id="jquery">JQUERY</h2>
+<p>========</p>
+
+<p><code class="highlighter-rouge">$(thing)</code></p>
+<ul>
+  <li>means the element is from jquery and should act like one &gt;:D</li>
+</ul>
+
+<p><code class="highlighter-rouge">$(document)</code></p>
+
+<p><code class="highlighter-rouge">$('button')</code></p>
+<ul>
+  <li>it’s a button element!
+    <ul>
+      <li><code class="highlighter-rouge">.on('event', doThis)</code>
+        <ul>
+          <li>‘event’ is the event psh. ex: ‘click’</li>
+          <li>doThis can be a function</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="-6">====================================================================</h1>
+<h1 id="-7">====================================================================</h1>
+<h1 id="-8">====================================================================</h1>
+
+<h2 id="notes">Notes</h2>
+<p>========</p>
+
+<p>Should probably use a modern front end library like <code class="highlighter-rouge">ReactJS</code> so that the site doesn’t become spaghetti code. These notes are a way to get started with HTML and Javascript, but don’t really talk about best coding practices.</p>
+
+         </div>
+
+         
+<div class="tags">
+    Tags:
+   
+    <span class="tag"><a href="/coding_notes">coding_notes</a></span>
+   
+</div>
+
+
+
+       </article>
+   
+       <article class="post">
+
+         <h1><a href="/how_to_python/">How to Python</a></h1>
+
+         <div class="author">
+    <div>By Jenny Wang on October  6, 2018</div>
+    
+        <div style="font-style: italic;">~10 min. read</div>
+    
+</div>
+
+
+
+         <div class="entry">
+         <h2 id="weird-things-compared-to-java">Weird things compared to Java</h2>
+<p>============</p>
+<ul>
+  <li>Passes lists to functions as references
+    <ul>
+      <li><code class="highlighter-rouge">list[1] = 2</code> actually changes data in list</li>
+    </ul>
+  </li>
+  <li>No semicolon (;)</li>
+  <li>Tabs/spaces are necessary</li>
+  <li>Print does everything</li>
+  <li>Arrays replaced by lists</li>
+  <li>Comments are # (not //)</li>
+  <li>No main method (type everything together: global vars, functions, statements)
+    <ul>
+      <li>runs top to bottom (like javascript)</li>
+    </ul>
+  </li>
+  <li>”” same as ‘’ (aka strings)</li>
+  <li>booleans’ values are 0 or 1 (more below)</li>
+  <li>&amp;&amp;, ||, and ! are written as and, or, and not</li>
+  <li>True and False are capitalized</li>
+  <li>No variable type declaration (ex: var, int, double)</li>
+  <li>“To the power of” is <code class="highlighter-rouge">** </code>
+    <ul>
+      <li>ex: <code class="highlighter-rouge">2 ** 4 == 16</code></li>
+    </ul>
+  </li>
+  <li>== works for strings</li>
+  <li>Multiline comments use triple quotes “””
+    <ul>
+      <li>
+        <p>ex:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  """I am a comment
+  that can span
+  multiple lines"""
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Continuation character \
+    <ul>
+      <li>Signifies that the next line is a part of the line above</li>
+      <li>
+        <p>ex:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var this = \
+  some_value
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Functional programming allowed (Use lambda keyword)
+    <ul>
+      <li>Can pass functions as variables</li>
+    </ul>
+  </li>
+  <li>Define multiple variables on one line
+    <ul>
+      <li>
+        <p>ex:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var1, var2, var3 = val1, val2, val3
+</code></pre></div>        </div>
+
+        <ul>
+          <li>Must have one value per variable</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Number is True if it isn’t 0 (if you’re not doing ==, but like if or while or smth)
+  None would be False
+  Returns the second to last # if the last # throws an error (ex: 1/0)</li>
+</ul>
+
+<h2 id="terms">Terms</h2>
+<p>======</p>
+
+<p><code class="highlighter-rouge">docstring</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    '''Comment'''
+</code></pre></div></div>
+
+<ul>
+  <li>Describes something</li>
+</ul>
+
+<p><code class="highlighter-rouge">doctest</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    &gt;&gt;&gt; print("Test")
+    Test
+</code></pre></div></div>
+
+<ul>
+  <li>shows that this is how to use the function</li>
+  <li>can do python3 -m doctest <filename> to test it.
+</filename>    <ul>
+      <li>Prints out errors if output isn’t the same as expected</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="operators">Operators</h2>
+<p>=========</p>
+
+<p><code class="highlighter-rouge">7 / 2</code></p>
+<ul>
+  <li>div</li>
+  <li>Returns decimal representation of result</li>
+</ul>
+
+<p><code class="highlighter-rouge">7 // 2</code></p>
+<ul>
+  <li>floordiv</li>
+  <li>Returns the rounded down integer of the result</li>
+</ul>
+
+<h2 id="booleans">booleans</h2>
+<p>=========</p>
+
+<p><code class="highlighter-rouge">True</code>, <code class="highlighter-rouge">False</code></p>
+<ul>
+  <li>can be evaluated to 1 or 0
+    <ul>
+      <li>
+        <p>ex:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  points = isHit*pointsHit + (1-isHit)*pointsMiss
+</code></pre></div>        </div>
+
+        <ul>
+          <li>gives points correctly</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">not</code> applies to the next boolean</p>
+<ul>
+  <li>ex: <code class="highlighter-rouge">not 3 == 2</code> is <code class="highlighter-rouge">True</code></li>
+</ul>
+
+<h2 id="for-loops">for loops</h2>
+<p>=========</p>
+
+<p><code class="highlighter-rouge">for i in range(&lt;number&gt;):</code>
+    does it <code class="highlighter-rouge">&lt;number&gt;</code> times
+    consider <code class="highlighter-rouge">&lt;number&gt; = len(myList)</code></p>
+
+<p><code class="highlighter-rouge">for i in range(minIndex, maxIndex):</code></p>
+<ul>
+  <li>i is from [minIndex, maxIndex)
+    <ul>
+      <li>Note the inclusive [ and exclusive )</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">for elm in myList:</code></p>
+<ul>
+  <li>like a for-each loop in Java</li>
+  <li>elm is an element in myList</li>
+</ul>
+
+<p><code class="highlighter-rouge">for key in myDictionary:</code></p>
+<ul>
+  <li>like for-each</li>
+  <li>get the value by doing myDictionary[key]</li>
+  <li>Keys are used in reverse-alphabetical order (z to a)
+    <ul>
+      <li>not necessarily in the order they were initialized to</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">for char in "string":</code></p>
+<ul>
+  <li>for each character in the string</li>
+  <li>because strings are lists</li>
+</ul>
+
+<p><code class="highlighter-rouge">for index, item in enumerate(list):</code></p>
+<ul>
+  <li>index is the index of item in the list</li>
+  <li>item is the next item</li>
+  <li>A magical for-each loop with indices too</li>
+</ul>
+
+<p><code class="highlighter-rouge">for a, b in zip(listA, listB):</code></p>
+<ul>
+  <li>Gives items in pairs. Will stop at the end of the shorter list</li>
+  <li>a is the nth item in listA</li>
+  <li>b is the nth item in listB</li>
+  <li>Can do this for as many lists as you want</li>
+</ul>
+
+<p><code class="highlighter-rouge">for x in set(lst_a).intersection(lst_b):</code></p>
+<ul>
+  <li>Gives x if x is both in lst_a and lst_b</li>
+</ul>
+
+<p><code class="highlighter-rouge">for x in set(lst_a).difference(lst_b):</code></p>
+<ul>
+  <li>Gives x if x is in lst_a but not in lst_b</li>
+</ul>
+
+<h2 id="if-statements">if statements</h2>
+<p>=============</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if &lt;expression&gt;:
+    &lt;do something&gt;
+elif &lt;expression&gt;:
+    &lt;do something&gt;
+else:
+    &lt;do something else&gt;
+&lt;I'm out of the if statement!&gt;
+</code></pre></div></div>
+
+<h2 id="functions">Functions</h2>
+<p>==========</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def funcName(parameters):
+    &lt;"fuction docstring"&gt; # Basically a comment to document the code
+    &lt;do something&gt;
+    &lt;return [expression]&gt;
+     ^^^
+    &lt;"function docstring"&gt;- optional statement to document the function
+    &lt;do something&gt;- the code block
+    &lt;return [expression]&gt;- the return statement (optional)
+                 - no return statement = return None
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">*args</code></p>
+<ul>
+  <li>ex: <code class="highlighter-rouge">f(*args)</code>
+    <ul>
+      <li>function takes in an arbitrary number of arguments</li>
+    </ul>
+  </li>
+  <li>
+    <p>ex: run a generic function multiple times:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  def make_avg_f(fn, num_times):
+      def avg_f(*args):
+          return avg(f(*args))
+      return avg_f
+  &gt;&gt;&gt; avg_f = make_avg_f(foo, 1000)
+  &gt;&gt;&gt; avg_f(foo_arg1, foo_arg2)
+  100342342348729
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="classes">Classes</h2>
+<p>========</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ClassName([BaseClass])
+    member_var = True
+
+    def __init__(self[, init_parameter, more, etc, ...]):
+        self.init_parameter = init_parameter
+    
+    def other_method(self[, other_parameter, more, etc, ...]):
+        &lt;do something&gt;
+</code></pre></div></div>
+
+<ul>
+  <li><code class="highlighter-rouge">BaseClass</code> - think about superclasses
+    <ul>
+      <li>If it’s not given, BaseClass defaults to object</li>
+      <li>Override methods by just making a new one with the same name/parameters</li>
+      <li>Classes that override don’t need the <strong>init</strong>() method</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">__init__</code> must have at least one parameter
+    <ul>
+      <li>self will refer to the object being created</li>
+    </ul>
+  </li>
+  <li>In the example, .init_parameter is an attribute (no need for doing int attr, etc)
+    <ul>
+      <li>Access with my_square = Square() ==&gt; my_square.sides</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">init_parameter</code> is a member variable (not instance variable-to particular instances of the class)
+    <ul>
+      <li>only available to members of the ClassName class</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">member_var</code> can be accessed by all objects of the ClassName class
+    <ul>
+      <li>But changing the value of one instance with hippo.is_alive = False doesn’t
+        <ul>
+          <li>change the value of the other ex: cat.is_alive</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Use <code class="highlighter-rouge">self.var</code> to change any variables for that class’s instance</p>
+  </li>
+  <li>Methods - functions in a class
+    <ul>
+      <li>Must take self as first parameter</li>
+      <li>But when calling it, you don’t have to include self inside the ()</li>
+      <li>ex: temp = ClassName() ==&gt; temp.other_method()</li>
+    </ul>
+  </li>
+  <li>Call superclass’s methods
+    <ul>
+      <li>super(ChildClass’sName, self).super_method()</li>
+    </ul>
+  </li>
+  <li>Functions from object
+    <ul>
+      <li>.<strong>init</strong>(self[, other_parameters, etc, …])
+        <ul>
+          <li>Think of a constructor</li>
+        </ul>
+      </li>
+      <li>.<strong>repr</strong>(self)
+        <ul>
+          <li>Stands for representation</li>
+          <li>Tells Python how to represent the object, ex: when printing</li>
+          <li>ex: <code class="highlighter-rouge">def __repr__(self): return "hi"</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="lists">Lists</h2>
+<p>=======</p>
+
+<ul>
+  <li>ARRAYS DO NOT EXIST (but think of them). They are LISTS</li>
+  <li>Note the [] instead of the {} (dictionaries)</li>
+  <li>Use len(list) for number of items</li>
+</ul>
+
+<p><code class="highlighter-rouge">myList = []</code></p>
+<ul>
+  <li>make a list</li>
+  <li>put values in [] if you want to initialize w/ values
+    <ul>
+      <li>ex: <code class="highlighter-rouge">list = [2,3]</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">print myList</code></p>
+<ul>
+  <li>prints it in the format [value, value, value]</li>
+</ul>
+
+<p><code class="highlighter-rouge">myList[&lt;index or sublist&gt;]</code></p>
+<ul>
+  <li>index: the index from 0 to len(myList)</li>
+  <li>sublist: <startval>:<endval> (inclusive:exclusive)
+</endval></startval>    <ul>
+      <li>ex:
+        <ul>
+          <li><code class="highlighter-rouge">[3:5]</code> gives list with elements 3 and 4</li>
+          <li><code class="highlighter-rouge">[:5]</code> gives list w/ elements up until 4 (no 5)</li>
+          <li><code class="highlighter-rouge">[3:]</code> gives list w/ elements 3 up until the end</li>
+          <li><code class="highlighter-rouge">[:]</code> gives entire list</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>ex: <code class="highlighter-rouge">myList[0:2] = [0,1]</code>
+    <ul>
+      <li>AMAZING</li>
+      <li>array size on left doesn’t have to equal size on right. simply replaces. AMAZING</li>
+    </ul>
+  </li>
+  <li>List comprehension for new lists
+    <ul>
+      <li>
+        <p>Initialize a fancy list</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  [&lt;var and expression] &lt;for loop&gt; [&lt;if statement&gt;]]
+</code></pre></div>        </div>
+
+        <ul>
+          <li>ex: <code class="highlighter-rouge">list = [i for i in range(10)]</code>
+            <ul>
+              <li>numbers 0 to 9 inclusive</li>
+            </ul>
+          </li>
+          <li>ex: <code class="highlighter-rouge">list = [i * 2 for i in range(10)]</code>
+            <ul>
+              <li>even numbers 0 to 18 inclusive</li>
+            </ul>
+          </li>
+          <li>ex: <code class="highlighter-rouge">list = [i for i in range(51) if i % 2 == 0]</code>
+            <ul>
+              <li>even numbers 0 to 50 inclusive</li>
+            </ul>
+          </li>
+          <li>ex: <code class="highlighter-rouge">list = [x*2 for x in range(6) if (x*2) % 3 == 0]</code>
+            <ul>
+              <li>Even numbers that are divisible by 3 from 0 to 5 inclusive
+                <ul>
+                  <li>So [6] (which is 3 * 2)</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Also a good counter
+            <ul>
+              <li>ex: <code class="highlighter-rouge">list = ["C" for x in range(5) if x &lt; 3]</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Concatenate lists with +
+    <ul>
+      <li>ex: <code class="highlighter-rouge">x = [1,2], y=[2,3] =&gt; x + y = [1, 2, 2, 3]</code></li>
+    </ul>
+  </li>
+  <li>Create list with repeating values
+    <ul>
+      <li>ex: <code class="highlighter-rouge">[0] * 5 == [0, 0, 0, 0, 0]</code></li>
+      <li>ex: <code class="highlighter-rouge">[0] * 2 * 2 == [0, 0, 0, 0] (not two lists inside a list)</code>
+        <ul>
+          <li>Use .append() instead</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>To print without [] brackets
+      <code class="highlighter-rouge">list = [1, 2, 3] ==&gt; " ".join(list) ==&gt; "1 2 3"</code></p>
+  </li>
+  <li>functions
+    <ul>
+      <li><code class="highlighter-rouge">.append(val)</code>
+        <ul>
+          <li>Add val into the last slot of the array</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.count(val)</code>
+        <ul>
+          <li>Returns int of the # of occurances of val in the list</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.index(val)</code>
+        <ul>
+          <li>returns index of val in the list</li>
+          <li>BEWARE: throws ValueError if m isn’t in the list</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.insert(index, item)</code>
+      - inserts item at index (or the end of the list)
+      - ex: insert at 100 then .index =&gt; at len(list)</li>
+      <li><code class="highlighter-rouge">.pop(index)</code>
+        <ul>
+          <li>Removes item at index and returns it</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.remove(value)</code>
+        <ul>
+          <li>removes first item in the list that matches the value</li>
+          <li>NOTE: NOT THE INDEX</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.sort(reverse=bool, key=func)</code>
+        <ul>
+          <li>sorts items in the list (ex: alphabetical, smallest to largest)</li>
+          <li>modifies the list and doesn’t return a new one</li>
+          <li>reverse=True =&gt; descending order. Else or not included, ascending order</li>
+          <li>key=func =&gt; applied to the element before sorting
+            <ul>
+              <li>ex: <code class="highlighter-rouge">lambda pair: pair[0]</code> to sort by the zeroth element of the objects</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">del(list[index])</code>
+        <ul>
+          <li>Removes the item at index and won’t return it</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">sum(myList)</code>
+        <ul>
+          <li>returns sum of all elements in p</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="dictionaries">Dictionaries</h2>
+<p>============</p>
+
+<ul>
+  <li>Note the {} instead of the [] (lists)</li>
+  <li>Think of structs</li>
+  <li>Access values by looking up a key</li>
+  <li>Can put list in dictionaries O:</li>
+  <li>
+    <p>ex:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  names = {"dog":"Spike", "cat":"Fluffy", "bird":"Sugar"}
+  names["dog"] == "Spike"
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>ex:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  residents = {1:"Bob", 2:"Joe", 3:"What are more names"}
+  residents[1] == "Bob"
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>ex:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  dict = {} # Empty dictionary
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>ex:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  dict["new key"] = new_value
+  adds a new key-value pair to the dictionary
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>ex:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  dict["old key"] = new_value
+  changes the value associated with the key
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">del dict[key_name]</code></p>
+<ul>
+  <li>
+    <p>removes key_name and its associated value from the dictionary</p>
+  </li>
+  <li>
+    <p>Functions</p>
+
+    <p><code class="highlighter-rouge">.items()</code></p>
+    <ul>
+      <li>Returns a list of tuples of key-value pairs in the dictionary in no particular order
+        <ul>
+          <li>Tuple = group (a key/value pair in this case)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><code class="highlighter-rouge">.keys()</code></p>
+    <ul>
+      <li>Returns list of keys of the dictionary in no particular order
+  <code class="highlighter-rouge">.values()</code></li>
+      <li>Returns  list of the dictionary’s values in no particular order</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">defaultdict(default_value)</code></p>
+<ul>
+  <li>high performance container datatype that gives default_value if that key isn’t found</li>
+</ul>
+
+<h2 id="tuple">Tuple</h2>
+<p>======</p>
+
+<ul>
+  <li>An immutable list (unchangeable)</li>
+  <li>Surrounded by ()s and can contain any data type</li>
+</ul>
+
+<h2 id="data-structures">Data structures</h2>
+<p>===============</p>
+
+<ul>
+  <li>Contained within collections</li>
+  <li>deque(iter_for_init[, maxlen]) (“DEHK” pronounciation)
+    <ul>
+      <li>Double-sided queue</li>
+      <li><code class="highlighter-rouge">append(x)</code>, <code class="highlighter-rouge">appendleft(x)</code>, <code class="highlighter-rouge">extend(iter)</code>, <code class="highlighter-rouge">extendleft(iter)</code>, <code class="highlighter-rouge">pop()</code>, <code class="highlighter-rouge">popleft()</code></li>
+      <li><code class="highlighter-rouge">remove(val)</code>, <code class="highlighter-rouge">reverse()</code>, <code class="highlighter-rouge">clear()</code></li>
+      <li><code class="highlighter-rouge">count(x)</code> - returns # of deque elements equal to x</li>
+      <li><code class="highlighter-rouge">rotate(n=1)</code> shift in circular way to the right</li>
+      <li><code class="highlighter-rouge">maxlen</code> - max length of the deque (corresponding # of items discarded as added if length &gt; maxlen)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="bitwise-operators">Bitwise operators</h2>
+<p>=================</p>
+
+<ul>
+  <li>Operators
+    <ul>
+      <li><code class="highlighter-rouge">&gt;&gt;</code> - Right shift
+        <ul>
+          <li>“divide by 2 and round down”</li>
+          <li>Good for making a mask while not writing all the digits</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">&lt;&lt;</code> - Left shift
+        <ul>
+          <li>“multiply by 2”</li>
+          <li>Good for making a mask while not writing all the digits</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">&amp;</code>  - Bitwise AND
+        <ul>
+          <li>“determine if a bit is on”</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">|</code>  - Bitwise OR
+        <ul>
+          <li>“turn a bit on if it’s off and leave the rest on”</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">^</code>  - Bitwise XOR
+        <ul>
+          <li>“flips a bit wherever there’s a 1 in the mask”</li>
+          <li>ex: <code class="highlighter-rouge">0b0110 ^ 0b1101 = 0b1011</code></li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">~</code>  - Bitwise NOT
+        <ul>
+          <li>Equivalent to adding 1 to the number and making it negative</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>ex: flip nth bit</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  num = num ^ 0b1 &lt;&lt; (n - 1)
+</code></pre></div>    </div>
+  </li>
+  <li>Denoting bases
+    <ul>
+      <li>base 2 - <code class="highlighter-rouge">0b&lt;number&gt;</code></li>
+      <li>base 8 - <code class="highlighter-rouge">0o&lt;number&gt;</code></li>
+      <li>base 16 - <code class="highlighter-rouge">0x&lt;number&gt;</code></li>
+    </ul>
+  </li>
+  <li>Helpful functions
+    <ul>
+      <li><code class="highlighter-rouge">bin(num)</code>
+        <ul>
+          <li>Returns binary representaion of num as a STRING</li>
+          <li>Can input binary, decimal, hex, etc (not string)</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">hex(num)</code>
+        <ul>
+          <li>Returns hexadecimal representation of num as a STRING</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">oct(num)</code>
+        <ul>
+          <li>Returns octadecimal representation of num as a STRING</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">int(&lt;num as another type&gt;[, baseTheNumCurrentlyIsIn])</code>
+        <ul>
+          <li>Normally converts the num as another type to an integer</li>
+          <li>If num is a string, the optional parameter converts it to decimal (int)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="strings">Strings</h2>
+<p>========</p>
+
+<h3 id="note-the-prescence-and-lack-of--before-the-function-name">***NOTE THE PRESCENCE AND LACK OF . BEFORE THE FUNCTION NAME***</h3>
+<p><code class="highlighter-rouge">s[index]</code></p>
+<ul>
+  <li>returns char at index</li>
+</ul>
+
+<p><code class="highlighter-rouge">s[start:end:stride]</code></p>
+<ul>
+  <li>Returns substring from [start,end) with the step stride</li>
+  <li>Note that both start and end are optional</li>
+  <li>stride - like a step</li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+  <li>To reverse a string
+    <ul>
+      <li><code class="highlighter-rouge">s[::-1]</code> or <code class="highlighter-rouge">reversed(s)</code></li>
+    </ul>
+  </li>
+  <li>String Encoding declarations- <code class="highlighter-rouge">'str'</code>, <code class="highlighter-rouge">u'str'</code>, <code class="highlighter-rouge">r'str'</code>
+    <ul>
+      <li>Are equivalent. They’re strings represented in different ways</li>
+      <li>u =&gt; Unicode</li>
+      <li>r =&gt; Raw</li>
+      <li>Convert among them with raw(str), unicode(str), str(str)</li>
+    </ul>
+  </li>
+  <li>To remove a character
+  ex: <code class="highlighter-rouge">s = s[:3] + s[4:]</code>
+  ex: <code class="highlighter-rouge">s = s.replace("old", "")</code></li>
+  <li>Functions
+    <ul>
+      <li><code class="highlighter-rouge">ord(char)</code>
+        <ul>
+          <li>returns ASCII code of that character</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">chr(&lt;ascii code&gt;)</code>
+        <ul>
+          <li>returns character represented by that ASCII code</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">len("string")</code>
+        <ul>
+          <li>returns length of string</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">len(string)</code>
+        <ul>
+          <li>returns length of string</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">max(string)</code>
+        <ul>
+          <li>returns character w/ highest ASCII value in that string</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">min(string)</code>
+        <ul>
+          <li>returns character w/ lowest ASCII value in that string</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">str1 in str2</code>
+        <ul>
+          <li>returns whether str1 appears in str2
+            <ul>
+              <li>^^ boolean True/False O.o</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">str1 &lt;string comparison&gt; str2</code>
+        <ul>
+          <li><code class="highlighter-rouge">&gt;</code>,<code class="highlighter-rouge"> &lt;</code>, <code class="highlighter-rouge">&lt;=</code>, <code class="highlighter-rouge">&gt;=</code>    compares ASCII values</li>
+          <li><code class="highlighter-rouge">==</code>, <code class="highlighter-rouge">!=</code>      check by value (not memory location)</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">isalnum(str)</code>
+        <ul>
+          <li>returns if the string is alphanumeric</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">isalpha(str)</code>
+        <ul>
+          <li>returns True if string contains only alphabets</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">isdigit(str)</code>
+        <ul>
+          <li>returns <code class="highlighter-rouge">True</code> if string contains only digits</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">isidentifier(str)</code>
+        <ul>
+          <li>return <code class="highlighter-rouge">True</code> is string is valid identifier</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">isspace(str)</code>
+        <ul>
+          <li>returns <code class="highlighter-rouge">True</code> if string contains only whitespace</li>
+          <li>includes <code class="highlighter-rouge">"\t"</code>, <code class="highlighter-rouge">"\n"</code>, etc</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">endswith(s1: str)</code>
+        <ul>
+          <li>returns <code class="highlighter-rouge">True</code> if strings ends with substring s1</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">startswith(s1: str)</code>
+        <ul>
+          <li>returns <code class="highlighter-rouge">True</code> if strings starts with substring s1</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">count(substring)</code>
+        <ul>
+          <li>returns number of occurrences of substring the string</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.find(s1)</code>
+        <ul>
+          <li>returns lowest index from where s1 starts in the string, if string not found returns -1</li>
+          <li>INDEXOF()! My love!</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.rfind(s1)</code>
+        <ul>
+          <li>returns highest index from where s1 starts in the string, if string not found returns -1</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.lower()</code>
+        <ul>
+          <li>return string by converting every character to lowercase</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.upper()</code>
+  return string by converting every character to uppercase</li>
+      <li><code class="highlighter-rouge">.split("str")</code>
+        <ul>
+          <li>Returns a list that has elements separated by str</li>
+          <li>The “str” is removed</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.replace(oldStr, newStr[, numTimes])</code>
+        <ul>
+          <li>No numTimes - returns str with every occurrence of old string replaced with new string</li>
+          <li>numTimes - Number of oldStrs to be replaced at maximum</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="console-functions">Console Functions</h2>
+<p>==============</p>
+
+<p><code class="highlighter-rouge">touch &lt;filename.txt&gt;</code></p>
+<ul>
+  <li>Creates filename.txt in the current directory</li>
+</ul>
+
+<p><code class="highlighter-rouge">print var1[, var2, var3, ...]</code></p>
+<ul>
+  <li>ex: print p</li>
+  <li>print out to console</li>
+  <li>if variable is an array, prints like [0.1, 0.2] (array elements)</li>
+  <li>NOTE: print (with nothing afterwards) prints an empty line</li>
+  <li>**Putting multiple variables seperated by commas seperates them by a space</li>
+  <li>**print var, means that the next print statement will print on the same line</li>
+</ul>
+
+<p><code class="highlighter-rouge">print("Number: %d, String: %s") % (my_num, my_str)</code></p>
+<ul>
+  <li>prints the string with %d’s, %s’s, etc replaced by the nth variable in ()</li>
+</ul>
+
+<p><code class="highlighter-rouge">print(var[, end="string"])</code></p>
+<ul>
+  <li>prints the variable</li>
+  <li>end- prints “string” after printing the var
+    <ul>
+      <li>default = “\n”</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">input("Question")</code></p>
+<ul>
+  <li>prints question to console and returns the string response</li>
+  <li>NOTE: Returns a string, so to compare numbers, do int(input)</li>
+</ul>
+
+<h2 id="keywords">Keywords</h2>
+<p>========</p>
+
+<p><code class="highlighter-rouge">break</code></p>
+<ul>
+  <li>exits the for loops</li>
+</ul>
+
+<p><code class="highlighter-rouge">in</code></p>
+<ul>
+  <li>Returns whether the var is in the list</li>
+  <li>ex: x in range(8) == true</li>
+  <li>ex: x not in range(8) == false</li>
+</ul>
+
+<p><code class="highlighter-rouge">lambda</code></p>
+<ul>
+  <li>Creates an anonymous function (define functions in-line)</li>
+  <li>Good for passing functions as parameters to functions</li>
+  <li><code class="highlighter-rouge">lambda &lt;parameters&gt;: &lt;return expression&gt;</code>
+    <ul>
+      <li>Don’t have to have a parameter but must have a return
+        <ul>
+          <li>ex: <code class="highlighter-rouge">(lambda: 3)() returns 3</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>ex: <code class="highlighter-rouge">foo(lambda x: x % 3 == 0)</code>
+    <ul>
+      <li><code class="highlighter-rouge">foo()</code> can use that function as a parameter (renamed in the foo())</li>
+    </ul>
+  </li>
+  <li>ex: <code class="highlighter-rouge">lambda x: lambda: x</code>
+    <ul>
+      <li>Returns a function that returns a number</li>
+    </ul>
+  </li>
+  <li>ex: <code class="highlighter-rouge">lambda f: f(4)</code>
+    <ul>
+      <li>Use a function as a parameter</li>
+    </ul>
+  </li>
+  <li>Used with <code class="highlighter-rouge">filter()</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">pass</code></p>
+<ul>
+  <li>Doesn’t do anything. It’s a good placeholder
+    <ul>
+      <li>(; would throw a syntax error)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="file-io">File I/O</h2>
+<p>========</p>
+
+<ul>
+  <li>
+    <p>Open a file</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      f = open("filename.txt", "w")
+</code></pre></div>    </div>
+
+    <ul>
+      <li>Then you can f.write, f.close, f.read, etc</li>
+    </ul>
+  </li>
+  <li>Functions that can’t be directly invoked
+    <ul>
+      <li><code class="highlighter-rouge">__enter__()</code></li>
+      <li><code class="highlighter-rouge">__exit__()</code>
+        <ul>
+          <li>
+            <p>Automatically closes the file afterwards like .close()
+  ex:</p>
+
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      with open("filename", "w" as textfile:
+          textfile.write("Success")
+          &lt;read or write to file&gt;
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Attributes
+    <ul>
+      <li><code class="highlighter-rouge">closed</code>
+        <ul>
+          <li>Returns True if the file is closed (eg: with .close())</li>
+          <li>Returns False if otherwise</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Functions
+    <ul>
+      <li><code class="highlighter-rouge">open("filename.txt", "mode")</code>
+        <ul>
+          <li>“filename.txt” is the filename</li>
+          <li>“mode” -
+            <ul>
+              <li>“w” - write</li>
+              <li>“r” - read</li>
+              <li>“r+” - read and write</li>
+              <li>“a” - append to the end of the file</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.close()</code>
+        <ul>
+          <li>Must be done or else text won’t be written properly</li>
+          <li>nd you can’t read until you’re “done” writing</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.read()</code>
+        <ul>
+          <li>Returns literally the whole text file lmao</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.readline()</code>
+        <ul>
+          <li>Returns a line from the file, including the newline</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.write(str)</code>
+        <ul>
+          <li>MUST BE A STRING (use <code class="highlighter-rouge">str()</code>)</li>
+          <li>Does not add newlines (“\n”); must do it yourself</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="multiprocessing">Multiprocessing</h2>
+<p>==============</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">multiprocessing.Queue</code></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &gt;&gt;&gt; q = Queue()
+  &gt;&gt;&gt; q.put('something')
+  &gt;&gt;&gt; q.get()
+  'something'
+  &gt;&gt;&gt; q.get() --&gt; blocks and waits forever
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="built-in-functions">Built-in Functions</h2>
+<p>==================</p>
+
+<p><code class="highlighter-rouge">abs(var)</code></p>
+<ul>
+  <li>Returns abs value of number</li>
+  <li>Only takes one number</li>
+</ul>
+
+<p><code class="highlighter-rouge">dir([obj])</code></p>
+<ul>
+  <li>Returns obj’s list of attributes</li>
+  <li>If no obj parameter - returns list of names in current local scope</li>
+  <li>ex: <code class="highlighter-rouge">import math</code> -&gt; <code class="highlighter-rouge">dir(math)</code> is list of vars/funcs in math module</li>
+  <li>Can print dir(obj) to get all attributes</li>
+</ul>
+
+<p><code class="highlighter-rouge">enumerate(list)</code></p>
+<ul>
+  <li>“supplies a corresponding index to each element in the list that you pass it”</li>
+  <li>Good for for loops</li>
+  <li>Get an index while still using a for-each loop</li>
+</ul>
+
+<p><code class="highlighter-rouge">filter(function, list)</code></p>
+<ul>
+  <li>Returns list of elements in list that return True when passed through function</li>
+  <li>function- can be made anonymously with lambda keyword</li>
+</ul>
+
+<p><code class="highlighter-rouge">id(var)</code></p>
+<ul>
+  <li>returns memory address of var</li>
+  <li><code class="highlighter-rouge">id(var1) == id(var2)</code> to see if both point to same object</li>
+</ul>
+
+<p><code class="highlighter-rouge">max(var)</code></p>
+<ul>
+  <li>Returns max value of var</li>
+  <li>See <code class="highlighter-rouge">min(var)</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">min(var)</code></p>
+<ul>
+  <li>Returns minimum value of var
+    <ul>
+      <li>its value if it’s one number</li>
+      <li>the lowest in the iterable if it is one</li>
+    </ul>
+  </li>
+  <li>Best to use it with integers and floats only (not strings)</li>
+  <li>Takes any number of arguments</li>
+</ul>
+
+<p><code class="highlighter-rouge">range(stop)</code></p>
+<ul>
+  <li>Returns list with numbers 0 to stop - 1</li>
+</ul>
+
+<p><code class="highlighter-rouge">range(start, stop)</code></p>
+<ul>
+  <li>Returns list with numbers start to stop - 1</li>
+</ul>
+
+<p><code class="highlighter-rouge">range(start, stop, step)</code></p>
+<ul>
+  <li>Returns list with numbers start to stop - step with step step :P</li>
+</ul>
+
+<p><code class="highlighter-rouge">reversed(str)</code></p>
+<ul>
+  <li>Returns the string with characters in reverse order</li>
+</ul>
+
+<p><code class="highlighter-rouge">str(obj)</code></p>
+<ul>
+  <li>Returns a string containing a nicely printable version of the object</li>
+  <li>Think of toString() from Java</li>
+</ul>
+
+<p><code class="highlighter-rouge">sum(list)</code></p>
+<ul>
+  <li>Returns the sum of the values in list</li>
+  <li>Only for numbers</li>
+</ul>
+
+<p><code class="highlighter-rouge">type(obj)</code></p>
+<ul>
+  <li>Returns type of obj</li>
+  <li>ex: <code class="highlighter-rouge">1 =&gt; &lt;type 'int'&gt;, 2.0 =&gt; &lt;type 'float'&gt;, "hi" =&gt; &lt;type 'str'&gt;</code></li>
+  <li>ex: <code class="highlighter-rouge">type(1.0) == float, type(1) == int</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">zip(list1, list2[, list3, list4, ...])</code></p>
+<ul>
+  <li>Gives pairs of items from each list. Good for for loops</li>
+  <li>Will stop with the shorter list</li>
+  <li>ex: <code class="highlighter-rouge">zip([1, 2, 3], [4, 5, 6]) == [(1, 4), (2, 5), (3, 6)]</code>
+    <ul>
+      <li>Access result with<code class="highlighter-rouge"> result[0][0] == 1</code></li>
+      <li>The () are tuples O:</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="cool-modules-like-libraries">Cool Modules (like libraries)</h2>
+<p>=============================</p>
+
+<ul>
+  <li>Generic import- <code class="highlighter-rouge">import &lt;module name&gt;</code>
+    <ul>
+      <li>Must use module.function_name() to use function</li>
+      <li>ex: import math</li>
+    </ul>
+  </li>
+  <li>Function import- <code class="highlighter-rouge">from &lt;module name&gt; import &lt;function/variable&gt;</code>
+    <ul>
+      <li>Imports only that function from module</li>
+      <li>Can use function_name to use function instead of module.function()</li>
+      <li>ex: import sqrt from math
+Universal <code class="highlighter-rouge">import- from &lt;module name&gt; import *</code></li>
+      <li>Imports all functions/variables from the module and don’t use module.function()</li>
+      <li>Makes code confusing b/c high possibility of conflicting names</li>
+    </ul>
+  </li>
+  <li>Use functions/variables from:
+    <ul>
+      <li><code class="highlighter-rouge">math</code>
+        <ul>
+          <li><code class="highlighter-rouge">sqrt(x)</code></li>
+          <li>returns square root of x</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">random</code>
+        <ul>
+          <li><code class="highlighter-rouge">randint(min, max)</code></li>
+          <li>generates random integer from min to max inclusive</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">from numpy import np</code>
+        <ul>
+          <li>good for vectors, matrices (2D arrays w/ extra features), and arrays (any dimension)</li>
+          <li>matrices can use * to multiply (not arrays)</li>
+          <li><code class="highlighter-rouge">arr[::3]</code> etc works</li>
+          <li><code class="highlighter-rouge">arr1 + arr2</code> is addition of elements and not concatenation (reg lists)</li>
+          <li><code class="highlighter-rouge">.arange(start,end,step)</code>
+            <ul>
+              <li>Returns NumPy array with numbers step away from each other from start to end exclusive</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.zeros([num_rows, num_cols])</code>
+            <ul>
+              <li>Returns NumPy array that contains all 0s</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.eye(n)</code>
+            <ul>
+              <li>Returns identity NumPy array with n rows and n cols</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.empty([m,n], dtype=np.int)</code>
+            <ul>
+              <li>Returns empty m x n NumPy array with datatype int inside</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.matrix([[a11, a12], [a21, a22]])</code>
+            <ul>
+              <li>Returns matrix with initial values</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.linspace(start, stop, num_divisions)</code>
+            <ul>
+              <li>Returns NumPy array that has num_division numbers from start to stop equally spaced</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.concatenate([arr1, arr2, ...], axis)</code>
+            <ul>
+              <li>Returns concatenation of arrays</li>
+              <li>axis
+                <ul>
+                  <li>= 0 =&gt; stack vertically (1 ontop of another)</li>
+                  <li>= 1 =&gt; stack horizontally</li>
+                </ul>
+              </li>
+              <li>or np.vstack([arr1, arr2]) and np.hstack([arr1, arr2])</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">.flatten()</code>
+            <ul>
+              <li>Returns array in one dimension</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">.reshape([m, n, ...])</code>
+            <ul>
+              <li>Returns array with that many rows/columns/any other dimension</li>
+              <li>To get a 1D vector, just put a number inside</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.transpose(arr)</code>
+            <ul>
+              <li>Returns transpose of arr</li>
+              <li>Also: <code class="highlighter-rouge">mat.T</code></li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.linalg.inv(arr)</code>
+  Returns inverse of arr</li>
+          <li><code class="highlighter-rouge">np.linalg.solve(a, b)</code>
+            <ul>
+              <li>solves <code class="highlighter-rouge">Ax = b</code>. And returns as an array</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.dot(arr1, arr2)</code>
+            <ul>
+              <li>Returns the result of matrix multiplication btwn arr1 and arr2</li>
+              <li>Order matters</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.floor(num)</code></li>
+          <li><code class="highlighter-rouge">np.ceil(num)</code></li>
+          <li><code class="highlighter-rouge">np.max(arr)</code>
+            <ul>
+              <li>Returns max in an array</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.min(arr)</code></li>
+          <li><code class="highlighter-rouge">np.argmax(arr)</code>
+            <ul>
+              <li>Returns index of max in an array</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.argmin(arr)</code></li>
+          <li><code class="highlighter-rouge">np.multiply(a, b)</code>
+            <ul>
+              <li>Returns the multiplication of a and b element-wise
+  <code class="highlighter-rouge">- np.roll(arr, num_cells_to_roll, axis)</code></li>
+              <li>Shifts cells and puts the excess on the other side
+  vNo need axis arg for 1D array</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.diagonal(arr)</code>
+            <ul>
+              <li>Return diagonal elements of arr in another arr</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">argparse</code>
+        <ul>
+          <li><code class="highlighter-rouge">.ArgumentParser(description="desc")</code>
+            <ul>
+              <li>creates parser that you can do:</li>
+              <li><code class="highlighter-rouge">.add_argument("--parsed_name?", "-shortname", action='store_true',help="Runs strategy experiments")</code></li>
+              <li><code class="highlighter-rouge">.parse_args()</code>
+                <ul>
+                  <li>Returns parsed arguments in a… struct?</li>
+                  <li><code class="highlighter-rouge">args.parsed_name</code>
+                    <ul>
+                      <li>Boolean.
+                        <ul>
+                          <li><code class="highlighter-rouge">True</code>- was included when running the file</li>
+                          <li><code class="highlighter-rouge">False</code>- not included when running the file</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+         </div>
+
+         
+<div class="tags">
+    Tags:
+   
+    <span class="tag"><a href="/coding_notes">coding_notes</a></span>
+   
+</div>
+
+
+
+       </article>
+   
+
+    <!-- Pagination links -->
+    <div class="pagination">
+      
+      <a href="/blog/page2/" class="older">&larr; Older Posts</a>
+      
+
+      
+    </div>
+   </div>
+
+   	 <div class="sidebar col-sm-4">
+	   <h1>Recent Posts</h1>
+
+	   <ul>
+	     
+	     <li><a href="/how_to_matlab/">How to MATLAB</a></li>
+	     
+	     <li><a href="/how_to_java/">How to Java (APCS level)</a></li>
+	     
+	     <li><a href="/how_to_c/">How to C</a></li>
+	     
+	     <li><a href="/how_to_javascript/">How to Javascript</a></li>
+	     
+	     <li><a href="/how_to_python/">How to Python</a></li>
+	     
+	   </ul>
+	   <ul>
+		   <li><a href="/archive/index">...see all</a></li>
+	   </ul>
+
+	   <!-- <h1>Most Popular</h1>
+	   <ul>
+	     
+	   </ul> -->
+
+	   <h1>Topics</h1>
+	   <ul>
+	     
+	     
+	     
+	     
+	     <li><a href="/tag/coding_notes">coding_notes</a> (8)</li>
+	     
+	     
+	   </ul>
+
+	 </div>
+
+
+  </div>
+</div>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="footer">
+          
+<a href="mailto:jennyw2@andrew.cmu.edu"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/himty"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/jenny-w-657731132"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+
+<a href="http://stackoverflow.com/users/5901346/himty"><i class="svg-icon stackoverflow"></i></a>
+
+
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'G-KD8WS8KY23', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/blog/',
+		  'title': ''
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+    <script>
+      renderMathInElement(document.body);
+    </script>
+  </body>
+</html>

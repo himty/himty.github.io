@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How to Python – Jenny Wang – research profile</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Weird things compared to Java
+============
+
+  Passes lists to functions as references
+    
+      list[1] = 2 actually changes data in list
+    
+  
+  No semicolon (;)
+  Tabs/spaces are necessary
+  Print does everything
+  Arrays replaced by lists
+  Comments are # (not //)
+  No main method (type everything together: global vars, functions, statements)
+    
+      runs top to bottom (like javascript)
+    
+  
+  ”” same as ‘’ (aka strings)
+  booleans’ values are 0 or 1 (more below)
+  &amp;&amp;, ||, and ! are written as and, or, and not
+  True and False are capitalized
+  No variable type declaration (ex: var, int, double)
+  “To the power of” is ** 
+    
+      ex: 2 ** 4 == 16
+    
+  
+  == works for strings
+  Multiline comments use triple quotes “””
+    
+      ex:
+    
+  
+
+
+" />
+    <meta property="og:description" content="Weird things compared to Java
+============
+
+  Passes lists to functions as references
+    
+      list[1] = 2 actually changes data in list
+    
+  
+  No semicolon (;)
+  Tabs/spaces are necessary
+  Print does everything
+  Arrays replaced by lists
+  Comments are # (not //)
+  No main method (type everything together: global vars, functions, statements)
+    
+      runs top to bottom (like javascript)
+    
+  
+  ”” same as ‘’ (aka strings)
+  booleans’ values are 0 or 1 (more below)
+  &amp;&amp;, ||, and ! are written as and, or, and not
+  True and False are capitalized
+  No variable type declaration (ex: var, int, double)
+  “To the power of” is ** 
+    
+      ex: 2 ** 4 == 16
+    
+  
+  == works for strings
+  Multiline comments use triple quotes “””
+    
+      ex:
+    
+  
+
+
+" />
+    
+    <meta name="author" content="Jenny Wang" />
+
+    
+    <meta property="og:title" content="How to Python" />
+    <meta property="twitter:title" content="How to Python" />
+    
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:normal,b,i,bi" rel="stylesheet">
+    <script src="https://use.fontawesome.com/60beeb5aee.js" type="text/javascript"></script>
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" id="avadaredux-google-fonts-avada_theme_options-css" href="https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700italic%2C700%7CPT+Serif%3A400&amp;subset=latin" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Jenny Wang - research profile" href="/feed.xml" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/contrib/auto-render.min.js" integrity="sha384-IiI65aU9ZYub2MY9zhtKd1H2ps7xxf+eb2YFG9lX6uRqpXCvBTOidPRCXCrQ++Uc" crossorigin="anonymous"></script>
+    
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"  />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://avatars.githubusercontent.com/u/9757649?v=4" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Jenny Wang</a></h1>
+            <p class="site-description">research profile</p>
+          </div>
+
+          <nav>
+            <!-- <a href="/archive">Archive</a> -->
+            <a href="/">Home</a>
+            <a href="/blog">Blog</a>
+            <a href="/cv">CV</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <div class="row">
+<div class="col-sm-8">
+
+<article class="post">
+  <h1>How to Python</h1>
+
+  <div class="author">
+    <div>By Jenny Wang on October  6, 2018</div>
+    
+        <div style="font-style: italic;">~10 min. read</div>
+    
+</div>
+
+
+
+  <div class="content">
+  <h2 id="weird-things-compared-to-java">Weird things compared to Java</h2>
+<p>============</p>
+<ul>
+  <li>Passes lists to functions as references
+    <ul>
+      <li><code class="highlighter-rouge">list[1] = 2</code> actually changes data in list</li>
+    </ul>
+  </li>
+  <li>No semicolon (;)</li>
+  <li>Tabs/spaces are necessary</li>
+  <li>Print does everything</li>
+  <li>Arrays replaced by lists</li>
+  <li>Comments are # (not //)</li>
+  <li>No main method (type everything together: global vars, functions, statements)
+    <ul>
+      <li>runs top to bottom (like javascript)</li>
+    </ul>
+  </li>
+  <li>”” same as ‘’ (aka strings)</li>
+  <li>booleans’ values are 0 or 1 (more below)</li>
+  <li>&amp;&amp;, ||, and ! are written as and, or, and not</li>
+  <li>True and False are capitalized</li>
+  <li>No variable type declaration (ex: var, int, double)</li>
+  <li>“To the power of” is <code class="highlighter-rouge">** </code>
+    <ul>
+      <li>ex: <code class="highlighter-rouge">2 ** 4 == 16</code></li>
+    </ul>
+  </li>
+  <li>== works for strings</li>
+  <li>Multiline comments use triple quotes “””
+    <ul>
+      <li>
+        <p>ex:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  """I am a comment
+  that can span
+  multiple lines"""
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Continuation character \
+    <ul>
+      <li>Signifies that the next line is a part of the line above</li>
+      <li>
+        <p>ex:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var this = \
+  some_value
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Functional programming allowed (Use lambda keyword)
+    <ul>
+      <li>Can pass functions as variables</li>
+    </ul>
+  </li>
+  <li>Define multiple variables on one line
+    <ul>
+      <li>
+        <p>ex:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var1, var2, var3 = val1, val2, val3
+</code></pre></div>        </div>
+
+        <ul>
+          <li>Must have one value per variable</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Number is True if it isn’t 0 (if you’re not doing ==, but like if or while or smth)
+  None would be False
+  Returns the second to last # if the last # throws an error (ex: 1/0)</li>
+</ul>
+
+<h2 id="terms">Terms</h2>
+<p>======</p>
+
+<p><code class="highlighter-rouge">docstring</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    '''Comment'''
+</code></pre></div></div>
+
+<ul>
+  <li>Describes something</li>
+</ul>
+
+<p><code class="highlighter-rouge">doctest</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    &gt;&gt;&gt; print("Test")
+    Test
+</code></pre></div></div>
+
+<ul>
+  <li>shows that this is how to use the function</li>
+  <li>can do python3 -m doctest <filename> to test it.
+</filename>    <ul>
+      <li>Prints out errors if output isn’t the same as expected</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="operators">Operators</h2>
+<p>=========</p>
+
+<p><code class="highlighter-rouge">7 / 2</code></p>
+<ul>
+  <li>div</li>
+  <li>Returns decimal representation of result</li>
+</ul>
+
+<p><code class="highlighter-rouge">7 // 2</code></p>
+<ul>
+  <li>floordiv</li>
+  <li>Returns the rounded down integer of the result</li>
+</ul>
+
+<h2 id="booleans">booleans</h2>
+<p>=========</p>
+
+<p><code class="highlighter-rouge">True</code>, <code class="highlighter-rouge">False</code></p>
+<ul>
+  <li>can be evaluated to 1 or 0
+    <ul>
+      <li>
+        <p>ex:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  points = isHit*pointsHit + (1-isHit)*pointsMiss
+</code></pre></div>        </div>
+
+        <ul>
+          <li>gives points correctly</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">not</code> applies to the next boolean</p>
+<ul>
+  <li>ex: <code class="highlighter-rouge">not 3 == 2</code> is <code class="highlighter-rouge">True</code></li>
+</ul>
+
+<h2 id="for-loops">for loops</h2>
+<p>=========</p>
+
+<p><code class="highlighter-rouge">for i in range(&lt;number&gt;):</code>
+    does it <code class="highlighter-rouge">&lt;number&gt;</code> times
+    consider <code class="highlighter-rouge">&lt;number&gt; = len(myList)</code></p>
+
+<p><code class="highlighter-rouge">for i in range(minIndex, maxIndex):</code></p>
+<ul>
+  <li>i is from [minIndex, maxIndex)
+    <ul>
+      <li>Note the inclusive [ and exclusive )</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">for elm in myList:</code></p>
+<ul>
+  <li>like a for-each loop in Java</li>
+  <li>elm is an element in myList</li>
+</ul>
+
+<p><code class="highlighter-rouge">for key in myDictionary:</code></p>
+<ul>
+  <li>like for-each</li>
+  <li>get the value by doing myDictionary[key]</li>
+  <li>Keys are used in reverse-alphabetical order (z to a)
+    <ul>
+      <li>not necessarily in the order they were initialized to</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">for char in "string":</code></p>
+<ul>
+  <li>for each character in the string</li>
+  <li>because strings are lists</li>
+</ul>
+
+<p><code class="highlighter-rouge">for index, item in enumerate(list):</code></p>
+<ul>
+  <li>index is the index of item in the list</li>
+  <li>item is the next item</li>
+  <li>A magical for-each loop with indices too</li>
+</ul>
+
+<p><code class="highlighter-rouge">for a, b in zip(listA, listB):</code></p>
+<ul>
+  <li>Gives items in pairs. Will stop at the end of the shorter list</li>
+  <li>a is the nth item in listA</li>
+  <li>b is the nth item in listB</li>
+  <li>Can do this for as many lists as you want</li>
+</ul>
+
+<p><code class="highlighter-rouge">for x in set(lst_a).intersection(lst_b):</code></p>
+<ul>
+  <li>Gives x if x is both in lst_a and lst_b</li>
+</ul>
+
+<p><code class="highlighter-rouge">for x in set(lst_a).difference(lst_b):</code></p>
+<ul>
+  <li>Gives x if x is in lst_a but not in lst_b</li>
+</ul>
+
+<h2 id="if-statements">if statements</h2>
+<p>=============</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if &lt;expression&gt;:
+    &lt;do something&gt;
+elif &lt;expression&gt;:
+    &lt;do something&gt;
+else:
+    &lt;do something else&gt;
+&lt;I'm out of the if statement!&gt;
+</code></pre></div></div>
+
+<h2 id="functions">Functions</h2>
+<p>==========</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def funcName(parameters):
+    &lt;"fuction docstring"&gt; # Basically a comment to document the code
+    &lt;do something&gt;
+    &lt;return [expression]&gt;
+     ^^^
+    &lt;"function docstring"&gt;- optional statement to document the function
+    &lt;do something&gt;- the code block
+    &lt;return [expression]&gt;- the return statement (optional)
+                 - no return statement = return None
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">*args</code></p>
+<ul>
+  <li>ex: <code class="highlighter-rouge">f(*args)</code>
+    <ul>
+      <li>function takes in an arbitrary number of arguments</li>
+    </ul>
+  </li>
+  <li>
+    <p>ex: run a generic function multiple times:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  def make_avg_f(fn, num_times):
+      def avg_f(*args):
+          return avg(f(*args))
+      return avg_f
+  &gt;&gt;&gt; avg_f = make_avg_f(foo, 1000)
+  &gt;&gt;&gt; avg_f(foo_arg1, foo_arg2)
+  100342342348729
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="classes">Classes</h2>
+<p>========</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ClassName([BaseClass])
+    member_var = True
+
+    def __init__(self[, init_parameter, more, etc, ...]):
+        self.init_parameter = init_parameter
+    
+    def other_method(self[, other_parameter, more, etc, ...]):
+        &lt;do something&gt;
+</code></pre></div></div>
+
+<ul>
+  <li><code class="highlighter-rouge">BaseClass</code> - think about superclasses
+    <ul>
+      <li>If it’s not given, BaseClass defaults to object</li>
+      <li>Override methods by just making a new one with the same name/parameters</li>
+      <li>Classes that override don’t need the <strong>init</strong>() method</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">__init__</code> must have at least one parameter
+    <ul>
+      <li>self will refer to the object being created</li>
+    </ul>
+  </li>
+  <li>In the example, .init_parameter is an attribute (no need for doing int attr, etc)
+    <ul>
+      <li>Access with my_square = Square() ==&gt; my_square.sides</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">init_parameter</code> is a member variable (not instance variable-to particular instances of the class)
+    <ul>
+      <li>only available to members of the ClassName class</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">member_var</code> can be accessed by all objects of the ClassName class
+    <ul>
+      <li>But changing the value of one instance with hippo.is_alive = False doesn’t
+        <ul>
+          <li>change the value of the other ex: cat.is_alive</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Use <code class="highlighter-rouge">self.var</code> to change any variables for that class’s instance</p>
+  </li>
+  <li>Methods - functions in a class
+    <ul>
+      <li>Must take self as first parameter</li>
+      <li>But when calling it, you don’t have to include self inside the ()</li>
+      <li>ex: temp = ClassName() ==&gt; temp.other_method()</li>
+    </ul>
+  </li>
+  <li>Call superclass’s methods
+    <ul>
+      <li>super(ChildClass’sName, self).super_method()</li>
+    </ul>
+  </li>
+  <li>Functions from object
+    <ul>
+      <li>.<strong>init</strong>(self[, other_parameters, etc, …])
+        <ul>
+          <li>Think of a constructor</li>
+        </ul>
+      </li>
+      <li>.<strong>repr</strong>(self)
+        <ul>
+          <li>Stands for representation</li>
+          <li>Tells Python how to represent the object, ex: when printing</li>
+          <li>ex: <code class="highlighter-rouge">def __repr__(self): return "hi"</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="lists">Lists</h2>
+<p>=======</p>
+
+<ul>
+  <li>ARRAYS DO NOT EXIST (but think of them). They are LISTS</li>
+  <li>Note the [] instead of the {} (dictionaries)</li>
+  <li>Use len(list) for number of items</li>
+</ul>
+
+<p><code class="highlighter-rouge">myList = []</code></p>
+<ul>
+  <li>make a list</li>
+  <li>put values in [] if you want to initialize w/ values
+    <ul>
+      <li>ex: <code class="highlighter-rouge">list = [2,3]</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">print myList</code></p>
+<ul>
+  <li>prints it in the format [value, value, value]</li>
+</ul>
+
+<p><code class="highlighter-rouge">myList[&lt;index or sublist&gt;]</code></p>
+<ul>
+  <li>index: the index from 0 to len(myList)</li>
+  <li>sublist: <startval>:<endval> (inclusive:exclusive)
+</endval></startval>    <ul>
+      <li>ex:
+        <ul>
+          <li><code class="highlighter-rouge">[3:5]</code> gives list with elements 3 and 4</li>
+          <li><code class="highlighter-rouge">[:5]</code> gives list w/ elements up until 4 (no 5)</li>
+          <li><code class="highlighter-rouge">[3:]</code> gives list w/ elements 3 up until the end</li>
+          <li><code class="highlighter-rouge">[:]</code> gives entire list</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>ex: <code class="highlighter-rouge">myList[0:2] = [0,1]</code>
+    <ul>
+      <li>AMAZING</li>
+      <li>array size on left doesn’t have to equal size on right. simply replaces. AMAZING</li>
+    </ul>
+  </li>
+  <li>List comprehension for new lists
+    <ul>
+      <li>
+        <p>Initialize a fancy list</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  [&lt;var and expression] &lt;for loop&gt; [&lt;if statement&gt;]]
+</code></pre></div>        </div>
+
+        <ul>
+          <li>ex: <code class="highlighter-rouge">list = [i for i in range(10)]</code>
+            <ul>
+              <li>numbers 0 to 9 inclusive</li>
+            </ul>
+          </li>
+          <li>ex: <code class="highlighter-rouge">list = [i * 2 for i in range(10)]</code>
+            <ul>
+              <li>even numbers 0 to 18 inclusive</li>
+            </ul>
+          </li>
+          <li>ex: <code class="highlighter-rouge">list = [i for i in range(51) if i % 2 == 0]</code>
+            <ul>
+              <li>even numbers 0 to 50 inclusive</li>
+            </ul>
+          </li>
+          <li>ex: <code class="highlighter-rouge">list = [x*2 for x in range(6) if (x*2) % 3 == 0]</code>
+            <ul>
+              <li>Even numbers that are divisible by 3 from 0 to 5 inclusive
+                <ul>
+                  <li>So [6] (which is 3 * 2)</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Also a good counter
+            <ul>
+              <li>ex: <code class="highlighter-rouge">list = ["C" for x in range(5) if x &lt; 3]</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Concatenate lists with +
+    <ul>
+      <li>ex: <code class="highlighter-rouge">x = [1,2], y=[2,3] =&gt; x + y = [1, 2, 2, 3]</code></li>
+    </ul>
+  </li>
+  <li>Create list with repeating values
+    <ul>
+      <li>ex: <code class="highlighter-rouge">[0] * 5 == [0, 0, 0, 0, 0]</code></li>
+      <li>ex: <code class="highlighter-rouge">[0] * 2 * 2 == [0, 0, 0, 0] (not two lists inside a list)</code>
+        <ul>
+          <li>Use .append() instead</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>To print without [] brackets
+      <code class="highlighter-rouge">list = [1, 2, 3] ==&gt; " ".join(list) ==&gt; "1 2 3"</code></p>
+  </li>
+  <li>functions
+    <ul>
+      <li><code class="highlighter-rouge">.append(val)</code>
+        <ul>
+          <li>Add val into the last slot of the array</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.count(val)</code>
+        <ul>
+          <li>Returns int of the # of occurances of val in the list</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.index(val)</code>
+        <ul>
+          <li>returns index of val in the list</li>
+          <li>BEWARE: throws ValueError if m isn’t in the list</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.insert(index, item)</code>
+      - inserts item at index (or the end of the list)
+      - ex: insert at 100 then .index =&gt; at len(list)</li>
+      <li><code class="highlighter-rouge">.pop(index)</code>
+        <ul>
+          <li>Removes item at index and returns it</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.remove(value)</code>
+        <ul>
+          <li>removes first item in the list that matches the value</li>
+          <li>NOTE: NOT THE INDEX</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.sort(reverse=bool, key=func)</code>
+        <ul>
+          <li>sorts items in the list (ex: alphabetical, smallest to largest)</li>
+          <li>modifies the list and doesn’t return a new one</li>
+          <li>reverse=True =&gt; descending order. Else or not included, ascending order</li>
+          <li>key=func =&gt; applied to the element before sorting
+            <ul>
+              <li>ex: <code class="highlighter-rouge">lambda pair: pair[0]</code> to sort by the zeroth element of the objects</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">del(list[index])</code>
+        <ul>
+          <li>Removes the item at index and won’t return it</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">sum(myList)</code>
+        <ul>
+          <li>returns sum of all elements in p</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="dictionaries">Dictionaries</h2>
+<p>============</p>
+
+<ul>
+  <li>Note the {} instead of the [] (lists)</li>
+  <li>Think of structs</li>
+  <li>Access values by looking up a key</li>
+  <li>Can put list in dictionaries O:</li>
+  <li>
+    <p>ex:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  names = {"dog":"Spike", "cat":"Fluffy", "bird":"Sugar"}
+  names["dog"] == "Spike"
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>ex:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  residents = {1:"Bob", 2:"Joe", 3:"What are more names"}
+  residents[1] == "Bob"
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>ex:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  dict = {} # Empty dictionary
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>ex:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  dict["new key"] = new_value
+  adds a new key-value pair to the dictionary
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>ex:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  dict["old key"] = new_value
+  changes the value associated with the key
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">del dict[key_name]</code></p>
+<ul>
+  <li>
+    <p>removes key_name and its associated value from the dictionary</p>
+  </li>
+  <li>
+    <p>Functions</p>
+
+    <p><code class="highlighter-rouge">.items()</code></p>
+    <ul>
+      <li>Returns a list of tuples of key-value pairs in the dictionary in no particular order
+        <ul>
+          <li>Tuple = group (a key/value pair in this case)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><code class="highlighter-rouge">.keys()</code></p>
+    <ul>
+      <li>Returns list of keys of the dictionary in no particular order
+  <code class="highlighter-rouge">.values()</code></li>
+      <li>Returns  list of the dictionary’s values in no particular order</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">defaultdict(default_value)</code></p>
+<ul>
+  <li>high performance container datatype that gives default_value if that key isn’t found</li>
+</ul>
+
+<h2 id="tuple">Tuple</h2>
+<p>======</p>
+
+<ul>
+  <li>An immutable list (unchangeable)</li>
+  <li>Surrounded by ()s and can contain any data type</li>
+</ul>
+
+<h2 id="data-structures">Data structures</h2>
+<p>===============</p>
+
+<ul>
+  <li>Contained within collections</li>
+  <li>deque(iter_for_init[, maxlen]) (“DEHK” pronounciation)
+    <ul>
+      <li>Double-sided queue</li>
+      <li><code class="highlighter-rouge">append(x)</code>, <code class="highlighter-rouge">appendleft(x)</code>, <code class="highlighter-rouge">extend(iter)</code>, <code class="highlighter-rouge">extendleft(iter)</code>, <code class="highlighter-rouge">pop()</code>, <code class="highlighter-rouge">popleft()</code></li>
+      <li><code class="highlighter-rouge">remove(val)</code>, <code class="highlighter-rouge">reverse()</code>, <code class="highlighter-rouge">clear()</code></li>
+      <li><code class="highlighter-rouge">count(x)</code> - returns # of deque elements equal to x</li>
+      <li><code class="highlighter-rouge">rotate(n=1)</code> shift in circular way to the right</li>
+      <li><code class="highlighter-rouge">maxlen</code> - max length of the deque (corresponding # of items discarded as added if length &gt; maxlen)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="bitwise-operators">Bitwise operators</h2>
+<p>=================</p>
+
+<ul>
+  <li>Operators
+    <ul>
+      <li><code class="highlighter-rouge">&gt;&gt;</code> - Right shift
+        <ul>
+          <li>“divide by 2 and round down”</li>
+          <li>Good for making a mask while not writing all the digits</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">&lt;&lt;</code> - Left shift
+        <ul>
+          <li>“multiply by 2”</li>
+          <li>Good for making a mask while not writing all the digits</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">&amp;</code>  - Bitwise AND
+        <ul>
+          <li>“determine if a bit is on”</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">|</code>  - Bitwise OR
+        <ul>
+          <li>“turn a bit on if it’s off and leave the rest on”</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">^</code>  - Bitwise XOR
+        <ul>
+          <li>“flips a bit wherever there’s a 1 in the mask”</li>
+          <li>ex: <code class="highlighter-rouge">0b0110 ^ 0b1101 = 0b1011</code></li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">~</code>  - Bitwise NOT
+        <ul>
+          <li>Equivalent to adding 1 to the number and making it negative</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>ex: flip nth bit</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  num = num ^ 0b1 &lt;&lt; (n - 1)
+</code></pre></div>    </div>
+  </li>
+  <li>Denoting bases
+    <ul>
+      <li>base 2 - <code class="highlighter-rouge">0b&lt;number&gt;</code></li>
+      <li>base 8 - <code class="highlighter-rouge">0o&lt;number&gt;</code></li>
+      <li>base 16 - <code class="highlighter-rouge">0x&lt;number&gt;</code></li>
+    </ul>
+  </li>
+  <li>Helpful functions
+    <ul>
+      <li><code class="highlighter-rouge">bin(num)</code>
+        <ul>
+          <li>Returns binary representaion of num as a STRING</li>
+          <li>Can input binary, decimal, hex, etc (not string)</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">hex(num)</code>
+        <ul>
+          <li>Returns hexadecimal representation of num as a STRING</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">oct(num)</code>
+        <ul>
+          <li>Returns octadecimal representation of num as a STRING</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">int(&lt;num as another type&gt;[, baseTheNumCurrentlyIsIn])</code>
+        <ul>
+          <li>Normally converts the num as another type to an integer</li>
+          <li>If num is a string, the optional parameter converts it to decimal (int)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="strings">Strings</h2>
+<p>========</p>
+
+<h3 id="note-the-prescence-and-lack-of--before-the-function-name">***NOTE THE PRESCENCE AND LACK OF . BEFORE THE FUNCTION NAME***</h3>
+<p><code class="highlighter-rouge">s[index]</code></p>
+<ul>
+  <li>returns char at index</li>
+</ul>
+
+<p><code class="highlighter-rouge">s[start:end:stride]</code></p>
+<ul>
+  <li>Returns substring from [start,end) with the step stride</li>
+  <li>Note that both start and end are optional</li>
+  <li>stride - like a step</li>
+</ul>
+
+<p><br /></p>
+
+<ul>
+  <li>To reverse a string
+    <ul>
+      <li><code class="highlighter-rouge">s[::-1]</code> or <code class="highlighter-rouge">reversed(s)</code></li>
+    </ul>
+  </li>
+  <li>String Encoding declarations- <code class="highlighter-rouge">'str'</code>, <code class="highlighter-rouge">u'str'</code>, <code class="highlighter-rouge">r'str'</code>
+    <ul>
+      <li>Are equivalent. They’re strings represented in different ways</li>
+      <li>u =&gt; Unicode</li>
+      <li>r =&gt; Raw</li>
+      <li>Convert among them with raw(str), unicode(str), str(str)</li>
+    </ul>
+  </li>
+  <li>To remove a character
+  ex: <code class="highlighter-rouge">s = s[:3] + s[4:]</code>
+  ex: <code class="highlighter-rouge">s = s.replace("old", "")</code></li>
+  <li>Functions
+    <ul>
+      <li><code class="highlighter-rouge">ord(char)</code>
+        <ul>
+          <li>returns ASCII code of that character</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">chr(&lt;ascii code&gt;)</code>
+        <ul>
+          <li>returns character represented by that ASCII code</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">len("string")</code>
+        <ul>
+          <li>returns length of string</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">len(string)</code>
+        <ul>
+          <li>returns length of string</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">max(string)</code>
+        <ul>
+          <li>returns character w/ highest ASCII value in that string</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">min(string)</code>
+        <ul>
+          <li>returns character w/ lowest ASCII value in that string</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">str1 in str2</code>
+        <ul>
+          <li>returns whether str1 appears in str2
+            <ul>
+              <li>^^ boolean True/False O.o</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">str1 &lt;string comparison&gt; str2</code>
+        <ul>
+          <li><code class="highlighter-rouge">&gt;</code>,<code class="highlighter-rouge"> &lt;</code>, <code class="highlighter-rouge">&lt;=</code>, <code class="highlighter-rouge">&gt;=</code>    compares ASCII values</li>
+          <li><code class="highlighter-rouge">==</code>, <code class="highlighter-rouge">!=</code>      check by value (not memory location)</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">isalnum(str)</code>
+        <ul>
+          <li>returns if the string is alphanumeric</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">isalpha(str)</code>
+        <ul>
+          <li>returns True if string contains only alphabets</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">isdigit(str)</code>
+        <ul>
+          <li>returns <code class="highlighter-rouge">True</code> if string contains only digits</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">isidentifier(str)</code>
+        <ul>
+          <li>return <code class="highlighter-rouge">True</code> is string is valid identifier</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">isspace(str)</code>
+        <ul>
+          <li>returns <code class="highlighter-rouge">True</code> if string contains only whitespace</li>
+          <li>includes <code class="highlighter-rouge">"\t"</code>, <code class="highlighter-rouge">"\n"</code>, etc</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">endswith(s1: str)</code>
+        <ul>
+          <li>returns <code class="highlighter-rouge">True</code> if strings ends with substring s1</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">startswith(s1: str)</code>
+        <ul>
+          <li>returns <code class="highlighter-rouge">True</code> if strings starts with substring s1</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">count(substring)</code>
+        <ul>
+          <li>returns number of occurrences of substring the string</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.find(s1)</code>
+        <ul>
+          <li>returns lowest index from where s1 starts in the string, if string not found returns -1</li>
+          <li>INDEXOF()! My love!</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.rfind(s1)</code>
+        <ul>
+          <li>returns highest index from where s1 starts in the string, if string not found returns -1</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.lower()</code>
+        <ul>
+          <li>return string by converting every character to lowercase</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.upper()</code>
+  return string by converting every character to uppercase</li>
+      <li><code class="highlighter-rouge">.split("str")</code>
+        <ul>
+          <li>Returns a list that has elements separated by str</li>
+          <li>The “str” is removed</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.replace(oldStr, newStr[, numTimes])</code>
+        <ul>
+          <li>No numTimes - returns str with every occurrence of old string replaced with new string</li>
+          <li>numTimes - Number of oldStrs to be replaced at maximum</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="console-functions">Console Functions</h2>
+<p>==============</p>
+
+<p><code class="highlighter-rouge">touch &lt;filename.txt&gt;</code></p>
+<ul>
+  <li>Creates filename.txt in the current directory</li>
+</ul>
+
+<p><code class="highlighter-rouge">print var1[, var2, var3, ...]</code></p>
+<ul>
+  <li>ex: print p</li>
+  <li>print out to console</li>
+  <li>if variable is an array, prints like [0.1, 0.2] (array elements)</li>
+  <li>NOTE: print (with nothing afterwards) prints an empty line</li>
+  <li>**Putting multiple variables seperated by commas seperates them by a space</li>
+  <li>**print var, means that the next print statement will print on the same line</li>
+</ul>
+
+<p><code class="highlighter-rouge">print("Number: %d, String: %s") % (my_num, my_str)</code></p>
+<ul>
+  <li>prints the string with %d’s, %s’s, etc replaced by the nth variable in ()</li>
+</ul>
+
+<p><code class="highlighter-rouge">print(var[, end="string"])</code></p>
+<ul>
+  <li>prints the variable</li>
+  <li>end- prints “string” after printing the var
+    <ul>
+      <li>default = “\n”</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">input("Question")</code></p>
+<ul>
+  <li>prints question to console and returns the string response</li>
+  <li>NOTE: Returns a string, so to compare numbers, do int(input)</li>
+</ul>
+
+<h2 id="keywords">Keywords</h2>
+<p>========</p>
+
+<p><code class="highlighter-rouge">break</code></p>
+<ul>
+  <li>exits the for loops</li>
+</ul>
+
+<p><code class="highlighter-rouge">in</code></p>
+<ul>
+  <li>Returns whether the var is in the list</li>
+  <li>ex: x in range(8) == true</li>
+  <li>ex: x not in range(8) == false</li>
+</ul>
+
+<p><code class="highlighter-rouge">lambda</code></p>
+<ul>
+  <li>Creates an anonymous function (define functions in-line)</li>
+  <li>Good for passing functions as parameters to functions</li>
+  <li><code class="highlighter-rouge">lambda &lt;parameters&gt;: &lt;return expression&gt;</code>
+    <ul>
+      <li>Don’t have to have a parameter but must have a return
+        <ul>
+          <li>ex: <code class="highlighter-rouge">(lambda: 3)() returns 3</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>ex: <code class="highlighter-rouge">foo(lambda x: x % 3 == 0)</code>
+    <ul>
+      <li><code class="highlighter-rouge">foo()</code> can use that function as a parameter (renamed in the foo())</li>
+    </ul>
+  </li>
+  <li>ex: <code class="highlighter-rouge">lambda x: lambda: x</code>
+    <ul>
+      <li>Returns a function that returns a number</li>
+    </ul>
+  </li>
+  <li>ex: <code class="highlighter-rouge">lambda f: f(4)</code>
+    <ul>
+      <li>Use a function as a parameter</li>
+    </ul>
+  </li>
+  <li>Used with <code class="highlighter-rouge">filter()</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">pass</code></p>
+<ul>
+  <li>Doesn’t do anything. It’s a good placeholder
+    <ul>
+      <li>(; would throw a syntax error)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="file-io">File I/O</h2>
+<p>========</p>
+
+<ul>
+  <li>
+    <p>Open a file</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      f = open("filename.txt", "w")
+</code></pre></div>    </div>
+
+    <ul>
+      <li>Then you can f.write, f.close, f.read, etc</li>
+    </ul>
+  </li>
+  <li>Functions that can’t be directly invoked
+    <ul>
+      <li><code class="highlighter-rouge">__enter__()</code></li>
+      <li><code class="highlighter-rouge">__exit__()</code>
+        <ul>
+          <li>
+            <p>Automatically closes the file afterwards like .close()
+  ex:</p>
+
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      with open("filename", "w" as textfile:
+          textfile.write("Success")
+          &lt;read or write to file&gt;
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Attributes
+    <ul>
+      <li><code class="highlighter-rouge">closed</code>
+        <ul>
+          <li>Returns True if the file is closed (eg: with .close())</li>
+          <li>Returns False if otherwise</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Functions
+    <ul>
+      <li><code class="highlighter-rouge">open("filename.txt", "mode")</code>
+        <ul>
+          <li>“filename.txt” is the filename</li>
+          <li>“mode” -
+            <ul>
+              <li>“w” - write</li>
+              <li>“r” - read</li>
+              <li>“r+” - read and write</li>
+              <li>“a” - append to the end of the file</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.close()</code>
+        <ul>
+          <li>Must be done or else text won’t be written properly</li>
+          <li>nd you can’t read until you’re “done” writing</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.read()</code>
+        <ul>
+          <li>Returns literally the whole text file lmao</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.readline()</code>
+        <ul>
+          <li>Returns a line from the file, including the newline</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">.write(str)</code>
+        <ul>
+          <li>MUST BE A STRING (use <code class="highlighter-rouge">str()</code>)</li>
+          <li>Does not add newlines (“\n”); must do it yourself</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="multiprocessing">Multiprocessing</h2>
+<p>==============</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">multiprocessing.Queue</code></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &gt;&gt;&gt; q = Queue()
+  &gt;&gt;&gt; q.put('something')
+  &gt;&gt;&gt; q.get()
+  'something'
+  &gt;&gt;&gt; q.get() --&gt; blocks and waits forever
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="built-in-functions">Built-in Functions</h2>
+<p>==================</p>
+
+<p><code class="highlighter-rouge">abs(var)</code></p>
+<ul>
+  <li>Returns abs value of number</li>
+  <li>Only takes one number</li>
+</ul>
+
+<p><code class="highlighter-rouge">dir([obj])</code></p>
+<ul>
+  <li>Returns obj’s list of attributes</li>
+  <li>If no obj parameter - returns list of names in current local scope</li>
+  <li>ex: <code class="highlighter-rouge">import math</code> -&gt; <code class="highlighter-rouge">dir(math)</code> is list of vars/funcs in math module</li>
+  <li>Can print dir(obj) to get all attributes</li>
+</ul>
+
+<p><code class="highlighter-rouge">enumerate(list)</code></p>
+<ul>
+  <li>“supplies a corresponding index to each element in the list that you pass it”</li>
+  <li>Good for for loops</li>
+  <li>Get an index while still using a for-each loop</li>
+</ul>
+
+<p><code class="highlighter-rouge">filter(function, list)</code></p>
+<ul>
+  <li>Returns list of elements in list that return True when passed through function</li>
+  <li>function- can be made anonymously with lambda keyword</li>
+</ul>
+
+<p><code class="highlighter-rouge">id(var)</code></p>
+<ul>
+  <li>returns memory address of var</li>
+  <li><code class="highlighter-rouge">id(var1) == id(var2)</code> to see if both point to same object</li>
+</ul>
+
+<p><code class="highlighter-rouge">max(var)</code></p>
+<ul>
+  <li>Returns max value of var</li>
+  <li>See <code class="highlighter-rouge">min(var)</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">min(var)</code></p>
+<ul>
+  <li>Returns minimum value of var
+    <ul>
+      <li>its value if it’s one number</li>
+      <li>the lowest in the iterable if it is one</li>
+    </ul>
+  </li>
+  <li>Best to use it with integers and floats only (not strings)</li>
+  <li>Takes any number of arguments</li>
+</ul>
+
+<p><code class="highlighter-rouge">range(stop)</code></p>
+<ul>
+  <li>Returns list with numbers 0 to stop - 1</li>
+</ul>
+
+<p><code class="highlighter-rouge">range(start, stop)</code></p>
+<ul>
+  <li>Returns list with numbers start to stop - 1</li>
+</ul>
+
+<p><code class="highlighter-rouge">range(start, stop, step)</code></p>
+<ul>
+  <li>Returns list with numbers start to stop - step with step step :P</li>
+</ul>
+
+<p><code class="highlighter-rouge">reversed(str)</code></p>
+<ul>
+  <li>Returns the string with characters in reverse order</li>
+</ul>
+
+<p><code class="highlighter-rouge">str(obj)</code></p>
+<ul>
+  <li>Returns a string containing a nicely printable version of the object</li>
+  <li>Think of toString() from Java</li>
+</ul>
+
+<p><code class="highlighter-rouge">sum(list)</code></p>
+<ul>
+  <li>Returns the sum of the values in list</li>
+  <li>Only for numbers</li>
+</ul>
+
+<p><code class="highlighter-rouge">type(obj)</code></p>
+<ul>
+  <li>Returns type of obj</li>
+  <li>ex: <code class="highlighter-rouge">1 =&gt; &lt;type 'int'&gt;, 2.0 =&gt; &lt;type 'float'&gt;, "hi" =&gt; &lt;type 'str'&gt;</code></li>
+  <li>ex: <code class="highlighter-rouge">type(1.0) == float, type(1) == int</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">zip(list1, list2[, list3, list4, ...])</code></p>
+<ul>
+  <li>Gives pairs of items from each list. Good for for loops</li>
+  <li>Will stop with the shorter list</li>
+  <li>ex: <code class="highlighter-rouge">zip([1, 2, 3], [4, 5, 6]) == [(1, 4), (2, 5), (3, 6)]</code>
+    <ul>
+      <li>Access result with<code class="highlighter-rouge"> result[0][0] == 1</code></li>
+      <li>The () are tuples O:</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="cool-modules-like-libraries">Cool Modules (like libraries)</h2>
+<p>=============================</p>
+
+<ul>
+  <li>Generic import- <code class="highlighter-rouge">import &lt;module name&gt;</code>
+    <ul>
+      <li>Must use module.function_name() to use function</li>
+      <li>ex: import math</li>
+    </ul>
+  </li>
+  <li>Function import- <code class="highlighter-rouge">from &lt;module name&gt; import &lt;function/variable&gt;</code>
+    <ul>
+      <li>Imports only that function from module</li>
+      <li>Can use function_name to use function instead of module.function()</li>
+      <li>ex: import sqrt from math
+Universal <code class="highlighter-rouge">import- from &lt;module name&gt; import *</code></li>
+      <li>Imports all functions/variables from the module and don’t use module.function()</li>
+      <li>Makes code confusing b/c high possibility of conflicting names</li>
+    </ul>
+  </li>
+  <li>Use functions/variables from:
+    <ul>
+      <li><code class="highlighter-rouge">math</code>
+        <ul>
+          <li><code class="highlighter-rouge">sqrt(x)</code></li>
+          <li>returns square root of x</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">random</code>
+        <ul>
+          <li><code class="highlighter-rouge">randint(min, max)</code></li>
+          <li>generates random integer from min to max inclusive</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">from numpy import np</code>
+        <ul>
+          <li>good for vectors, matrices (2D arrays w/ extra features), and arrays (any dimension)</li>
+          <li>matrices can use * to multiply (not arrays)</li>
+          <li><code class="highlighter-rouge">arr[::3]</code> etc works</li>
+          <li><code class="highlighter-rouge">arr1 + arr2</code> is addition of elements and not concatenation (reg lists)</li>
+          <li><code class="highlighter-rouge">.arange(start,end,step)</code>
+            <ul>
+              <li>Returns NumPy array with numbers step away from each other from start to end exclusive</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.zeros([num_rows, num_cols])</code>
+            <ul>
+              <li>Returns NumPy array that contains all 0s</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.eye(n)</code>
+            <ul>
+              <li>Returns identity NumPy array with n rows and n cols</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.empty([m,n], dtype=np.int)</code>
+            <ul>
+              <li>Returns empty m x n NumPy array with datatype int inside</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.matrix([[a11, a12], [a21, a22]])</code>
+            <ul>
+              <li>Returns matrix with initial values</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.linspace(start, stop, num_divisions)</code>
+            <ul>
+              <li>Returns NumPy array that has num_division numbers from start to stop equally spaced</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.concatenate([arr1, arr2, ...], axis)</code>
+            <ul>
+              <li>Returns concatenation of arrays</li>
+              <li>axis
+                <ul>
+                  <li>= 0 =&gt; stack vertically (1 ontop of another)</li>
+                  <li>= 1 =&gt; stack horizontally</li>
+                </ul>
+              </li>
+              <li>or np.vstack([arr1, arr2]) and np.hstack([arr1, arr2])</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">.flatten()</code>
+            <ul>
+              <li>Returns array in one dimension</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">.reshape([m, n, ...])</code>
+            <ul>
+              <li>Returns array with that many rows/columns/any other dimension</li>
+              <li>To get a 1D vector, just put a number inside</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.transpose(arr)</code>
+            <ul>
+              <li>Returns transpose of arr</li>
+              <li>Also: <code class="highlighter-rouge">mat.T</code></li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.linalg.inv(arr)</code>
+  Returns inverse of arr</li>
+          <li><code class="highlighter-rouge">np.linalg.solve(a, b)</code>
+            <ul>
+              <li>solves <code class="highlighter-rouge">Ax = b</code>. And returns as an array</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.dot(arr1, arr2)</code>
+            <ul>
+              <li>Returns the result of matrix multiplication btwn arr1 and arr2</li>
+              <li>Order matters</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.floor(num)</code></li>
+          <li><code class="highlighter-rouge">np.ceil(num)</code></li>
+          <li><code class="highlighter-rouge">np.max(arr)</code>
+            <ul>
+              <li>Returns max in an array</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.min(arr)</code></li>
+          <li><code class="highlighter-rouge">np.argmax(arr)</code>
+            <ul>
+              <li>Returns index of max in an array</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.argmin(arr)</code></li>
+          <li><code class="highlighter-rouge">np.multiply(a, b)</code>
+            <ul>
+              <li>Returns the multiplication of a and b element-wise
+  <code class="highlighter-rouge">- np.roll(arr, num_cells_to_roll, axis)</code></li>
+              <li>Shifts cells and puts the excess on the other side
+  vNo need axis arg for 1D array</li>
+            </ul>
+          </li>
+          <li><code class="highlighter-rouge">np.diagonal(arr)</code>
+            <ul>
+              <li>Return diagonal elements of arr in another arr</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">argparse</code>
+        <ul>
+          <li><code class="highlighter-rouge">.ArgumentParser(description="desc")</code>
+            <ul>
+              <li>creates parser that you can do:</li>
+              <li><code class="highlighter-rouge">.add_argument("--parsed_name?", "-shortname", action='store_true',help="Runs strategy experiments")</code></li>
+              <li><code class="highlighter-rouge">.parse_args()</code>
+                <ul>
+                  <li>Returns parsed arguments in a… struct?</li>
+                  <li><code class="highlighter-rouge">args.parsed_name</code>
+                    <ul>
+                      <li>Boolean.
+                        <ul>
+                          <li><code class="highlighter-rouge">True</code>- was included when running the file</li>
+                          <li><code class="highlighter-rouge">False</code>- not included when running the file</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+  </div>
+
+</article>
+
+  
+<div class="tags">
+    Tags:
+   
+    <span class="tag"><a href="/coding_notes">coding_notes</a></span>
+   
+</div>
+
+
+
+  <div class="row pagenav">
+      
+      <div class="col-xs-6 prev_post"><a href="/how_to_android_studio/">&larr; How to Android Studio</a></div>
+      
+      
+      <div class="col-xs-6 next_post"><a href="/how_to_javascript/">How to Javascript &rarr;</a></div>
+      
+  </div>
+
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'himty-github-io';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+  </div>
+
+  	 <div class="sidebar col-sm-4">
+	   <h1>Recent Posts</h1>
+
+	   <ul>
+	     
+	     <li><a href="/how_to_matlab/">How to MATLAB</a></li>
+	     
+	     <li><a href="/how_to_java/">How to Java (APCS level)</a></li>
+	     
+	     <li><a href="/how_to_c/">How to C</a></li>
+	     
+	     <li><a href="/how_to_javascript/">How to Javascript</a></li>
+	     
+	     <li><a href="/how_to_python/">How to Python</a></li>
+	     
+	   </ul>
+	   <ul>
+		   <li><a href="/archive/index">...see all</a></li>
+	   </ul>
+
+	   <!-- <h1>Most Popular</h1>
+	   <ul>
+	     
+	   </ul> -->
+
+	   <h1>Topics</h1>
+	   <ul>
+	     
+	     
+	     
+	     
+	     <li><a href="/tag/coding_notes">coding_notes</a> (8)</li>
+	     
+	     
+	   </ul>
+
+	 </div>
+
+  
+</div>
+
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="footer">
+          
+<a href="mailto:jennyw2@andrew.cmu.edu"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/himty"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/jenny-w-657731132"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+
+<a href="http://stackoverflow.com/users/5901346/himty"><i class="svg-icon stackoverflow"></i></a>
+
+
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'G-KD8WS8KY23', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/how_to_python/',
+		  'title': 'How to Python'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+    <script>
+      renderMathInElement(document.body);
+    </script>
+  </body>
+</html>

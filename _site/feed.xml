@@ -1,0 +1,4109 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://himty.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://himty.github.io/" rel="alternate" type="text/html" /><updated>2022-11-15T16:32:58-05:00</updated><id>http://himty.github.io/feed.xml</id><title type="html">Jenny Wang</title><subtitle>research profile</subtitle><entry><title type="html">How to Java (APCS level)</title><link href="http://himty.github.io/how_to_java/" rel="alternate" type="text/html" title="How to Java (APCS level)" /><published>2019-05-27T00:00:00-04:00</published><updated>2019-05-27T00:00:00-04:00</updated><id>http://himty.github.io/how_to_java</id><content type="html" xml:base="http://himty.github.io/how_to_java/">&lt;h2 id=&quot;accessible-methods-in-the-java-quick-reference&quot;&gt;Accessible methods in the Java Quick Reference&lt;/h2&gt;
+&lt;p&gt;===============================================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Object&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;boolean equals(Object other)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;String toString()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Integer&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Integer(int value)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;int intValue()&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;returns value in int&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Integer.MIN_VALUE&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;smallest value that can be stored in an int&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Integer.MAX_VALUE&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;largest value that can be stored in an int&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Double&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Double(double value)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;double doubleValue()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;String&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;int length()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;String substring(int from, int to)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;String substring(int from)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;int indexOf(String str)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;int compareTo(String other)&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;returns
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; if equivalent&lt;/li&gt;
+          &lt;li&gt;some number &amp;gt; 0 if earlier in alphabet&lt;/li&gt;
+          &lt;li&gt;some number &amp;lt; 0 if later in alphabet&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Math&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;abs(int/double x)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pow(double base, double exponent)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sqrt(double x)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;double random()&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;double in the range [0,1)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;List&amp;lt;E&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;int size()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;boolean add(E obj)&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;returns true after adding it ._.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;void add(int index, E obj)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;E get(int index)&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;if it’s a number, returns Integer/smth else
+        &lt;ul&gt;
+          &lt;li&gt;(not int/double, but Integer/Double)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;E set(int index, E obj)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;E remove(int index)&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;changes indices of next elements. BEWARE IN LOOPS&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;terms&quot;&gt;TERMS&lt;/h2&gt;
+&lt;p&gt;========&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;API = Application Programming Interface
+    &lt;ul&gt;
+      &lt;li&gt;methods, routines, etc used to program&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;nested/inner class
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  class foo {
+      class bar {...}
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;^^ bar is nested class&lt;/li&gt;
+      &lt;li&gt;bar sees everything from foo, but isn’t a foo&lt;/li&gt;
+      &lt;li&gt;ex: String is a nested class of Object&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;child class
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;class bar extends foo {...}&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;^^bar is child class&lt;/li&gt;
+      &lt;li&gt;bar sees everything from foo, and is a foo&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;keywords&quot;&gt;KEYWORDS&lt;/h2&gt;
+&lt;p&gt;===========&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;implements&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;for interfaces (methods not defined)&lt;/li&gt;
+  &lt;li&gt;provide definitions for APIs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;extends&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;for Classes (methods defined)&lt;/li&gt;
+  &lt;li&gt;parent-child relationship&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;static&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;modifies/takes stuff from the class&lt;/li&gt;
+  &lt;li&gt;nonstatic (aka not putting static there) modifies the instance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Integer/Double&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;can == null =&amp;gt; can’t assign null to an int
+    &lt;ul&gt;
+      &lt;li&gt;otherwise, it’s the same as int/double in Java 5+&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;List&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;from index 0&lt;/li&gt;
+  &lt;li&gt;see methods&lt;/li&gt;
+  &lt;li&gt;to initialize
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;List&amp;lt;Integer/etc&amp;gt; a = Arrays.asList(ele1, ele2, ...);&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;is immutable (cannot be modified)&lt;/li&gt;
+  &lt;li&gt;is an interface&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ArrayList&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;extends AbstractList that extends List&lt;/li&gt;
+  &lt;li&gt;from index 0&lt;/li&gt;
+  &lt;li&gt;to initialize
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ArrayList&amp;lt;Integer/etc&amp;gt; a = new ArrayList(Arrays.asList(ele1, ...);&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;is a Class&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;control-statements&quot;&gt;CONTROL STATEMENTS&lt;/h2&gt;
+&lt;p&gt;=====================&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;enhanced for loop (“for-each”)
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  String[] array = {...};
+  for (String element : array) {
+      //do something for all elements in array
+  }
+  the same as:
+      for (int i=0; i&amp;lt;array.length(); i++) {
+          ;
+      }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sorts&quot;&gt;SORTS&lt;/h2&gt;
+&lt;p&gt;========&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;insertion sort&lt;/li&gt;
+  &lt;li&gt;selection sort&lt;/li&gt;
+  &lt;li&gt;bubble sort&lt;/li&gt;
+  &lt;li&gt;mergesort&lt;/li&gt;
+  &lt;li&gt;heapsort&lt;/li&gt;
+  &lt;li&gt;quick sort&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;==================================================&lt;/h1&gt;
+
+&lt;p&gt;Java unrelated to APCS&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;concurrency
+    &lt;ul&gt;
+      &lt;li&gt;processes happen at the same time&lt;/li&gt;
+      &lt;li&gt;use threads&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;immutable
+    &lt;ul&gt;
+      &lt;li&gt;that instance cannot be changed after it is made&lt;/li&gt;
+      &lt;li&gt;uses the keyword final&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;\unnnn (escape sequence like \n)
+    &lt;ul&gt;
+      &lt;li&gt;line break LOL&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;assert &amp;lt;boolean expression&amp;gt;&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;check for bugs in the code&lt;/li&gt;
+      &lt;li&gt;if expression after it is false, it stops the program&lt;/li&gt;
+      &lt;li&gt;ex: assert varIsTrue == false&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jenny Wang</name></author><category term="coding_notes" /><summary type="html">Accessible methods in the Java Quick Reference ===============================================</summary></entry><entry><title type="html">How to C</title><link href="http://himty.github.io/how_to_c/" rel="alternate" type="text/html" title="How to C" /><published>2019-05-27T00:00:00-04:00</published><updated>2019-05-27T00:00:00-04:00</updated><id>http://himty.github.io/how_to_c</id><content type="html" xml:base="http://himty.github.io/how_to_c/">&lt;h2 id=&quot;popular-things-to-include&quot;&gt;Popular things to include:&lt;/h2&gt;
+&lt;p&gt;============================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;standard input and output&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#include &amp;lt;string.h&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#include &amp;lt;stdlib.h&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exit()&lt;/code&gt; to exit out of code&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rand()&lt;/code&gt; to create random numbers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#include &amp;lt;stdbool.h&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;booleans&lt;/li&gt;
+  &lt;li&gt;can use bool instead of&lt;code class=&quot;highlighter-rouge&quot;&gt; _Bool&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#include &amp;lt;ctype.h&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;getchar()&lt;/code&gt; recieves a string/char, can be put in variable&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;putchar(string)&lt;/code&gt; display the char&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isalnum(char)&lt;/code&gt; and others (see below)&lt;/li&gt;
+  &lt;li&gt;has an alphanumber been passed in? (a for 10, b for 11, etc)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#include &amp;lt;errno.h&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;error handling&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#include &amp;lt;math.h&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;calculate power of something&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;define&quot;&gt;Define:&lt;/h2&gt;
+&lt;p&gt;==========&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#define MYNAME &quot;Derek Banas&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;all uppercase, a constant&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#undef MYNAME&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;can redefine afterwards&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;concepts-and-strategies&quot;&gt;Concepts and Strategies:&lt;/h2&gt;
+&lt;p&gt;==========================&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;main looks like &lt;code class=&quot;highlighter-rouge&quot;&gt;int main(){}&lt;/code&gt; and returns a &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; at the end&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; is to get the pointer, &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; is for the value
+    &lt;ul&gt;
+      &lt;li&gt;inverses&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Print things on the screen from an array:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;char *randomString = &quot;Just some random stuff&quot;;
+while (*randomString){ //null=&amp;gt;0=&amp;gt;ends while    
+  putchar(*randomString++); //increment to chars
+}
+//OR
+int i = 0;
+while(randomString[i] != '\0'){
+  putchar(randomString[i++]);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;if you initialize a, but don’t give it a value before incrementing it, computer will take whatever was inside the place a is, increment it, and spit it out.  “Random garbage”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;arrays use row-major ordering, so it is array[y][x]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;data-types&quot;&gt;Data Types:&lt;/h2&gt;
+&lt;p&gt;=============&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;char firstLetter = 'L';
+int age = 38; //up to 32000
+long int superBigNum = -3229384234; //bigger
+float piValue = 3.14; //decimals (38 decimal #s)
+double reallyBigPi = 3.1423842323i4uy23i4;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;to-describe-variables&quot;&gt;To describe variables:&lt;/h2&gt;
+&lt;p&gt;=========================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;unsigned&lt;/code&gt; = no negative digits&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;const&lt;/code&gt; = constant, unchanging&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;size_t&lt;/code&gt; = stores the amount of data in bytes&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;extern&lt;/code&gt; = variable was defined elsewhere, but use that var here, too&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;static&lt;/code&gt; = basically a “global” variable with a scope limited to where it was defined
+    - functions: “you can’t call me out of my scope! &amp;gt;:D”&lt;/p&gt;
+
+&lt;h2 id=&quot;relational&quot;&gt;Relational:&lt;/h2&gt;
+&lt;p&gt;=============&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;TRUE&lt;/code&gt; is anything other than 0&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;can an int be used in if(int) ?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;FALSE&lt;/code&gt; is also 0&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;=&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;=&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;==&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;!=&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&amp;amp;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;||&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;result comes out as 1 (true) and 0 (false)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;!0&lt;/code&gt; equals &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;!1&lt;/code&gt; equals &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To choose between two options:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  char* legalAge = (custAge &amp;gt; 21) ? &quot;true&quot; : &quot;false&quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;if true, return true.  If false, return false&lt;/li&gt;
+      &lt;li&gt;can be put inside the %s part of printf()&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;casting-a-value&quot;&gt;Casting a value:&lt;/h2&gt;
+&lt;p&gt;==================&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;to temporarily change the type&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  //when the two numbers are ints:
+  printf(&quot;numberEx / numberEx2 : %f&quot;, (float)numberEx/numberEx2);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;strings&quot;&gt;Strings:&lt;/h2&gt;
+&lt;p&gt;===========&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If made by char ex[] = {‘C’, ‘a’, ‘\0’}, include ‘\0’ “naw” to end the string&lt;/li&gt;
+  &lt;li&gt;or do char myName[] = “Something” (automagically puts \0)&lt;/li&gt;
+  &lt;li&gt;see Functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;pointers&quot;&gt;Pointers:&lt;/h2&gt;
+&lt;p&gt;============&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;To pass data to other functions so they can use that local variable as well&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;can be in %p and %d (hexidecimal or not)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; to get what’s in the pointer&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; to make it into a pointer&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;print the first index in an array:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;printf(&quot;First: %d&quot;, *array);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;print any other index because they are next to each other:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;printf(&quot;Thrid: %d&quot;, *(array + 2));
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;structs&quot;&gt;Structs:&lt;/h2&gt;
+&lt;p&gt;===========&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;more than one data type to describe something&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;need &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; for strings because of pointers&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Example:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  struct dogs{
+
+      const char *name;
+      int height; 
+
+  };
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;use &lt;code class=&quot;highlighter-rouge&quot;&gt;typedef struct&lt;/code&gt; to make it so you don’t have to put struct everywhere else
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;“Make a new variable type”&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Example:&lt;/p&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      typedef struct dog{
+
+          const char *name;
+          int height; 
+
+      } dog; //you can call it with dog
+              //can put multiple names
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To put info in:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  struct dog spike = {&quot;Spike&quot;, 90};
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To get the info in the struct:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  theName = theDog.name; //use the . OR
+  theName = theDog-&amp;gt;name; //OR
+  theDog-&amp;gt;name = theName;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To get addresses, use theDog.name for strings and
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;amp;theDog.avgHeight for ints
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;When struct is passed to function, new struct is created, so need pointers&lt;/li&gt;
+  &lt;li&gt;When doing &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; with structs, use &lt;code class=&quot;highlighter-rouge&quot;&gt;()&lt;/code&gt;:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  (*theDog).weight = newWeight;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;OR you can do
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  *theDog-&amp;gt;weight = newWeight;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;struct dog cujo2 = cujo;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Can copy everything in a struct, including pointers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;union&quot;&gt;Union:&lt;/h2&gt;
+&lt;p&gt;========&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;store 1 pieces of data that can be any type, but is not more than one type at a single time&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Making one:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  typedef union{
+        
+      short individual;
+      float pound;
+      float ounce;
+
+  } amount; //this union is named amount
+
+  //set amount as 16, other values follow
+  amount orangeAmt = {.ounce = 16};
+
+  //changes the value of the whole union
+  orangeAmt.individual = 4;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;BE SURE TO USE THE CORRECT DATA TYPE&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Can put them in structs&lt;/li&gt;
+  &lt;li&gt;To initialize:
+    &lt;ul&gt;
+      &lt;li&gt;Ex: orangeProduct is a type of struct named orangeProduct, theAmount is an union, so
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  orangeProduct productOrdered = {&quot;Chiquita&quot;,
+      .theAmount.ounce = 16};
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;linked-list&quot;&gt;Linked List:&lt;/h2&gt;
+&lt;p&gt;==============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Essentially make an infinitely long list with structs&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Format of each struct:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  typedef struct product{
+
+      const char *name;
+      float price;
+
+      struct product *next; //pointer to next struct
+
+  } product;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;if &lt;code class=&quot;highlighter-rouge&quot;&gt;pProduct&lt;/code&gt; is the pointer of the given product, the next one in the line is &lt;code class=&quot;highlighter-rouge&quot;&gt;pProduct-&amp;gt;next&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add a new struct to the end:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  tomato.next = &amp;amp;potato;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;add a new product, apple, between potato and lemon:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  potato.next = &amp;amp;apple, apple.next = &amp;amp;lemon, lemon.next = NULL
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To go through all structs:
+    &lt;ul&gt;
+      &lt;li&gt;go through all the items through next until you get NULL&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To search for a struct:
+    &lt;ul&gt;
+      &lt;li&gt;recieve a &lt;code class=&quot;highlighter-rouge&quot;&gt;*productName&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;set a varialbe to the first variable in the struct =&amp;gt; name&lt;/li&gt;
+      &lt;li&gt;use strcmp() to compare&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Deleting an item:
+    &lt;ul&gt;
+      &lt;li&gt;Ex: Tomato, Potato, Lemon&lt;/li&gt;
+      &lt;li&gt;see what’s before potato from the time you were scanning for potato
+        &lt;ul&gt;
+          &lt;li&gt;potato’s next is now tomato’s next&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;free() potato&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;macros&quot;&gt;Macros:&lt;/h2&gt;
+&lt;p&gt;==========&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A fragment of code that is given a name&lt;/li&gt;
+  &lt;li&gt;name is read =&amp;gt; whole code is pasted in&lt;/li&gt;
+  &lt;li&gt;conventional = names are all UPPERCASE&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;#define MACRO_THINGIE 10&lt;/code&gt; -&amp;gt; 10 is put in MACRO_THINGIE, replaces it&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;can make multiple lines
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  #define MACRO_NUMBERS 10 \
+                          2 \
+                          3
+  int x[] = {MACRO_NUMBERS};
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;makes: int x[] = {10,2,3};&lt;/li&gt;
+      &lt;li&gt;weird error line numbers later on tho&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;enumerated-type&quot;&gt;Enumerated type&lt;/h3&gt;
+&lt;p&gt;====================
+For the times that you don’t need anything else other than what you put inside&lt;/p&gt;
+
+&lt;h2 id=&quot;initialize&quot;&gt;Initialize:&lt;/h2&gt;
+&lt;p&gt;==============&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;typedef enum{ INDIV, OUNCE, POUND } quantity;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To set the value:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;quantity quantityType = INDIV;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To do somethign:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if (quantityType == INDIV){
+    blah blah
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;line-buffering&quot;&gt;Line buffering:&lt;/h2&gt;
+&lt;p&gt;=================&lt;/p&gt;
+
+&lt;p&gt;storing/scanning an amount of information before something is done to it&lt;/p&gt;
+
+&lt;h2 id=&quot;file-io&quot;&gt;File I/O:&lt;/h2&gt;
+&lt;p&gt;===========&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Print out data from the file:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  char buffer[1000];
+  while(fgets(buffer, 1000, pFile) != NULL){
+      printf(&quot;%s&quot;, buffer);
+  }
+  //OR
+  while(fscanf(pFile, &quot;%s&quot;, buffer) == 1) 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;returns # other than 1 if it doesn’t pass a string&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Print directly to the file:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  fputs(&quot;Messing with strings&quot;, pFile);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;pFile is the way you are entering stuff&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;TO PRINT WHOLE THING, YOUR “CURSOR” HAS TO BE AT BEGINNING&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To get number of bytes in whole file:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  fseek(pFile, 0, SEEK_END);
+  ftell(pFile)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;because the “cursor” is at the end of the file&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;see Functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;convert-any-base-to-any-base&quot;&gt;Convert any base to any base:&lt;/h2&gt;
+&lt;p&gt;===============================&lt;/p&gt;
+
+&lt;p&gt;For &lt;code class=&quot;highlighter-rouge&quot;&gt;startingBase&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;endingBase&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;numberToConvert&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;numberToConvert % endingBase&lt;/code&gt; =&amp;gt; put in array&lt;/li&gt;
+  &lt;li&gt;Then &lt;code class=&quot;highlighter-rouge&quot;&gt;numberToConvert = (numberToConvert - &amp;lt;remainder&amp;gt;) / endingBase&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;and so on until you get an error with 1&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Convert any base to base 10:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;ex: binary 110 to base 10
+    &lt;ul&gt;
+      &lt;li&gt;(1 * 2^2) + (1 * 2^1) + (0 * 2^0)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;chars have values, too!&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if(isalpha(number[i])){
+    int charCode = ((int)tolower(number[i])) - 87;
+    result += charCode * pow(baseFrom, toThePowerOf);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;bitwise-operators&quot;&gt;Bitwise operators:&lt;/h2&gt;
+&lt;p&gt;====================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; And bitwise operator:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;110 &amp;amp; 111&lt;/code&gt; =&amp;gt; 1 for every time they’re both 1
+    &lt;ul&gt;
+      &lt;li&gt;110 is result&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt; Or bitwise operator:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;6 | 7&lt;/code&gt; =&amp;gt; if either is a 1, return a 1 =&amp;gt; 111&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; exclusive or:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;6 ^ 7
+    &lt;ul&gt;
+      &lt;li&gt;1 returned if one is a 1, other is 0&lt;/li&gt;
+      &lt;li&gt;001 =&amp;gt; 1 is returned&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~&lt;/code&gt; bitwise not:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;~x
+    &lt;ul&gt;
+      &lt;li&gt;if a bit in x == 0, that bit is now = 1&lt;/li&gt;
+      &lt;li&gt;if a bit in x == 1, that bit is now = 0&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;negative is the 2’s complement
+000000010 =&amp;gt; 2
+111111101 =&amp;gt; complement of 2
+111111110 =&amp;gt; add 1 to it&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;inverse sign = &lt;code class=&quot;highlighter-rouge&quot;&gt;~&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;~numberSix = -6&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;shift operators:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shiftLeftTwo = numberSix &amp;lt;&amp;lt; 2;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;x/pow(2, n)&lt;/code&gt; is the same as &lt;code class=&quot;highlighter-rouge&quot;&gt;x&amp;gt;&amp;gt;n&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;bit masking
+    &lt;ul&gt;
+      &lt;li&gt;if you want to see what is in some specific spots&lt;/li&gt;
+      &lt;li&gt;do 1 for parts you want to see, 0 for others&lt;/li&gt;
+      &lt;li&gt;do an AND bitwise operator&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;functions&quot;&gt;Functions:&lt;/h2&gt;
+&lt;p&gt;============&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;printf(&quot;string, int %d, long int %ld, decimal with 2 decimal &lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;places shown %.2f”, intValue, longIntValue, floatValue);&lt;/li&gt;
+  &lt;li&gt;Displays to terminal&lt;/li&gt;
+  &lt;li&gt;Conversion characters:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%ld&lt;/code&gt; //long&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%d&lt;/code&gt; //int&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%.5f&lt;/code&gt; //prints to 5 decimal places&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%.15f&lt;/code&gt; //used for float and double&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%c&lt;/code&gt; //char&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%s&lt;/code&gt; //string&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%p&lt;/code&gt; //return hexidecimal addresses
+  //also use &amp;amp; =&amp;gt; printf(“%p”, &amp;amp;rand1)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\n&lt;/code&gt; = line, &lt;code class=&quot;highlighter-rouge&quot;&gt;\t&lt;/code&gt; = tab, &lt;code class=&quot;highlighter-rouge&quot;&gt;\\&lt;/code&gt; = print, &lt;code class=&quot;highlighter-rouge&quot;&gt;\&quot;&lt;/code&gt; = print “&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;scanf(&quot;&amp;lt;data type in format&amp;gt;&quot;, &amp;amp;whereToStore, &amp;amp;otherPlace);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;scanf(&quot; %d/%d/%d&quot;, &amp;amp;month, &amp;amp;day, &amp;amp;year);&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Store input from user, bulky&lt;/li&gt;
+  &lt;li&gt;will overwrite values if there is a data overflow&lt;/li&gt;
+  &lt;li&gt;needs the &amp;amp;&lt;/li&gt;
+  &lt;li&gt;don’t use %d++ in the “” because it screws up&lt;/li&gt;
+  &lt;li&gt;will return a 1 or 0 if compared with == to a number&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fgets(storeHere, 30, stdin);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;like &lt;code class=&quot;highlighter-rouge&quot;&gt;scanf()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;store the 30 bytes of information in storeHere through stdin&lt;/li&gt;
+  &lt;li&gt;adds the \0 character&lt;/li&gt;
+  &lt;li&gt;adds new line&lt;/li&gt;
+  &lt;li&gt;accepts more than one string&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fputs(&quot;string here&quot;, stdout);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;string, output method&lt;/li&gt;
+  &lt;li&gt;no new line&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gets(name);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;accepts one string and puts it in name&lt;/li&gt;
+  &lt;li&gt;no new line.  It ends with \0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;puts(&quot;string here&quot;);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;makes a new line after displaying the string&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;strcpy(myName, &quot;Bob Joe&quot;); //used to hold &quot;Derek Banas&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;assign a different value to the variable&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;strcomp()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns negative # if first string is less than 2nd&lt;/li&gt;
+  &lt;li&gt;returns positive # if more (second would come first if  alphabetic)&lt;/li&gt;
+  &lt;li&gt;returns 0 if equal&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;strcat(yourCity, yourState);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;combine the two strings into yourCity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;strlcpy(yourCity, &quot;aksjdfl&quot;, sizeof(yourCity));&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;cuts off the end of the string so variable doesn’t overflow&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;strlen(name);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns the length of the variable (number of slots)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;theChar = getchar();&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Takes in chars until enter is pressed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;putchar(theChar);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;print the char on the screen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;strrchr(randomString, '\n');&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns last occurance of \n in randomString&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;strchr(randomString, 'a');&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns first occurance of a in randomString&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tolower(char)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;makes the letter lower cased&lt;/li&gt;
+  &lt;li&gt;Ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;theString[i] = tolower(theString[i]);&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;toupper(char)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;makes the letter upper cased&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isalnum(char)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;is it consisting of all numbers?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isalpha(char)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;alphabetic character&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isblank(char)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;space&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isdigit(char)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;digit&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isgraph(char)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;anything but space&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isupper(char)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;upper cased&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;islower(char)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;lower cased&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ispunct(char)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;punctuation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isspace(char)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;any space&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;strcmp(string, string)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;comparing two string sto see if they match&lt;/li&gt;
+  &lt;li&gt;returns 0 if they’re the same&lt;/li&gt;
+  &lt;li&gt;returns (+) if first string more (further in alpha order)&lt;/li&gt;
+  &lt;li&gt;returns (-) if first string is less&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exit()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Close program.  Don’t run anything else.&lt;/li&gt;
+  &lt;li&gt;can be (0),(1),(2),(3),(4), etc for personal reference&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rand()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create random number&lt;/li&gt;
+  &lt;li&gt;To get numbers 1-50: &lt;code class=&quot;highlighter-rouge&quot;&gt;rand() % 50 + 1&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;break;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;exit out of an infinite loop (is like exit())&lt;/li&gt;
+  &lt;li&gt;used in switch&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;continue;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;go back to the beginning of the braces&lt;/li&gt;
+  &lt;li&gt;Ex:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  for(blah){ 
+      //do something, start here again!
+      if (variable == 1){ continue; }
+      //don't do this stuff this time
+  } 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;switch(whatToDo){
+        
+    case(1) : printf(&quot;Print the time&quot;);
+        break;
+
+    default : printf(&quot;Bye&quot;);
+        exit(0);
+        break;
+
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;if whatToDo == 1 (in case(1)), do that&lt;/li&gt;
+  &lt;li&gt;go on to other cases&lt;/li&gt;
+  &lt;li&gt;default is done if nothing else works&lt;/li&gt;
+  &lt;li&gt;if there isn’t a break, it will execute all the other statements after the one it entered in on range is 4…6 instead of 4 or something&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sizeof(variableName);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns the number of bytes in there&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pRandomNumbers = malloc(amountOfBytesToStore);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;if fails, stores a NULL&lt;/li&gt;
+  &lt;li&gt;Good usage to store a specific number of ints:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;malloc(amtOfNumbersToStore * sizeof(int))&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;free(pRandomNumbers);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;free memory for pRandomNumbers to prevent crashing&lt;/li&gt;
+  &lt;li&gt;used for large scale programs that don’t end in a while&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pFile* = fopen(&quot;fileName.txt&quot;, &quot;w&quot;);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;will make the file if it doesn’t exist&lt;/li&gt;
+  &lt;li&gt;binary files (.bin) use things like rb+
+    &lt;ul&gt;
+      &lt;li&gt;“w” - stuff already inside will be deleted/replaced&lt;/li&gt;
+      &lt;li&gt;“a” - append or add new info&lt;/li&gt;
+      &lt;li&gt;“r” - read from the file&lt;/li&gt;
+      &lt;li&gt;“a+” - start at end of file if it exists and reads and writes&lt;/li&gt;
+      &lt;li&gt;“r+” - open at beginning for reading and writing, no delete, no make new file&lt;/li&gt;
+      &lt;li&gt;“w+” - delete original (or make new one if no exist), read and write&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;if file wasn’t opened, returns a 1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fprintf(pFile, &quot;%d&quot;, randomNumber)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;print it to the file like printf()&lt;/li&gt;
+  &lt;li&gt;file to print to, what to print&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fclose(pFile)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;close the file, if not closed, returns 0&lt;/li&gt;
+  &lt;li&gt;if went well, returns 1
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  if(fclose(pFile)) != 0){
+      printf(&quot;Success writing to text&quot;);
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fseek(pFile, 12, SEEK_SET);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;can use (-) numbers in fseek()&lt;/li&gt;
+  &lt;li&gt;12- move 12 characters =&amp;gt; “moving the cursor”&lt;/li&gt;
+  &lt;li&gt;Seek things:
+    &lt;ul&gt;
+      &lt;li&gt;SEEK_SET - Start from beginning of file&lt;/li&gt;
+      &lt;li&gt;SEEK_CUR - Move from current position in file&lt;/li&gt;
+      &lt;li&gt;SEEK_END - Based off of end of file&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;in binary mode, need to * number chars to move by the size of each thingie =&amp;gt; move 12 =&amp;gt; 12 * sizeof(int)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ftell(pFilfe)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns the number of bytes the cursor is from the beginning of the file&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;perror(&quot;Error Occured&quot;);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;prints that and the standard error message&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;printf(&quot;Error Code %d\n&quot;, errno);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;prints error code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fwrite(name, sizeof(name[0]), sizeof(name)/sizeof(name[0]), pFile);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Write binary data to file&lt;/li&gt;
+  &lt;li&gt;pointer by default&lt;/li&gt;
+  &lt;li&gt;variable, size of each element, number of elements, where to print&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fread(buffer, 1, fileSize, pFile);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;dataInFile = fread(blah blah);&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;information goes to buffer, bytes taken from each element,
+    &lt;ul&gt;
+      &lt;li&gt;number of elements, read from this place&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rewind(pFile);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;go to beginning of file&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pow(base, toThePowerOf);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;mutiply base and itself toThePowerOf times&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jenny Wang</name></author><category term="coding_notes" /><summary type="html">Popular things to include: ============================</summary></entry><entry><title type="html">How to MATLAB</title><link href="http://himty.github.io/how_to_matlab/" rel="alternate" type="text/html" title="How to MATLAB" /><published>2019-05-27T00:00:00-04:00</published><updated>2019-05-27T00:00:00-04:00</updated><id>http://himty.github.io/how_to_matlab</id><content type="html" xml:base="http://himty.github.io/how_to_matlab/">&lt;h2 id=&quot;numerical-data-structures&quot;&gt;Numerical Data Structures&lt;/h2&gt;
+&lt;p&gt;==========================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cell&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;vector&lt;/code&gt; = row/column&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;matrix&lt;/code&gt; = group of vectors&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;is a rectangle&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;array &lt;/code&gt;= 3d matrix&lt;/p&gt;
+
+&lt;p&gt;Initialize matrix
+    &lt;code class=&quot;highlighter-rouge&quot;&gt;
+    matrix = [1 1;2 2]
+   &lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;;&lt;/code&gt; = new row&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;space&amp;gt;&lt;/code&gt; = next column&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Specify # of cells&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;matrix = zeros(numRows, numColumns)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;matrix = ones(numRows, numColumns)&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;or &lt;code class=&quot;highlighter-rouge&quot;&gt;ones([numRows numColumns])&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Call data from all numRows rows or numColumns columns&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;replace with :&lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;matrix(:,4)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;vector = [1:100]&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;fills vector with numbers 1 to 100&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;vector(row, col) = 10&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;change cell value&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;vector(row, col)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;get number and print it out&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sum(vector)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;sums all numbers in vector&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;prod(vector)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;multiply everything in vector&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Math between two vectors/matrices&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;use &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Math between correlating cells in vectors/matrices&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;use &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;.*&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;./&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;vector = vector';&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;make the row vector into a column vector&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;matrix(:)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;take all cells in the matrix&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;=================================================&lt;/h1&gt;
+
+&lt;h2 id=&quot;other-data-structures&quot;&gt;Other Data Structures&lt;/h2&gt;
+&lt;p&gt;=======================&lt;/p&gt;
+
+&lt;p&gt;Strings are in single quotes ‘’&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;num2string(var);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;change data type&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;string2num(var);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;change data type&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-1&quot;&gt;=====================================&lt;/h1&gt;
+
+&lt;h2 id=&quot;miscellaneous-syntax&quot;&gt;Miscellaneous Syntax&lt;/h2&gt;
+&lt;p&gt;=======================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;NaN&lt;/code&gt; = null&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; = comment&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;...&lt;/code&gt; at the end of the line when you want to press enter&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;ex:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  var1 *...
+  var2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;put semicolons in scripts
+    &lt;ul&gt;
+      &lt;li&gt;won’t print onto command window&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lowerLimit:upperLimit&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;vector with all numbers from lowerLimit to upperLimit&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~&lt;/code&gt; = not&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;||&lt;/code&gt; = or&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&amp;amp;&lt;/code&gt; = and&lt;/p&gt;
+
+&lt;p&gt;for loops
+    &lt;code class=&quot;highlighter-rouge&quot;&gt;
+    for i = start:end
+        %do something
+    end
+   &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;if statemtents
+    &lt;code class=&quot;highlighter-rouge&quot;&gt;
+    if %condition
+        %action
+    else
+        %action
+    end
+   &lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;-2&quot;&gt;===============================&lt;/h1&gt;
+
+&lt;h2 id=&quot;random-functions&quot;&gt;Random Functions&lt;/h2&gt;
+&lt;p&gt;==================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;vector = xlsread('fileName.extension')&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Read Exel file&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;image = imread('imagename');&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;read image&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;linspace(start, end, n_points);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns equally spaced points&lt;/li&gt;
+  &lt;li&gt;includes starting and end points&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[x,y] = meshgrid(xVector, yVector)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns all possible coordinates of pts&lt;/li&gt;
+  &lt;li&gt;use with linspace&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;size(vector, &amp;lt;row or column as in 1 or 2&amp;gt;)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns numRows, numColumns&lt;/li&gt;
+  &lt;li&gt;don’t specify row or column if want both&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;imageB = imresize(imageA, scale);&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;imageB = imresize(imageA, [numRows, numCols]);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;imageB has numRows rows and numCols cols&lt;/li&gt;
+  &lt;li&gt;or put NaN as one of them to preserve aspect ratio&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;imshow(image);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;make a window with the image on it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sind(theta)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;sin&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cosd(theta)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;cos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;repmat(vector, numTimes)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;repeat the vector numTimes horizontally and vertically&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;repmat(vector, numRows, numColumns)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;have that many total rows/cols&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shuffle(vector)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;change up the order of all cells, use with repmat&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shuffle(vector, dimension)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;dimension: 1 = Rows change, 2 = Columns change, 3 = next dimension changes, etc&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;vertcat(vector, vector2, vector3, ...)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;stacks vectors ontop of each other&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;horzcat(vector, vector2, vector3, ...)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;stacks vectors side to side&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;RandStream.setGlobalStream(RandStream('mt19937ar', 'seed', sum(100*clock)));&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;put it everywhere just in case you want a random number (for real randomness)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;randperm(upperLimit, numCells);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;can’t get the same number twice&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;randperm(upperLimit)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;numbers 1~upperLimit are reordered&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;randi(upperLimit);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;get one random number&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;randi(upperLimit, numRows, numCols);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;random numbers in matrix numRows x numCols&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;randi([lowerLimit, upperLimit]);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;number from lowerLimit to upperLimit&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;randsample(upperLimit, numCells);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;numCells number of random numbers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;randsample([1 2 3], 2)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;numCells number of rand numbers from the vector&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;any(vector)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns true if any of cells is nonzero&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;floor(num)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns num rounded down to whole number&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ismember(element, vector)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns true if element is found inside the vector&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;WaitSecs(seconds);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;how long to wait&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GetSecs()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;get seconds from start of program&lt;/li&gt;
+  &lt;li&gt;use to make sure the time intervals are right&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[keyIsDown, secs, keyCode] = KbCheck()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;if have different keyboards, put 1/2/3/4/5 in parenthesis for specific keyboard&lt;/li&gt;
+  &lt;li&gt;keyIsDown = any button down (1 or 0 =&amp;gt; true or false)&lt;/li&gt;
+  &lt;li&gt;secs = time from GetSecs()&lt;/li&gt;
+  &lt;li&gt;keyCode = key that is down
+    &lt;ul&gt;
+      &lt;li&gt;ex: strcmp(‘s’, KeyName(keyCode)), see if it is ‘s’&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[x,y,clicks] = GetMouse()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;x, y = mouse position coordinates&lt;/li&gt;
+  &lt;li&gt;if clicks = [0,0,0] =&amp;gt; no click, [1, 0, 0] = left click&lt;/li&gt;
+  &lt;li&gt;test with any(clicks)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GetClicks()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;get number of mouse clicks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;strcmp(string1, string2)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns true if identical, false if not&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;string = strcat(string1, string2)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;combine string1 and string2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;KeyName('UnifyKeyNames')&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;make codes from key presses the same from macs/windows/etc&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;save(fileName, 'variable')&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;save('result', 'p', 'q');&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;save some variables in a file (.mat)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;string = upper(string)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;all letters uppercase&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isdir(directoryString)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;true if there already is a directory with that name, false if no&lt;/li&gt;
+  &lt;li&gt;example of directoryString is from pwd()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mkdir(directoryString)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;create a folder with directory directoryString&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sortrows(matrix, colNum)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;make numbers in the colNum-th column be in ascending order&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;resizem(input, scale)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;resizem(input, [numRows, numCols])&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;expand and contract matrix&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-3&quot;&gt;====================================================&lt;/h1&gt;
+
+&lt;h2 id=&quot;command-line-commands&quot;&gt;Command Line Commands&lt;/h2&gt;
+&lt;p&gt;=======================&lt;/p&gt;
+
+&lt;p&gt;COMMANDS CAN BE PUT INTO SCRIPTS&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;print your directory&lt;/li&gt;
+  &lt;li&gt;usage examples:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  rootDir = pwd();
+  resultsDir = [rootDir '/results/']
+  if ~isdir(resultsDir) %if don't have this directory already
+      mkdir(resultsDir) %make the directory/folder
+  end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd(folderName)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;change directory&lt;/li&gt;
+  &lt;li&gt;go one level up =&amp;gt; cd ..&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;list of files in the folder&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;clear all&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;clears variables from other experiments&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;clc&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;clear command window&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-4&quot;&gt;===========================================&lt;/h1&gt;
+
+&lt;h2 id=&quot;keyboard-shortcuts&quot;&gt;Keyboard Shortcuts&lt;/h2&gt;
+&lt;p&gt;====================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl+c then s then c then a then enter&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;bring back window (if it crashes)&lt;/li&gt;
+  &lt;li&gt;might need to alt+tab (switch windows) before doing above&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-5&quot;&gt;=================================================================&lt;/h1&gt;
+
+&lt;h2 id=&quot;psychtoolbox&quot;&gt;Psychtoolbox&lt;/h2&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;p&gt;A library for psychology experiments&lt;/p&gt;
+
+&lt;p&gt;Screen has many settings&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;access w/ &lt;code class=&quot;highlighter-rouge&quot;&gt;Screen('something', &amp;lt;specific&amp;gt;, &amp;lt;more specific&amp;gt;, &amp;lt;etc&amp;gt;);&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Screen('CloseAll');&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;closes all screens&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Screen('Preference', 'SkipSyncTests', 1);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;yes to skipping sync tests&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[window, rect] = Screen('OpenWindow', 0, [], [500 500 700 700]); &lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;open the window
+    &lt;ul&gt;
+      &lt;li&gt;0 = open on this monitor&lt;/li&gt;
+      &lt;li&gt;1 = open on other monitor&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2nd matrix = where the screen will be&lt;/li&gt;
+  &lt;li&gt;window = pointer&lt;/li&gt;
+  &lt;li&gt;rect = (startX, startY, endX, endY)
+    &lt;ul&gt;
+      &lt;li&gt;corner coordinates;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Screen puts data into window/rect&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;x = Screen('MakeTexture', window, uint8(image));&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;uint8 because colors in image can’t be &amp;gt; 255&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Screen('DrawTextures', window, x);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;draw the texture. x is from function above&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Screen('DrawTextures', window, tid(rand_oranges(i,:)), [], xy_rect, orientation);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;xy_rect = corners of each picture&lt;/li&gt;
+  &lt;li&gt;orientation = degrees of rotation=========================================================================&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;A = Screen('Flip', window);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;display onto monitor&lt;/li&gt;
+  &lt;li&gt;usually don’t need A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Screen('Flip', window, A + seconds);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;show a blank screen (if nothing is made with window) second seconds later&lt;/li&gt;
+  &lt;li&gt;more accurate than WaitSecs()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;KbWait(); &lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;wait for keyboard input before going on&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;how to get rid of background of image&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;add transparent mask ontop&lt;/li&gt;
+      &lt;li&gt;mask must be same size as image&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jenny Wang</name></author><category term="coding_notes" /><summary type="html">Numerical Data Structures ==========================</summary></entry><entry><title type="html">How to Javascript</title><link href="http://himty.github.io/how_to_javascript/" rel="alternate" type="text/html" title="How to Javascript" /><published>2019-05-24T00:00:00-04:00</published><updated>2019-05-24T00:00:00-04:00</updated><id>http://himty.github.io/how_to_javascript</id><content type="html" xml:base="http://himty.github.io/how_to_javascript/">&lt;h2 id=&quot;html-stuff&quot;&gt;HTML STUFF&lt;/h2&gt;
+&lt;p&gt;============&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;body onload=function()&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;onload- does &lt;code class=&quot;highlighter-rouge&quot;&gt;function()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p id=&quot;demo&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt;-     set the id so its elements can be found w/ getElementById()
+  if there is no matching id, creates one at the bottom of the page
+events: onchange, onclick, onmouseover, onmouseout, onkeydown, onload&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;inserts a line break there&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;noscript&amp;gt;Text to display&amp;lt;/noscript&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Display that text if javascript is not enabled&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;!-- and //--&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;outline the script with this comment so unsupported computers skip it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div style=&quot;&quot; align=&quot;&quot; globalAtribbutes&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;style- “color:#0000FF” =&amp;gt; all text within &amp;lt;div&amp;gt; = that color&lt;/li&gt;
+  &lt;li&gt;align- left/right/center/justify(stretch) the elements
+    &lt;ul&gt;
+      &lt;li&gt;not supported in HTML5&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;draggable- can click and drag like a picture&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;form action=&quot;code.php&quot; method=&quot;post/get&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;for organization&lt;/li&gt;
+  &lt;li&gt;action- what to do after submit button is clicked
+    &lt;ul&gt;
+      &lt;li&gt;if ommitted, looks within the page&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;method- how to submit data, GET = default (data displayed in&lt;/li&gt;
+  &lt;li&gt;address field, POST = data hidden&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;fieldset&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;for organization within &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;form&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;legend&amp;gt;text&amp;lt;/legend&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;“header” for fieldset&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input type=&quot;&quot; name=&quot;name&quot; value=&quot;text&quot; onclick=&quot;function()&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;type- none/text=text box, button=button, radio=multiple choice submit=submit button (see &amp;lt;form&amp;gt;)&lt;/li&gt;
+  &lt;li&gt;name- must be included to be submitted within &amp;lt;form&amp;gt;
+    &lt;ul&gt;
+      &lt;li&gt;id- can’t be used for &amp;lt;form&amp;gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;value- text to initially display (hint). ‘’ is empty&lt;/li&gt;
+  &lt;li&gt;onclick (buttons)- when element is clicked do blah&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;audio src=&quot;dir or website&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;holds an audio file&lt;/li&gt;
+  &lt;li&gt;audio accessed by through audioElement.play()&lt;/li&gt;
+  &lt;li&gt;src- a directory or website that holds the audio file&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.innerHTML / .value&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;.value is for buttons, etc&lt;/li&gt;
+  &lt;li&gt;.innerHTML is for paragraphs, etc&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;strike&amp;gt;text&amp;lt;/strike&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;text has strikethrough&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;global-attributes&quot;&gt;GLOBAL ATTRIBUTES&lt;/h2&gt;
+&lt;p&gt;==================
+http://www.w3schools.com/TAGS/ref_standardattributes.asp&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;draggable=true/false&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;click and drag the element like a picture
+&lt;code class=&quot;highlighter-rouge&quot;&gt;spellcheck=true/false&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;have spellcheck within element or not&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;event-attributes&quot;&gt;EVENT ATTRIBUTES&lt;/h2&gt;
+&lt;p&gt;=================
+http://www.w3schools.com/TAGS/ref_eventattributes.asp&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;onclick=&quot;function()&quot;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;do this when the element is clicked&lt;/li&gt;
+  &lt;li&gt;for string parameters, use quotes DIFFERENT from the one
+    &lt;ul&gt;
+      &lt;li&gt;surrounding the function&lt;/li&gt;
+      &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;function('hi')&quot;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ondblclick=&quot;function()&quot;&lt;/code&gt;
+    - do this when the element is double clicked&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;onload=&quot;function()&quot;&lt;/code&gt;
+    - do this when the element loads&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;onkeydown=&quot;function()&quot;&lt;/code&gt;
+    - do this when key is down&lt;/p&gt;
+
+&lt;h1&gt;====================================================================&lt;/h1&gt;
+&lt;h1 id=&quot;-1&quot;&gt;====================================================================&lt;/h1&gt;
+&lt;h1 id=&quot;-2&quot;&gt;====================================================================&lt;/h1&gt;
+
+&lt;h2 id=&quot;javascript-stuff&quot;&gt;JAVASCRIPT STUFF&lt;/h2&gt;
+&lt;p&gt;==================&lt;/p&gt;
+
+&lt;h2 id=&quot;random-syntax-and-stuff&quot;&gt;RANDOM SYNTAX AND STUFF&lt;/h2&gt;
+&lt;p&gt;=======================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script type=&quot;text/JavaScript&quot;&amp;gt;script&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;make a js script&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script type=&quot;text/JavaScript&quot; src=&quot;code.js&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;reference an external js script&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;==&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;equals&lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;7&quot; == 7&lt;/code&gt; =&amp;gt; true&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;===&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;strict equals, takes var type into account, too&lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;7&quot; === 7&lt;/code&gt; =&amp;gt; false&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the element&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ex:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  `&amp;lt;button onclick=&quot;this.value=Date()&amp;gt; `
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;changes button’s own text&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;typeof &amp;lt;variable&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns type of variable&lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;typeof variable == 'undefined'&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;if a variable doesn’t exist, it basically == false&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;ex:
+      function test(callbackFunction)
+          if (callbackFunction) {
+              callbackFunction();
+          }
+      }&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;and if I put test() with no callbackFunction, it just doesn’t do anything&lt;/li&gt;
+  &lt;li&gt;AKA: can call functions with less arguments than specified&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;closure: variables created outside an event listener are “kept alive” if the reference in the listener is still there&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;creates memory leaks&lt;/li&gt;
+  &lt;li&gt;use &lt;code class=&quot;highlighter-rouge&quot;&gt;$('element').off('event')&lt;/code&gt;
+  =&amp;gt; ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;$('button').off('click');&lt;/code&gt;
+“use strict” ontop of the script&lt;/li&gt;
+  &lt;li&gt;cannot “pollute the root scope”
+    &lt;ul&gt;
+      &lt;li&gt;can’t make a new var to fit the uninitialized a = 2 in the window object&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;foo: function(){
+    //do something
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;another way to declare the function foo()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;try{ throw &quot;error&quot; } catch(e){ switch(e){ case &quot;error&quot; break;}&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;create + manage errors!
+&lt;code class=&quot;highlighter-rouge&quot;&gt;let&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;block-scoped&lt;/li&gt;
+  &lt;li&gt;using x before let statement causes error&lt;/li&gt;
+  &lt;li&gt;only defined in its block
+&lt;code class=&quot;highlighter-rouge&quot;&gt;var&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;function-scoped&lt;/li&gt;
+  &lt;li&gt;using x before var statement sets x to undefined
+&lt;code class=&quot;highlighter-rouge&quot;&gt;that ${var1 + var2} is cool&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;template literals. Replaces “that “ + (var1 + var2) + “ is cool”&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;can do multiline:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  `hi
+  there`
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;(this has a \n in the middle)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;functionsattributes&quot;&gt;FUNCTIONS/ATTRIBUTES&lt;/h2&gt;
+&lt;p&gt;======================
+&lt;code class=&quot;highlighter-rouge&quot;&gt;window.alert(&amp;lt;text or num&amp;gt;);&lt;/code&gt; [or just alert()]
+    popup alert&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;document&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.write(&amp;lt;text or num or object&amp;gt;);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;cannot write numbers when it is not in a function&lt;/li&gt;
+      &lt;li&gt;only for testing purposes&lt;/li&gt;
+      &lt;li&gt;if it is object, can type as &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;&amp;lt;p&amp;gt;paragraph&amp;lt;/p&amp;gt;&quot;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;“&lt;code class=&quot;highlighter-rouge&quot;&gt;string&quot; + num = &quot;stringnum&quot;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;num + num = sum&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.getElementById(id);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;access an HTML element&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.innerHTML = &quot;text&quot;;&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;change the element’s text&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.body&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;do something to the &amp;lt;body&amp;gt;&lt;/li&gt;
+      &lt;li&gt;.appendChild(‘elementVariable’)
+        &lt;ul&gt;
+          &lt;li&gt;add the element (ex: button) to the document&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.createElement(&quot;element&quot;)&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;ex: “button”, “br” (line break)&lt;/li&gt;
+      &lt;li&gt;create the element.&lt;/li&gt;
+      &lt;li&gt;can save it w/ &lt;code class=&quot;highlighter-rouge&quot;&gt;var btn = document.createElement(&quot;button&quot;);&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.createTextNode(&quot;text&quot;)&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;create the text node (variable)&lt;/li&gt;
+      &lt;li&gt;can save it w/ &lt;code class=&quot;highlighter-rouge&quot;&gt;var t = document.createTextNode(&quot;text&quot;);&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Any element variable (ex: btn)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;btn.appendChild(textNode)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.previousSibling&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;returns element right before it in the parent&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.replaceChild(newChildElement, oldChildElement)&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;replace the old with the new&lt;/li&gt;
+      &lt;li&gt;later do newChild.appendChild(oldChild) to restructure&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;console.log(text/num, text/num, etc);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;log text into the console (inspect element)&lt;/li&gt;
+  &lt;li&gt;multiple parameters =&amp;gt; a space in the&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.indexOf(&quot;string&quot;[, fromIndex]);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;returns first index of “string” within str
+        &lt;ul&gt;
+          &lt;li&gt;returns-1 if not found&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;begin looking from the index fromIndex&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.lastIndexOf(&quot;string&quot;);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;returns last index of “string within str
+        &lt;ul&gt;
+          &lt;li&gt;returns -1 if there’s nothing&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.search(&quot;string&quot;)&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;.search([regexp object])&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;can use regexp (but slower)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.match([regexp object])&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;better search method&lt;/li&gt;
+      &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;match(/m/gi)&lt;/code&gt; (see regexp)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.substr(start, length);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;start at start and end length chars later&lt;/li&gt;
+      &lt;li&gt;start is negative =&amp;gt; start from the end of the string&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.substring(start, end);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;start at start and end at end&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.slice(start[, end]);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;almost same as &lt;code class=&quot;highlighter-rouge&quot;&gt;substring()&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;if start/end are negative, count from the end of the string
+        &lt;ul&gt;
+          &lt;li&gt;doesn’t work in Internet Exploerer 8 or earlier&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;only one parameter =&amp;gt; slice out the rest of the string&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.split(&quot;searchTerm&quot;[, numElementsToReturn]);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;return array of str split at the search terms&lt;/li&gt;
+      &lt;li&gt;can stop looking for new terms after numElementsToReturn&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.charAt(index)&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;returns char at the index&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.replace(&quot;findThis&quot;, &quot;replaceWithThis&quot;);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;replace all “findThis”’s with the replacement&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.toLowerCase()&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;returns string in all lowercase&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.toUpperCase()&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;returns string in all uppercase&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.strike()&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;returns &lt;strike&gt;[str.value]&lt;/strike&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.length&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;returns length of string&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;element.fireevent(eventStartingWithOn, event)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;can be used without the () and stuff in it&lt;/li&gt;
+  &lt;li&gt;returns if the event was cancelled (ex: can’t click there)&lt;/li&gt;
+  &lt;li&gt;eventStartingWithOn/event are more specifications&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Math.random()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns rand number from 0 to 1&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Math.floor(Math.random()*50)&lt;/code&gt; for rand int between 0 and 50&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Array&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;.splice(index, number)
+  remove element(s) from the array&lt;/li&gt;
+  &lt;li&gt;.push(element)
+  add element to end of array&lt;/li&gt;
+  &lt;li&gt;.includes(element)
+    &lt;ul&gt;
+      &lt;li&gt;returns if the element is in the array&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;.pop()
+  removes and returns last element&lt;/li&gt;
+  &lt;li&gt;.shift()
+    &lt;ul&gt;
+      &lt;li&gt;removes and returns first element. all elements are shifted left&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;can initialize with var a = [1, 2, 3]&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;adding elements outside the array puts undefined in the middle&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  var a = [1, 2, 3]
+  a[5] = 0
+  // a = [1, 2, 3, undefined, undefined, 0]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;an instanceof Array&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;events-for-stuff&quot;&gt;EVENTS FOR STUFF&lt;/h2&gt;
+&lt;p&gt;==================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;document&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.ready()&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;does what’s inside () when doc is ready
+&lt;code class=&quot;highlighter-rouge&quot;&gt;onerror = &amp;lt;function&amp;gt;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;calls &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;function&amp;gt;&lt;/code&gt; when the document errors.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;variable-magic&quot;&gt;VARIABLE MAGIC&lt;/h2&gt;
+&lt;p&gt;================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;var varName = &amp;lt;something&amp;gt;;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;window.varName&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;all global variables in HTML are part of the window object&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;var car = {brand:&quot;Fiat&quot;, price:&quot;3000000000000&quot;};&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;get values with car.price or car[“price”]&lt;/li&gt;
+  &lt;li&gt;can have methods as elements
+    &lt;ul&gt;
+      &lt;li&gt;use with car.function()&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;this.innerHTML = &amp;lt;blah&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;change own element (ex: if in &lt;button&gt;, change button name)&lt;/button&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;strings&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;txt.length&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;returns length of string&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;string objects&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;For &lt;code class=&quot;highlighter-rouge&quot;&gt;var x = new String(&quot;Some Text&quot;);&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;x == y&lt;/code&gt; (another new String()) =&amp;gt; false&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;x == x&lt;/code&gt; =&amp;gt; true&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;!= &quot;Some Text&quot;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;if variable not given in parameter of function, it = undefined
+    - ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;func(x,y)&lt;/code&gt; =&amp;gt; use &lt;code class=&quot;highlighter-rouge&quot;&gt;func(1)&lt;/code&gt; =&amp;gt; y = undefined&lt;/p&gt;
+
+&lt;p&gt;2D Array
+    - is arrays in an array
+    - ex: 
+            var array = new Array(columns);
+            for (i = 0; i &amp;lt; columnds; i++) {
+                array[i] = new Array(rows);
+            }
+    - access with &lt;code class=&quot;highlighter-rouge&quot;&gt;array[1][2]&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;prototypes&quot;&gt;PROTOTYPES&lt;/h2&gt;
+&lt;p&gt;=============&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;basically parent classes in java&lt;/li&gt;
+  &lt;li&gt;different from classes b/c they are hoisted
+    &lt;ul&gt;
+      &lt;li&gt;can be used in lines above it b/c it’s basically in the head&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;create prototype:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  function Person(n, a){
+      this.name = n;
+      this.age = a;
+      this.talk = function() {console.log(&quot;Hi&quot;)};
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;add properties within prototype once made:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Person.prototype.newProtoName = &quot;value&quot;;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;create new object from prototype:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;var joe = new Person(&quot;Joe&quot;, 70);&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;add property to existing object
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;myObject.newProperty = &quot;value&quot;;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;(creates it automagically for myObject and not prototype)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;add method to existing object&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  myObject.property = function () {
+      return &quot;I dunno&quot;;
+  };
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;object.prototype.isPrototypeOf(obj)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns whether object.prototype is in prototype chain of obj&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;classes&quot;&gt;CLASSES&lt;/h2&gt;
+&lt;p&gt;=========&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;not hoisted&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  class B extends A {
+      publicField = 0;
+      #privateField = 1;
+      uninitialized;
+
+      constructor(x, y) {
+          this.x = x;
+          this.y = y;
+      }
+
+      foo() {
+          &amp;lt;function body&amp;gt;
+      }
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;constructor is named “constructor”&lt;/li&gt;
+  &lt;li&gt;don’t put &lt;code class=&quot;highlighter-rouge&quot;&gt;def&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;var&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;function&lt;/code&gt; keywords in front of methods&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;regular-expressions-regexp&quot;&gt;REGULAR EXPRESSIONS (regexp)&lt;/h2&gt;
+&lt;p&gt;===============================&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;object representing formatting&lt;/li&gt;
+  &lt;li&gt;syntax: &lt;code class=&quot;highlighter-rouge&quot;&gt;/pattern/modifiers&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;pattern- word/char/[multiple things] to look for&lt;/li&gt;
+      &lt;li&gt;modifiers- i (case-insensitive),
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;g&lt;/code&gt; (global, find multiple matches)&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;m&lt;/code&gt; (multi-line matching)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;str.match(/m/gi)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;var rEPattern1 = /z/i;&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;reg&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.exec()&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns first match if found&lt;/li&gt;
+          &lt;li&gt;returns false if none found&lt;/li&gt;
+          &lt;li&gt;if just called for the same string, starts searching after the previous match
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;.test()&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;returns true if found, false if not found&lt;/li&gt;
+          &lt;li&gt;if just called for the same string, starts searching after the previous match&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;built-in-variables&quot;&gt;BUILT IN VARIABLES&lt;/h2&gt;
+&lt;p&gt;=====================
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Date()&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;document.location&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;is website url&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;helper-functions&quot;&gt;HELPER FUNCTIONS&lt;/h2&gt;
+&lt;p&gt;===================&lt;/p&gt;
+
+&lt;p&gt;Append text to document body&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    document.body.appendChild(document.createTextNode(&quot;hi&quot;));
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Simulate a click without clicking there&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    function eventFire(el, etype){
+      if (el.fireEvent) {
+        el.fireEvent('on' + etype);
+      } else {
+        var evObj = document.createEvent('Events');
+        evObj.initEvent(etype, true, false);
+        el.dispatchEvent(evObj);
+      }
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;usage: &lt;code class=&quot;highlighter-rouge&quot;&gt;eventFire(document.getElementById('mytest1'), 'click');&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Get mouse coordinates when it changes&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(function() {
+    document.onmousemove = handleMouseMove;
+    function handleMouseMove(event) {
+        var dot, eventDoc, doc, body, pageX, pageY;
+
+        event = event || window.event; // IE-ism
+
+        // If pageX/Y aren't available and clientX/Y are,
+        // calculate pageX/Y - logic taken from jQuery.
+        // (This is to support old IE)
+        if (event.pageX == null &amp;amp;&amp;amp; event.clientX != null) {
+            eventDoc = (event.target &amp;amp;&amp;amp; event.target.ownerDocument) || document;
+            doc = eventDoc.documentElement;
+            body = eventDoc.body;
+
+            event.pageX = event.clientX +
+              (doc &amp;amp;&amp;amp; doc.scrollLeft || body &amp;amp;&amp;amp; body.scrollLeft || 0) -
+              (doc &amp;amp;&amp;amp; doc.clientLeft || body &amp;amp;&amp;amp; body.clientLeft || 0);
+            event.pageY = event.clientY +
+              (doc &amp;amp;&amp;amp; doc.scrollTop  || body &amp;amp;&amp;amp; body.scrollTop  || 0) -
+              (doc &amp;amp;&amp;amp; doc.clientTop  || body &amp;amp;&amp;amp; body.clientTop  || 0 );
+        }
+
+        // Use event.pageX / event.pageY here
+    }
+})();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;terms&quot;&gt;TERMS&lt;/h2&gt;
+&lt;p&gt;========&lt;/p&gt;
+
+&lt;p&gt;String interpolation&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;add variable value to a string&lt;/li&gt;
+  &lt;li&gt;ex: console.log(var+”hi”);&lt;/li&gt;
+  &lt;li&gt;Escaping a letter
+    &lt;ul&gt;
+      &lt;li&gt;in a quote &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;There\'s something&quot;&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;put a slash to print the apostrophe&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tips&quot;&gt;TIPS&lt;/h2&gt;
+&lt;p&gt;======&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;while testing on a web server
+    &lt;ul&gt;
+      &lt;li&gt;disable cache in inspect element
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Network-&amp;gt;Disable cache&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;change order of elements by appending/something the &lt;code class=&quot;highlighter-rouge&quot;&gt;document.getElementById&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-3&quot;&gt;====================================================================&lt;/h1&gt;
+&lt;h1 id=&quot;-4&quot;&gt;====================================================================&lt;/h1&gt;
+&lt;h1 id=&quot;-5&quot;&gt;====================================================================&lt;/h1&gt;
+
+&lt;h2 id=&quot;jquery&quot;&gt;JQUERY&lt;/h2&gt;
+&lt;p&gt;========&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$(thing)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;means the element is from jquery and should act like one &amp;gt;:D&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$(document)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$('button')&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;it’s a button element!
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.on('event', doThis)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;‘event’ is the event psh. ex: ‘click’&lt;/li&gt;
+          &lt;li&gt;doThis can be a function&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-6&quot;&gt;====================================================================&lt;/h1&gt;
+&lt;h1 id=&quot;-7&quot;&gt;====================================================================&lt;/h1&gt;
+&lt;h1 id=&quot;-8&quot;&gt;====================================================================&lt;/h1&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+&lt;p&gt;========&lt;/p&gt;
+
+&lt;p&gt;Should probably use a modern front end library like &lt;code class=&quot;highlighter-rouge&quot;&gt;ReactJS&lt;/code&gt; so that the site doesn’t become spaghetti code. These notes are a way to get started with HTML and Javascript, but don’t really talk about best coding practices.&lt;/p&gt;</content><author><name>Jenny Wang</name></author><category term="coding_notes" /><summary type="html">HTML STUFF ============</summary></entry><entry><title type="html">How to Python</title><link href="http://himty.github.io/how_to_python/" rel="alternate" type="text/html" title="How to Python" /><published>2018-10-06T00:00:00-04:00</published><updated>2018-10-06T00:00:00-04:00</updated><id>http://himty.github.io/how_to_python</id><content type="html" xml:base="http://himty.github.io/how_to_python/">&lt;h2 id=&quot;weird-things-compared-to-java&quot;&gt;Weird things compared to Java&lt;/h2&gt;
+&lt;p&gt;============&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Passes lists to functions as references
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;list[1] = 2&lt;/code&gt; actually changes data in list&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;No semicolon (;)&lt;/li&gt;
+  &lt;li&gt;Tabs/spaces are necessary&lt;/li&gt;
+  &lt;li&gt;Print does everything&lt;/li&gt;
+  &lt;li&gt;Arrays replaced by lists&lt;/li&gt;
+  &lt;li&gt;Comments are # (not //)&lt;/li&gt;
+  &lt;li&gt;No main method (type everything together: global vars, functions, statements)
+    &lt;ul&gt;
+      &lt;li&gt;runs top to bottom (like javascript)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;”” same as ‘’ (aka strings)&lt;/li&gt;
+  &lt;li&gt;booleans’ values are 0 or 1 (more below)&lt;/li&gt;
+  &lt;li&gt;&amp;amp;&amp;amp;, ||, and ! are written as and, or, and not&lt;/li&gt;
+  &lt;li&gt;True and False are capitalized&lt;/li&gt;
+  &lt;li&gt;No variable type declaration (ex: var, int, double)&lt;/li&gt;
+  &lt;li&gt;“To the power of” is &lt;code class=&quot;highlighter-rouge&quot;&gt;** &lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;2 ** 4 == 16&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;== works for strings&lt;/li&gt;
+  &lt;li&gt;Multiline comments use triple quotes “””
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;ex:&lt;/p&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &quot;&quot;&quot;I am a comment
+  that can span
+  multiple lines&quot;&quot;&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Continuation character \
+    &lt;ul&gt;
+      &lt;li&gt;Signifies that the next line is a part of the line above&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;ex:&lt;/p&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  var this = \
+  some_value
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Functional programming allowed (Use lambda keyword)
+    &lt;ul&gt;
+      &lt;li&gt;Can pass functions as variables&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Define multiple variables on one line
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;ex:&lt;/p&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  var1, var2, var3 = val1, val2, val3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;Must have one value per variable&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Number is True if it isn’t 0 (if you’re not doing ==, but like if or while or smth)
+  None would be False
+  Returns the second to last # if the last # throws an error (ex: 1/0)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;terms&quot;&gt;Terms&lt;/h2&gt;
+&lt;p&gt;======&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docstring&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    '''Comment'''
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Describes something&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;doctest&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &amp;gt;&amp;gt;&amp;gt; print(&quot;Test&quot;)
+    Test
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;shows that this is how to use the function&lt;/li&gt;
+  &lt;li&gt;can do python3 -m doctest &lt;filename&gt; to test it.
+&lt;/filename&gt;    &lt;ul&gt;
+      &lt;li&gt;Prints out errors if output isn’t the same as expected&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;operators&quot;&gt;Operators&lt;/h2&gt;
+&lt;p&gt;=========&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;7 / 2&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;div&lt;/li&gt;
+  &lt;li&gt;Returns decimal representation of result&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;7 // 2&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;floordiv&lt;/li&gt;
+  &lt;li&gt;Returns the rounded down integer of the result&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;booleans&quot;&gt;booleans&lt;/h2&gt;
+&lt;p&gt;=========&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;True&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;False&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;can be evaluated to 1 or 0
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;ex:&lt;/p&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  points = isHit*pointsHit + (1-isHit)*pointsMiss
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;gives points correctly&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;not&lt;/code&gt; applies to the next boolean&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;not 3 == 2&lt;/code&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;True&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;for-loops&quot;&gt;for loops&lt;/h2&gt;
+&lt;p&gt;=========&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for i in range(&amp;lt;number&amp;gt;):&lt;/code&gt;
+    does it &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;number&amp;gt;&lt;/code&gt; times
+    consider &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;number&amp;gt; = len(myList)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for i in range(minIndex, maxIndex):&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;i is from [minIndex, maxIndex)
+    &lt;ul&gt;
+      &lt;li&gt;Note the inclusive [ and exclusive )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for elm in myList:&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;like a for-each loop in Java&lt;/li&gt;
+  &lt;li&gt;elm is an element in myList&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for key in myDictionary:&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;like for-each&lt;/li&gt;
+  &lt;li&gt;get the value by doing myDictionary[key]&lt;/li&gt;
+  &lt;li&gt;Keys are used in reverse-alphabetical order (z to a)
+    &lt;ul&gt;
+      &lt;li&gt;not necessarily in the order they were initialized to&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for char in &quot;string&quot;:&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;for each character in the string&lt;/li&gt;
+  &lt;li&gt;because strings are lists&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for index, item in enumerate(list):&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;index is the index of item in the list&lt;/li&gt;
+  &lt;li&gt;item is the next item&lt;/li&gt;
+  &lt;li&gt;A magical for-each loop with indices too&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for a, b in zip(listA, listB):&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Gives items in pairs. Will stop at the end of the shorter list&lt;/li&gt;
+  &lt;li&gt;a is the nth item in listA&lt;/li&gt;
+  &lt;li&gt;b is the nth item in listB&lt;/li&gt;
+  &lt;li&gt;Can do this for as many lists as you want&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for x in set(lst_a).intersection(lst_b):&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Gives x if x is both in lst_a and lst_b&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for x in set(lst_a).difference(lst_b):&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Gives x if x is in lst_a but not in lst_b&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;if-statements&quot;&gt;if statements&lt;/h2&gt;
+&lt;p&gt;=============&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if &amp;lt;expression&amp;gt;:
+    &amp;lt;do something&amp;gt;
+elif &amp;lt;expression&amp;gt;:
+    &amp;lt;do something&amp;gt;
+else:
+    &amp;lt;do something else&amp;gt;
+&amp;lt;I'm out of the if statement!&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;functions&quot;&gt;Functions&lt;/h2&gt;
+&lt;p&gt;==========&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def funcName(parameters):
+    &amp;lt;&quot;fuction docstring&quot;&amp;gt; # Basically a comment to document the code
+    &amp;lt;do something&amp;gt;
+    &amp;lt;return [expression]&amp;gt;
+     ^^^
+    &amp;lt;&quot;function docstring&quot;&amp;gt;- optional statement to document the function
+    &amp;lt;do something&amp;gt;- the code block
+    &amp;lt;return [expression]&amp;gt;- the return statement (optional)
+                 - no return statement = return None
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*args&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;f(*args)&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;function takes in an arbitrary number of arguments&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ex: run a generic function multiple times:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  def make_avg_f(fn, num_times):
+      def avg_f(*args):
+          return avg(f(*args))
+      return avg_f
+  &amp;gt;&amp;gt;&amp;gt; avg_f = make_avg_f(foo, 1000)
+  &amp;gt;&amp;gt;&amp;gt; avg_f(foo_arg1, foo_arg2)
+  100342342348729
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;classes&quot;&gt;Classes&lt;/h2&gt;
+&lt;p&gt;========&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class ClassName([BaseClass])
+    member_var = True
+
+    def __init__(self[, init_parameter, more, etc, ...]):
+        self.init_parameter = init_parameter
+    
+    def other_method(self[, other_parameter, more, etc, ...]):
+        &amp;lt;do something&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;BaseClass&lt;/code&gt; - think about superclasses
+    &lt;ul&gt;
+      &lt;li&gt;If it’s not given, BaseClass defaults to object&lt;/li&gt;
+      &lt;li&gt;Override methods by just making a new one with the same name/parameters&lt;/li&gt;
+      &lt;li&gt;Classes that override don’t need the &lt;strong&gt;init&lt;/strong&gt;() method&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;__init__&lt;/code&gt; must have at least one parameter
+    &lt;ul&gt;
+      &lt;li&gt;self will refer to the object being created&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In the example, .init_parameter is an attribute (no need for doing int attr, etc)
+    &lt;ul&gt;
+      &lt;li&gt;Access with my_square = Square() ==&amp;gt; my_square.sides&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;init_parameter&lt;/code&gt; is a member variable (not instance variable-to particular instances of the class)
+    &lt;ul&gt;
+      &lt;li&gt;only available to members of the ClassName class&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;member_var&lt;/code&gt; can be accessed by all objects of the ClassName class
+    &lt;ul&gt;
+      &lt;li&gt;But changing the value of one instance with hippo.is_alive = False doesn’t
+        &lt;ul&gt;
+          &lt;li&gt;change the value of the other ex: cat.is_alive&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;self.var&lt;/code&gt; to change any variables for that class’s instance&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Methods - functions in a class
+    &lt;ul&gt;
+      &lt;li&gt;Must take self as first parameter&lt;/li&gt;
+      &lt;li&gt;But when calling it, you don’t have to include self inside the ()&lt;/li&gt;
+      &lt;li&gt;ex: temp = ClassName() ==&amp;gt; temp.other_method()&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Call superclass’s methods
+    &lt;ul&gt;
+      &lt;li&gt;super(ChildClass’sName, self).super_method()&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Functions from object
+    &lt;ul&gt;
+      &lt;li&gt;.&lt;strong&gt;init&lt;/strong&gt;(self[, other_parameters, etc, …])
+        &lt;ul&gt;
+          &lt;li&gt;Think of a constructor&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;.&lt;strong&gt;repr&lt;/strong&gt;(self)
+        &lt;ul&gt;
+          &lt;li&gt;Stands for representation&lt;/li&gt;
+          &lt;li&gt;Tells Python how to represent the object, ex: when printing&lt;/li&gt;
+          &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;def __repr__(self): return &quot;hi&quot;&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
+&lt;p&gt;=======&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ARRAYS DO NOT EXIST (but think of them). They are LISTS&lt;/li&gt;
+  &lt;li&gt;Note the [] instead of the {} (dictionaries)&lt;/li&gt;
+  &lt;li&gt;Use len(list) for number of items&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;myList = []&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;make a list&lt;/li&gt;
+  &lt;li&gt;put values in [] if you want to initialize w/ values
+    &lt;ul&gt;
+      &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;list = [2,3]&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print myList&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;prints it in the format [value, value, value]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;myList[&amp;lt;index or sublist&amp;gt;]&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;index: the index from 0 to len(myList)&lt;/li&gt;
+  &lt;li&gt;sublist: &lt;startval&gt;:&lt;endval&gt; (inclusive:exclusive)
+&lt;/endval&gt;&lt;/startval&gt;    &lt;ul&gt;
+      &lt;li&gt;ex:
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[3:5]&lt;/code&gt; gives list with elements 3 and 4&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[:5]&lt;/code&gt; gives list w/ elements up until 4 (no 5)&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[3:]&lt;/code&gt; gives list w/ elements 3 up until the end&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[:]&lt;/code&gt; gives entire list&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;myList[0:2] = [0,1]&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;AMAZING&lt;/li&gt;
+      &lt;li&gt;array size on left doesn’t have to equal size on right. simply replaces. AMAZING&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List comprehension for new lists
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Initialize a fancy list&lt;/p&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  [&amp;lt;var and expression] &amp;lt;for loop&amp;gt; [&amp;lt;if statement&amp;gt;]]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;list = [i for i in range(10)]&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;numbers 0 to 9 inclusive&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;list = [i * 2 for i in range(10)]&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;even numbers 0 to 18 inclusive&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;list = [i for i in range(51) if i % 2 == 0]&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;even numbers 0 to 50 inclusive&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;list = [x*2 for x in range(6) if (x*2) % 3 == 0]&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Even numbers that are divisible by 3 from 0 to 5 inclusive
+                &lt;ul&gt;
+                  &lt;li&gt;So [6] (which is 3 * 2)&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Also a good counter
+            &lt;ul&gt;
+              &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;list = [&quot;C&quot; for x in range(5) if x &amp;lt; 3]&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Concatenate lists with +
+    &lt;ul&gt;
+      &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;x = [1,2], y=[2,3] =&amp;gt; x + y = [1, 2, 2, 3]&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Create list with repeating values
+    &lt;ul&gt;
+      &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;[0] * 5 == [0, 0, 0, 0, 0]&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;[0] * 2 * 2 == [0, 0, 0, 0] (not two lists inside a list)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Use .append() instead&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To print without [] brackets
+      &lt;code class=&quot;highlighter-rouge&quot;&gt;list = [1, 2, 3] ==&amp;gt; &quot; &quot;.join(list) ==&amp;gt; &quot;1 2 3&quot;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;functions
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.append(val)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Add val into the last slot of the array&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.count(val)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Returns int of the # of occurances of val in the list&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.index(val)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns index of val in the list&lt;/li&gt;
+          &lt;li&gt;BEWARE: throws ValueError if m isn’t in the list&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.insert(index, item)&lt;/code&gt;
+      - inserts item at index (or the end of the list)
+      - ex: insert at 100 then .index =&amp;gt; at len(list)&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.pop(index)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Removes item at index and returns it&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.remove(value)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;removes first item in the list that matches the value&lt;/li&gt;
+          &lt;li&gt;NOTE: NOT THE INDEX&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.sort(reverse=bool, key=func)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;sorts items in the list (ex: alphabetical, smallest to largest)&lt;/li&gt;
+          &lt;li&gt;modifies the list and doesn’t return a new one&lt;/li&gt;
+          &lt;li&gt;reverse=True =&amp;gt; descending order. Else or not included, ascending order&lt;/li&gt;
+          &lt;li&gt;key=func =&amp;gt; applied to the element before sorting
+            &lt;ul&gt;
+              &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;lambda pair: pair[0]&lt;/code&gt; to sort by the zeroth element of the objects&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;del(list[index])&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Removes the item at index and won’t return it&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sum(myList)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns sum of all elements in p&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dictionaries&quot;&gt;Dictionaries&lt;/h2&gt;
+&lt;p&gt;============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Note the {} instead of the [] (lists)&lt;/li&gt;
+  &lt;li&gt;Think of structs&lt;/li&gt;
+  &lt;li&gt;Access values by looking up a key&lt;/li&gt;
+  &lt;li&gt;Can put list in dictionaries O:&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ex:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  names = {&quot;dog&quot;:&quot;Spike&quot;, &quot;cat&quot;:&quot;Fluffy&quot;, &quot;bird&quot;:&quot;Sugar&quot;}
+  names[&quot;dog&quot;] == &quot;Spike&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ex:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  residents = {1:&quot;Bob&quot;, 2:&quot;Joe&quot;, 3:&quot;What are more names&quot;}
+  residents[1] == &quot;Bob&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ex:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  dict = {} # Empty dictionary
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ex:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  dict[&quot;new key&quot;] = new_value
+  adds a new key-value pair to the dictionary
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ex:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  dict[&quot;old key&quot;] = new_value
+  changes the value associated with the key
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;del dict[key_name]&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;removes key_name and its associated value from the dictionary&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Functions&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.items()&lt;/code&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Returns a list of tuples of key-value pairs in the dictionary in no particular order
+        &lt;ul&gt;
+          &lt;li&gt;Tuple = group (a key/value pair in this case)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.keys()&lt;/code&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Returns list of keys of the dictionary in no particular order
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;.values()&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Returns  list of the dictionary’s values in no particular order&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;defaultdict(default_value)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;high performance container datatype that gives default_value if that key isn’t found&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tuple&quot;&gt;Tuple&lt;/h2&gt;
+&lt;p&gt;======&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An immutable list (unchangeable)&lt;/li&gt;
+  &lt;li&gt;Surrounded by ()s and can contain any data type&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;data-structures&quot;&gt;Data structures&lt;/h2&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Contained within collections&lt;/li&gt;
+  &lt;li&gt;deque(iter_for_init[, maxlen]) (“DEHK” pronounciation)
+    &lt;ul&gt;
+      &lt;li&gt;Double-sided queue&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;append(x)&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;appendleft(x)&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;extend(iter)&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;extendleft(iter)&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;pop()&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;popleft()&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;remove(val)&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;reverse()&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;clear()&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;count(x)&lt;/code&gt; - returns # of deque elements equal to x&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rotate(n=1)&lt;/code&gt; shift in circular way to the right&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;maxlen&lt;/code&gt; - max length of the deque (corresponding # of items discarded as added if length &amp;gt; maxlen)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;bitwise-operators&quot;&gt;Bitwise operators&lt;/h2&gt;
+&lt;p&gt;=================&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Operators
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&amp;gt;&lt;/code&gt; - Right shift
+        &lt;ul&gt;
+          &lt;li&gt;“divide by 2 and round down”&lt;/li&gt;
+          &lt;li&gt;Good for making a mask while not writing all the digits&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt;&lt;/code&gt; - Left shift
+        &lt;ul&gt;
+          &lt;li&gt;“multiply by 2”&lt;/li&gt;
+          &lt;li&gt;Good for making a mask while not writing all the digits&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;  - Bitwise AND
+        &lt;ul&gt;
+          &lt;li&gt;“determine if a bit is on”&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt;  - Bitwise OR
+        &lt;ul&gt;
+          &lt;li&gt;“turn a bit on if it’s off and leave the rest on”&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt;  - Bitwise XOR
+        &lt;ul&gt;
+          &lt;li&gt;“flips a bit wherever there’s a 1 in the mask”&lt;/li&gt;
+          &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;0b0110 ^ 0b1101 = 0b1011&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~&lt;/code&gt;  - Bitwise NOT
+        &lt;ul&gt;
+          &lt;li&gt;Equivalent to adding 1 to the number and making it negative&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ex: flip nth bit&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  num = num ^ 0b1 &amp;lt;&amp;lt; (n - 1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Denoting bases
+    &lt;ul&gt;
+      &lt;li&gt;base 2 - &lt;code class=&quot;highlighter-rouge&quot;&gt;0b&amp;lt;number&amp;gt;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;base 8 - &lt;code class=&quot;highlighter-rouge&quot;&gt;0o&amp;lt;number&amp;gt;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;base 16 - &lt;code class=&quot;highlighter-rouge&quot;&gt;0x&amp;lt;number&amp;gt;&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Helpful functions
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bin(num)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Returns binary representaion of num as a STRING&lt;/li&gt;
+          &lt;li&gt;Can input binary, decimal, hex, etc (not string)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hex(num)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Returns hexadecimal representation of num as a STRING&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;oct(num)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Returns octadecimal representation of num as a STRING&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;int(&amp;lt;num as another type&amp;gt;[, baseTheNumCurrentlyIsIn])&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Normally converts the num as another type to an integer&lt;/li&gt;
+          &lt;li&gt;If num is a string, the optional parameter converts it to decimal (int)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;strings&quot;&gt;Strings&lt;/h2&gt;
+&lt;p&gt;========&lt;/p&gt;
+
+&lt;h3 id=&quot;note-the-prescence-and-lack-of--before-the-function-name&quot;&gt;***NOTE THE PRESCENCE AND LACK OF . BEFORE THE FUNCTION NAME***&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;s[index]&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns char at index&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;s[start:end:stride]&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns substring from [start,end) with the step stride&lt;/li&gt;
+  &lt;li&gt;Note that both start and end are optional&lt;/li&gt;
+  &lt;li&gt;stride - like a step&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To reverse a string
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;s[::-1]&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;reversed(s)&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;String Encoding declarations- &lt;code class=&quot;highlighter-rouge&quot;&gt;'str'&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;u'str'&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;r'str'&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Are equivalent. They’re strings represented in different ways&lt;/li&gt;
+      &lt;li&gt;u =&amp;gt; Unicode&lt;/li&gt;
+      &lt;li&gt;r =&amp;gt; Raw&lt;/li&gt;
+      &lt;li&gt;Convert among them with raw(str), unicode(str), str(str)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To remove a character
+  ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;s = s[:3] + s[4:]&lt;/code&gt;
+  ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;s = s.replace(&quot;old&quot;, &quot;&quot;)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Functions
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ord(char)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns ASCII code of that character&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;chr(&amp;lt;ascii code&amp;gt;)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns character represented by that ASCII code&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;len(&quot;string&quot;)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns length of string&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;len(string)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns length of string&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;max(string)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns character w/ highest ASCII value in that string&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;min(string)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns character w/ lowest ASCII value in that string&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;str1 in str2&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns whether str1 appears in str2
+            &lt;ul&gt;
+              &lt;li&gt;^^ boolean True/False O.o&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;str1 &amp;lt;string comparison&amp;gt; str2&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt; &amp;lt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;=&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;=&lt;/code&gt;    compares ASCII values&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;==&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;!=&lt;/code&gt;      check by value (not memory location)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isalnum(str)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns if the string is alphanumeric&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isalpha(str)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns True if string contains only alphabets&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isdigit(str)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns &lt;code class=&quot;highlighter-rouge&quot;&gt;True&lt;/code&gt; if string contains only digits&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isidentifier(str)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;return &lt;code class=&quot;highlighter-rouge&quot;&gt;True&lt;/code&gt; is string is valid identifier&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isspace(str)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns &lt;code class=&quot;highlighter-rouge&quot;&gt;True&lt;/code&gt; if string contains only whitespace&lt;/li&gt;
+          &lt;li&gt;includes &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;\t&quot;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;\n&quot;&lt;/code&gt;, etc&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;endswith(s1: str)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns &lt;code class=&quot;highlighter-rouge&quot;&gt;True&lt;/code&gt; if strings ends with substring s1&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;startswith(s1: str)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns &lt;code class=&quot;highlighter-rouge&quot;&gt;True&lt;/code&gt; if strings starts with substring s1&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;count(substring)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns number of occurrences of substring the string&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.find(s1)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns lowest index from where s1 starts in the string, if string not found returns -1&lt;/li&gt;
+          &lt;li&gt;INDEXOF()! My love!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.rfind(s1)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;returns highest index from where s1 starts in the string, if string not found returns -1&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.lower()&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;return string by converting every character to lowercase&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.upper()&lt;/code&gt;
+  return string by converting every character to uppercase&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.split(&quot;str&quot;)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Returns a list that has elements separated by str&lt;/li&gt;
+          &lt;li&gt;The “str” is removed&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.replace(oldStr, newStr[, numTimes])&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;No numTimes - returns str with every occurrence of old string replaced with new string&lt;/li&gt;
+          &lt;li&gt;numTimes - Number of oldStrs to be replaced at maximum&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;console-functions&quot;&gt;Console Functions&lt;/h2&gt;
+&lt;p&gt;==============&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;touch &amp;lt;filename.txt&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Creates filename.txt in the current directory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print var1[, var2, var3, ...]&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;ex: print p&lt;/li&gt;
+  &lt;li&gt;print out to console&lt;/li&gt;
+  &lt;li&gt;if variable is an array, prints like [0.1, 0.2] (array elements)&lt;/li&gt;
+  &lt;li&gt;NOTE: print (with nothing afterwards) prints an empty line&lt;/li&gt;
+  &lt;li&gt;**Putting multiple variables seperated by commas seperates them by a space&lt;/li&gt;
+  &lt;li&gt;**print var, means that the next print statement will print on the same line&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print(&quot;Number: %d, String: %s&quot;) % (my_num, my_str)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;prints the string with %d’s, %s’s, etc replaced by the nth variable in ()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print(var[, end=&quot;string&quot;])&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;prints the variable&lt;/li&gt;
+  &lt;li&gt;end- prints “string” after printing the var
+    &lt;ul&gt;
+      &lt;li&gt;default = “\n”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;input(&quot;Question&quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;prints question to console and returns the string response&lt;/li&gt;
+  &lt;li&gt;NOTE: Returns a string, so to compare numbers, do int(input)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;keywords&quot;&gt;Keywords&lt;/h2&gt;
+&lt;p&gt;========&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;break&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;exits the for loops&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;in&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns whether the var is in the list&lt;/li&gt;
+  &lt;li&gt;ex: x in range(8) == true&lt;/li&gt;
+  &lt;li&gt;ex: x not in range(8) == false&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lambda&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Creates an anonymous function (define functions in-line)&lt;/li&gt;
+  &lt;li&gt;Good for passing functions as parameters to functions&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lambda &amp;lt;parameters&amp;gt;: &amp;lt;return expression&amp;gt;&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Don’t have to have a parameter but must have a return
+        &lt;ul&gt;
+          &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;(lambda: 3)() returns 3&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;foo(lambda x: x % 3 == 0)&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;foo()&lt;/code&gt; can use that function as a parameter (renamed in the foo())&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;lambda x: lambda: x&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Returns a function that returns a number&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;lambda f: f(4)&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Use a function as a parameter&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Used with &lt;code class=&quot;highlighter-rouge&quot;&gt;filter()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pass&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Doesn’t do anything. It’s a good placeholder
+    &lt;ul&gt;
+      &lt;li&gt;(; would throw a syntax error)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;file-io&quot;&gt;File I/O&lt;/h2&gt;
+&lt;p&gt;========&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open a file&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      f = open(&quot;filename.txt&quot;, &quot;w&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Then you can f.write, f.close, f.read, etc&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Functions that can’t be directly invoked
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;__enter__()&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;__exit__()&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;Automatically closes the file afterwards like .close()
+  ex:&lt;/p&gt;
+
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      with open(&quot;filename&quot;, &quot;w&quot; as textfile:
+          textfile.write(&quot;Success&quot;)
+          &amp;lt;read or write to file&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Attributes
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;closed&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Returns True if the file is closed (eg: with .close())&lt;/li&gt;
+          &lt;li&gt;Returns False if otherwise&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Functions
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;open(&quot;filename.txt&quot;, &quot;mode&quot;)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;“filename.txt” is the filename&lt;/li&gt;
+          &lt;li&gt;“mode” -
+            &lt;ul&gt;
+              &lt;li&gt;“w” - write&lt;/li&gt;
+              &lt;li&gt;“r” - read&lt;/li&gt;
+              &lt;li&gt;“r+” - read and write&lt;/li&gt;
+              &lt;li&gt;“a” - append to the end of the file&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.close()&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Must be done or else text won’t be written properly&lt;/li&gt;
+          &lt;li&gt;nd you can’t read until you’re “done” writing&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.read()&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Returns literally the whole text file lmao&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.readline()&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Returns a line from the file, including the newline&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.write(str)&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;MUST BE A STRING (use &lt;code class=&quot;highlighter-rouge&quot;&gt;str()&lt;/code&gt;)&lt;/li&gt;
+          &lt;li&gt;Does not add newlines (“\n”); must do it yourself&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;multiprocessing&quot;&gt;Multiprocessing&lt;/h2&gt;
+&lt;p&gt;==============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;multiprocessing.Queue&lt;/code&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;gt;&amp;gt;&amp;gt; q = Queue()
+  &amp;gt;&amp;gt;&amp;gt; q.put('something')
+  &amp;gt;&amp;gt;&amp;gt; q.get()
+  'something'
+  &amp;gt;&amp;gt;&amp;gt; q.get() --&amp;gt; blocks and waits forever
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;built-in-functions&quot;&gt;Built-in Functions&lt;/h2&gt;
+&lt;p&gt;==================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;abs(var)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns abs value of number&lt;/li&gt;
+  &lt;li&gt;Only takes one number&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;dir([obj])&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns obj’s list of attributes&lt;/li&gt;
+  &lt;li&gt;If no obj parameter - returns list of names in current local scope&lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;import math&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;dir(math)&lt;/code&gt; is list of vars/funcs in math module&lt;/li&gt;
+  &lt;li&gt;Can print dir(obj) to get all attributes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;enumerate(list)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;“supplies a corresponding index to each element in the list that you pass it”&lt;/li&gt;
+  &lt;li&gt;Good for for loops&lt;/li&gt;
+  &lt;li&gt;Get an index while still using a for-each loop&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;filter(function, list)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns list of elements in list that return True when passed through function&lt;/li&gt;
+  &lt;li&gt;function- can be made anonymously with lambda keyword&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;id(var)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns memory address of var&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;id(var1) == id(var2)&lt;/code&gt; to see if both point to same object&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;max(var)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns max value of var&lt;/li&gt;
+  &lt;li&gt;See &lt;code class=&quot;highlighter-rouge&quot;&gt;min(var)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;min(var)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns minimum value of var
+    &lt;ul&gt;
+      &lt;li&gt;its value if it’s one number&lt;/li&gt;
+      &lt;li&gt;the lowest in the iterable if it is one&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Best to use it with integers and floats only (not strings)&lt;/li&gt;
+  &lt;li&gt;Takes any number of arguments&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;range(stop)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns list with numbers 0 to stop - 1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;range(start, stop)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns list with numbers start to stop - 1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;range(start, stop, step)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns list with numbers start to stop - step with step step :P&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;reversed(str)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns the string with characters in reverse order&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;str(obj)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns a string containing a nicely printable version of the object&lt;/li&gt;
+  &lt;li&gt;Think of toString() from Java&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sum(list)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns the sum of the values in list&lt;/li&gt;
+  &lt;li&gt;Only for numbers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;type(obj)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Returns type of obj&lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;1 =&amp;gt; &amp;lt;type 'int'&amp;gt;, 2.0 =&amp;gt; &amp;lt;type 'float'&amp;gt;, &quot;hi&quot; =&amp;gt; &amp;lt;type 'str'&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;type(1.0) == float, type(1) == int&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;zip(list1, list2[, list3, list4, ...])&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Gives pairs of items from each list. Good for for loops&lt;/li&gt;
+  &lt;li&gt;Will stop with the shorter list&lt;/li&gt;
+  &lt;li&gt;ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;zip([1, 2, 3], [4, 5, 6]) == [(1, 4), (2, 5), (3, 6)]&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Access result with&lt;code class=&quot;highlighter-rouge&quot;&gt; result[0][0] == 1&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;The () are tuples O:&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;cool-modules-like-libraries&quot;&gt;Cool Modules (like libraries)&lt;/h2&gt;
+&lt;p&gt;=============================&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Generic import- &lt;code class=&quot;highlighter-rouge&quot;&gt;import &amp;lt;module name&amp;gt;&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Must use module.function_name() to use function&lt;/li&gt;
+      &lt;li&gt;ex: import math&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Function import- &lt;code class=&quot;highlighter-rouge&quot;&gt;from &amp;lt;module name&amp;gt; import &amp;lt;function/variable&amp;gt;&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Imports only that function from module&lt;/li&gt;
+      &lt;li&gt;Can use function_name to use function instead of module.function()&lt;/li&gt;
+      &lt;li&gt;ex: import sqrt from math
+Universal &lt;code class=&quot;highlighter-rouge&quot;&gt;import- from &amp;lt;module name&amp;gt; import *&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Imports all functions/variables from the module and don’t use module.function()&lt;/li&gt;
+      &lt;li&gt;Makes code confusing b/c high possibility of conflicting names&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Use functions/variables from:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;math&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sqrt(x)&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;returns square root of x&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;random&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;randint(min, max)&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;generates random integer from min to max inclusive&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;from numpy import np&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;good for vectors, matrices (2D arrays w/ extra features), and arrays (any dimension)&lt;/li&gt;
+          &lt;li&gt;matrices can use * to multiply (not arrays)&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;arr[::3]&lt;/code&gt; etc works&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;arr1 + arr2&lt;/code&gt; is addition of elements and not concatenation (reg lists)&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.arange(start,end,step)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns NumPy array with numbers step away from each other from start to end exclusive&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.zeros([num_rows, num_cols])&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns NumPy array that contains all 0s&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.eye(n)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns identity NumPy array with n rows and n cols&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.empty([m,n], dtype=np.int)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns empty m x n NumPy array with datatype int inside&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.matrix([[a11, a12], [a21, a22]])&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns matrix with initial values&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.linspace(start, stop, num_divisions)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns NumPy array that has num_division numbers from start to stop equally spaced&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.concatenate([arr1, arr2, ...], axis)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns concatenation of arrays&lt;/li&gt;
+              &lt;li&gt;axis
+                &lt;ul&gt;
+                  &lt;li&gt;= 0 =&amp;gt; stack vertically (1 ontop of another)&lt;/li&gt;
+                  &lt;li&gt;= 1 =&amp;gt; stack horizontally&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;or np.vstack([arr1, arr2]) and np.hstack([arr1, arr2])&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.flatten()&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns array in one dimension&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.reshape([m, n, ...])&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns array with that many rows/columns/any other dimension&lt;/li&gt;
+              &lt;li&gt;To get a 1D vector, just put a number inside&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.transpose(arr)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns transpose of arr&lt;/li&gt;
+              &lt;li&gt;Also: &lt;code class=&quot;highlighter-rouge&quot;&gt;mat.T&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.linalg.inv(arr)&lt;/code&gt;
+  Returns inverse of arr&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.linalg.solve(a, b)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;solves &lt;code class=&quot;highlighter-rouge&quot;&gt;Ax = b&lt;/code&gt;. And returns as an array&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.dot(arr1, arr2)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns the result of matrix multiplication btwn arr1 and arr2&lt;/li&gt;
+              &lt;li&gt;Order matters&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.floor(num)&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.ceil(num)&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.max(arr)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns max in an array&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.min(arr)&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.argmax(arr)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns index of max in an array&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.argmin(arr)&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.multiply(a, b)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Returns the multiplication of a and b element-wise
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;- np.roll(arr, num_cells_to_roll, axis)&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;Shifts cells and puts the excess on the other side
+  vNo need axis arg for 1D array&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;np.diagonal(arr)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Return diagonal elements of arr in another arr&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;argparse&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.ArgumentParser(description=&quot;desc&quot;)&lt;/code&gt;
+            &lt;ul&gt;
+              &lt;li&gt;creates parser that you can do:&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.add_argument(&quot;--parsed_name?&quot;, &quot;-shortname&quot;, action='store_true',help=&quot;Runs strategy experiments&quot;)&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.parse_args()&lt;/code&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;Returns parsed arguments in a… struct?&lt;/li&gt;
+                  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;args.parsed_name&lt;/code&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;Boolean.
+                        &lt;ul&gt;
+                          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;True&lt;/code&gt;- was included when running the file&lt;/li&gt;
+                          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;False&lt;/code&gt;- not included when running the file&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jenny Wang</name></author><category term="coding_notes" /><summary type="html">Weird things compared to Java ============ Passes lists to functions as references list[1] = 2 actually changes data in list No semicolon (;) Tabs/spaces are necessary Print does everything Arrays replaced by lists Comments are # (not //) No main method (type everything together: global vars, functions, statements) runs top to bottom (like javascript) ”” same as ‘’ (aka strings) booleans’ values are 0 or 1 (more below) &amp;amp;&amp;amp;, ||, and ! are written as and, or, and not True and False are capitalized No variable type declaration (ex: var, int, double) “To the power of” is ** ex: 2 ** 4 == 16 == works for strings Multiline comments use triple quotes “”” ex:</summary></entry><entry><title type="html">How to Android Studio</title><link href="http://himty.github.io/how_to_android_studio/" rel="alternate" type="text/html" title="How to Android Studio" /><published>2017-06-21T00:00:00-04:00</published><updated>2017-06-21T00:00:00-04:00</updated><id>http://himty.github.io/how_to_android_studio</id><content type="html" xml:base="http://himty.github.io/how_to_android_studio/">&lt;h2 id=&quot;pixels-and-screen-compatibility&quot;&gt;PIXELS AND SCREEN COMPATIBILITY&lt;/h2&gt;
+&lt;p&gt;================================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;dp to pixels&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;float scale = getResources().getDisplayMetrics().density;&lt;/li&gt;
+  &lt;li&gt;numPixels = (int) (dp * scale + 0.5f);&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ViewConfiguration&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;.get(myContext).getScaledTouchSlop()
+    &lt;ul&gt;
+      &lt;li&gt;returns int of the distance in pixels a touch&lt;/li&gt;
+      &lt;li&gt;can wander before we think the user is scrolling&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;androidutil-package&quot;&gt;android.util package&lt;/h2&gt;
+&lt;p&gt;=====================&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Log&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;log stuff to console&lt;/li&gt;
+  &lt;li&gt;.i
+    &lt;ul&gt;
+      &lt;li&gt;information&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;.e
+    &lt;ul&gt;
+      &lt;li&gt;error&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;.d
+    &lt;ul&gt;
+      &lt;li&gt;debug&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;user-input&quot;&gt;USER INPUT&lt;/h2&gt;
+&lt;p&gt;=======&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Button&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;android:onClick- the function to call when button is clicked&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;alternative\/\/\/&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  .setOnClickListener(new View.onClickListener() {
+      @Override
+      public void onClick(View v) {
+          //do something
+      }
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ImageButton&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;a button that can have an image on it&lt;/li&gt;
+  &lt;li&gt;see Button&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CheckBox&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;yes/no input&lt;/li&gt;
+  &lt;li&gt;checkBoxElem.isChecked()
+    &lt;ul&gt;
+      &lt;li&gt;to get yes/no&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Spinner&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;dropdown menu but in popup form&lt;/li&gt;
+  &lt;li&gt;selection choices are strings in an array in strings.xml
+    &lt;ul&gt;
+      &lt;li&gt;see string arrays in strings.xml below&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;spinnerElem.getSelectedItem().toString()
+    &lt;ul&gt;
+      &lt;li&gt;to get selected item&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;EditText&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;collect text input&lt;/li&gt;
+  &lt;li&gt;lines- number of lines the textbox will have&lt;/li&gt;
+  &lt;li&gt;editTextElem.getText().toString()
+    &lt;ul&gt;
+      &lt;li&gt;to get entered text&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;layout&quot;&gt;LAYOUT&lt;/h2&gt;
+&lt;p&gt;=======&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ScrollView&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;ScrollView&amp;gt;&amp;lt;/ScrollView&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;things inside are scrollable&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;LinearLayout&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;one thing after another&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;lt;LinearLayout&amp;gt;
+      &amp;lt;Element/&amp;gt;
+      &amp;lt;Element/&amp;gt;
+  &amp;lt;/LinearLayout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;stringsxml&quot;&gt;strings.xml&lt;/h2&gt;
+&lt;p&gt;===========&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;stores app-wide string values/names&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;lt;string-array name=&quot;name&quot;&amp;gt;
+      &amp;lt;item&amp;gt;@string/stringName&amp;lt;/item&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;accessed with @array/name&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;color name=&quot;white&quot;&amp;gt;#FFFFFF&amp;lt;/color&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;add color&lt;/li&gt;
+  &lt;li&gt;can be accessed in code w/ @color/white&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;methods&quot;&gt;METHODS&lt;/h2&gt;
+&lt;p&gt;========&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;findViewById(int id)&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;get an element from the UI&lt;/li&gt;
+  &lt;li&gt;ex: final EditText nameField = (EditText)findViewById(R.id.EditText’sId);
+    &lt;ul&gt;
+      &lt;li&gt;where EditText’sId is found in id=”@+id/EditText’sId”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;getBaseContext()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;returns base context (replaces this)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;finish()&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;sends activity to the background&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jenny Wang</name></author><category term="coding_notes" /><summary type="html">PIXELS AND SCREEN COMPATIBILITY ================================</summary></entry><entry><title type="html">How to Git</title><link href="http://himty.github.io/how_to_git/" rel="alternate" type="text/html" title="How to Git" /><published>2017-04-22T00:00:00-04:00</published><updated>2017-04-22T00:00:00-04:00</updated><id>http://himty.github.io/how_to_git</id><content type="html" xml:base="http://himty.github.io/how_to_git/">&lt;h2 id=&quot;command-prompt&quot;&gt;COMMAND PROMPT&lt;/h2&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;get your directory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;go to that directory (follow pwd’s format)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;SETUP&lt;/h2&gt;
+&lt;p&gt;=======&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;–global
+    &lt;ul&gt;
+      &lt;li&gt;change setting on all repos&lt;/li&gt;
+      &lt;li&gt;disclusion = only change setting on this repo&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;–help
+    &lt;ul&gt;
+      &lt;li&gt;get local help page&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;user.name [“name”]
+    &lt;ul&gt;
+      &lt;li&gt;get/set username
+        &lt;ul&gt;
+          &lt;li&gt;(put “name” after if you want to set it)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;user.email [“email”]
+    &lt;ul&gt;
+      &lt;li&gt;get/set email&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;core.editor [“directory”]
+    &lt;ul&gt;
+      &lt;li&gt;get/set default editor to type values in when prompted&lt;/li&gt;
+      &lt;li&gt;ex: core.editor “atom –wait”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git init&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;creates new git repository
+    &lt;ul&gt;
+      &lt;li&gt;first cd to the correct folder&lt;/li&gt;
+      &lt;li&gt;if you want to see it, go to file manager, options,
+  show hidden files (roughly)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;doing-stuff&quot;&gt;DOING STUFF&lt;/h2&gt;
+&lt;p&gt;============&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;shows status of all files in repo&lt;/li&gt;
+  &lt;li&gt;untracked- hasn’t been anywhere yet&lt;/li&gt;
+  &lt;li&gt;unmodified- unchanged from last commit/ from after pulling&lt;/li&gt;
+  &lt;li&gt;modified- changed, but not set to commit yet&lt;/li&gt;
+  &lt;li&gt;staged- going to commit soon&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git add &amp;lt;filename&amp;gt; [&amp;lt;filename&amp;gt; &amp;lt;filename&amp;gt; ...]&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;add file’s content to next commit
+    &lt;ul&gt;
+      &lt;li&gt;-start TRACKING that file, STAGE files, mark
+        &lt;ul&gt;
+          &lt;li&gt;merge-conflicted files as RESOLVED, etc&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;see names of untracked files w/ git status&lt;/li&gt;
+  &lt;li&gt;ex: git add README&lt;/li&gt;
+  &lt;li&gt;-s
+    &lt;ul&gt;
+      &lt;li&gt;makes output shorter&lt;/li&gt;
+      &lt;li&gt;M = modified&lt;/li&gt;
+      &lt;li&gt;A = added&lt;/li&gt;
+      &lt;li&gt;?? = not tracked&lt;/li&gt;
+      &lt;li&gt;2 columns of symbols ^^
+        &lt;ul&gt;
+          &lt;li&gt;left = staging area status&lt;/li&gt;
+          &lt;li&gt;right = working area status
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;commits the changes in staging area (see git status)&lt;/li&gt;
+  &lt;li&gt;w/o -m
+    &lt;ul&gt;
+      &lt;li&gt;opens core editor to type message describing commit&lt;/li&gt;
+      &lt;li&gt;close core editor window to proceed&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;-m &lt;message&gt;
+&lt;/message&gt;    &lt;ul&gt;
+      &lt;li&gt;type commit message w/o opening core editor&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;-a
+    &lt;ul&gt;
+      &lt;li&gt;commit everything that was changed (skip staging area)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cat .gitignore &amp;lt;press enter&amp;gt; &amp;lt;what to ignore&amp;gt; &amp;lt;enter&amp;gt; &amp;lt;etc&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;make those files not show up in git status&lt;/li&gt;
+  &lt;li&gt;
+    &lt;what to=&quot;&quot; ignore=&quot;&quot;&gt;
+&lt;/what&gt;
+    &lt;ul&gt;
+      &lt;li&gt;*.[extension] - ignore w/ that extension&lt;/li&gt;
+      &lt;li&gt;*[part of name] - ignore w/ that in end of name&lt;/li&gt;
+      &lt;li&gt;(note the * in front)&lt;/li&gt;
+      &lt;li&gt;disregards lines with # (comment)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;no .a files
+    &lt;ul&gt;
+      &lt;li&gt;*.a&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;but do track lib.a, even though you’re ignoring .a files above
+    &lt;ul&gt;
+      &lt;li&gt;!lib.a&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;only ignore the TODO file in the current directory, not subdir/TODO
+    &lt;ul&gt;
+      &lt;li&gt;/TODO&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ignore all files in the build/ directory
+    &lt;ul&gt;
+      &lt;li&gt;build/&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ignore doc/notes.txt, but not doc/server/arch.txt
+    &lt;ul&gt;
+      &lt;li&gt;doc/*.txt&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ignore all .pdf files in the doc/ directory
+    &lt;ul&gt;
+      &lt;li&gt;doc/&lt;em&gt;*/&lt;/em&gt;.pdf&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git diff &amp;lt;filename&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;shows difference between working directory and staging area
+    &lt;ul&gt;
+      &lt;li&gt;ex: lines of code that were changed&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;filename&gt; if discluded, shows all files i think
+    
+&lt;/filename&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;gives list of commits w/ their message&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git show &amp;lt;commit&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;display what changed in that commit (git log?)&lt;/li&gt;
+  &lt;li&gt;
+    &lt;commit&gt; can be HEAD =&amp;gt; the commit you're currently on
+    
+&lt;/commit&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout &amp;lt;commit&amp;gt; &amp;lt;filename&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;restore that file in working directory to that commit’s version&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git help &amp;lt;commandName&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;your friend. opens up local help page (html file)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jenny Wang</name></author><category term="coding_notes" /><summary type="html">COMMAND PROMPT ===============</summary></entry><entry><title type="html">How to XML</title><link href="http://himty.github.io/how_to_xml/" rel="alternate" type="text/html" title="How to XML" /><published>2017-02-26T00:00:00-05:00</published><updated>2017-02-26T00:00:00-05:00</updated><id>http://himty.github.io/how_to_xml</id><content type="html" xml:base="http://himty.github.io/how_to_xml/">&lt;h2 id=&quot;xml-file-structure&quot;&gt;.xml FILE STRUCTURE&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;firstThing&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;second&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;attribute=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;this&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;actual thing&lt;span class=&quot;nt&quot;&gt;&amp;lt;/second&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;yeah&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;en&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;alsdkjfa&lt;span class=&quot;nt&quot;&gt;&amp;lt;/yeah&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/firstThing&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;see https://www.w3schools.com/xml/dom_nodes.asp&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-access&quot;&gt;HOW TO ACCESS&lt;/h2&gt;
+
+&lt;p&gt;setup&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 &amp;amp;&amp;amp; this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open(&quot;GET&quot;, &quot;books.xml&quot;, true);
+xhttp.send();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;get elements&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var xmlDoc = xml.responseXML;
+var x = xmlDoc.getElementsByTagName(&quot;title&quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;get value&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;x[3].childNodes[0].nodeValue;
+    ^^ 4th child of doc + the 1st child of that element's value/text
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;object-description&quot;&gt;OBJECT DESCRIPTION&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;XMLHttpRequest
+    .open(requestType, url, asynchronous/synchronous)
+        requestType- &quot;GET&quot; or &quot;POST&quot;
+        url- &quot;http://aldkjfalsd&quot; or &quot;file.xml&quot;
+        last boolean- true = asyncrhonous (one thing at a time)
+            false = synchronous (all at once/real time)
+    .send()
+        send the request
+    .onreadystatechange (event)
+        this.
+            readyState
+                0- request not intialized
+                1- server connection established
+                2- request recieved
+                3- processing request
+                4- request finished and response ready
+            status
+                200- ok
+                404- page not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Jenny Wang</name></author><category term="coding_notes" /><summary type="html">.xml FILE STRUCTURE</summary></entry></feed>
